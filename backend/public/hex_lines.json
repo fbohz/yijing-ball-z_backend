@@ -1,0 +1,2306 @@
+[
+  {
+    "id": 1,
+    "king_wen_number": 1,
+    "place": 1,
+    "meaning": "Hidden dragon. Do not act."
+  },
+  {
+    "id": 2,
+    "king_wen_number": 1,
+    "place": 2,
+    "meaning": "Dragon appearing in the field.\nIt furthers one to see the great man."
+  },
+  {
+    "id": 3,
+    "king_wen_number": 1,
+    "place": 3,
+    "meaning": "All day long the superior man is creatively actiev.\nAt nightfall his mind is still beset with cares.\nDanger. No blame."
+  },
+  {
+    "id": 4,
+    "king_wen_number": 1,
+    "place": 4,
+    "meaning": "Wavering flight over the depths.\nNo blame."
+  },
+  {
+    "id": 5,
+    "king_wen_number": 1,
+    "place": 5,
+    "meaning": "Flying dragon in the heavens.\nIt furthers one to see the great man."
+  },
+  {
+    "id": 6,
+    "king_wen_number": 1,
+    "place": 6,
+    "meaning": "Arrogant dragon will have cause to repent."
+  },
+  {
+    "id": 7,
+    "king_wen_number": 2,
+    "place": 1,
+    "meaning": "When there is hoarfrost underfoot,\nSolid ice is not far off."
+  },
+  {
+    "id": 8,
+    "king_wen_number": 2,
+    "place": 2,
+    "meaning": "Straight, square, great.\nWithout purpose,\nYet nothing remains unfurthered."
+  },
+  {
+    "id": 9,
+    "king_wen_number": 2,
+    "place": 3,
+    "meaning": "Hidden lines.\nOne is able to remain persevering.\nIf by chance you are in the service of a king,\nSeek not works, but bring to completion."
+  },
+  {
+    "id": 10,
+    "king_wen_number": 2,
+    "place": 4,
+    "meaning": "A tied-up sack. No blame, no praise."
+  },
+  {
+    "id": 11,
+    "king_wen_number": 2,
+    "place": 5,
+    "meaning": "A yellow lower garment brings supreme good fortune."
+  },
+  {
+    "id": 12,
+    "king_wen_number": 2,
+    "place": 6,
+    "meaning": "Dragons fight in the meadow.\nTheir blood is black and yellow."
+  },
+  {
+    "id": 13,
+    "king_wen_number": 3,
+    "place": 1,
+    "meaning": "Hesitation and hindrance.\nIt furthers one to remain persevering.\nIt furthers one to appoint helpers."
+  },
+  {
+    "id": 14,
+    "king_wen_number": 3,
+    "place": 2,
+    "meaning": "Difficulties pile up.\nHorse and wagon part.\nHe is not a robber;\nHe wants to woo when the time comes.\nThe maiden is chaste,\nShe does not pledge herself.\nTen years -- then she pledges herself."
+  },
+  {
+    "id": 15,
+    "king_wen_number": 3,
+    "place": 3,
+    "meaning": "Whoever hunts deer without the forester\nOnly loses his way in the forest.\nThe superior man understands the signs of the time\nAnd prefers to desist.\nTo go on brings humiliation."
+  },
+  {
+    "id": 16,
+    "king_wen_number": 3,
+    "place": 4,
+    "meaning": "Horse and wagon part.\nStrive for union.\nTo go brings good fortune.\nEverything acts to further."
+  },
+  {
+    "id": 17,
+    "king_wen_number": 3,
+    "place": 5,
+    "meaning": "Difficulties in blessing.\nA little perseverance brings good fortune.\nGreat perseverance brings misfortune."
+  },
+  {
+    "id": 18,
+    "king_wen_number": 3,
+    "place": 6,
+    "meaning": "Horse and wagon part.\nBloody tears flow."
+  },
+  {
+    "id": 19,
+    "king_wen_number": 4,
+    "place": 1,
+    "meaning": "To make a fool develop\nIt furthers one to apply discipline.\nThe fetters should be removed.\nTo go on in this way brings humiliation."
+  },
+  {
+    "id": 20,
+    "king_wen_number": 4,
+    "place": 2,
+    "meaning": "To bear with fools in kindliness brings good fortune.\nTo know how to take women\nBrings good fortune.\nThe son is capable of taking charge of the household."
+  },
+  {
+    "id": 21,
+    "king_wen_number": 4,
+    "place": 3,
+    "meaning": "Take not a maiden who, when she sees a man of bronze,\nLoses possession of herself.\nNothing furthers."
+  },
+  {
+    "id": 22,
+    "king_wen_number": 4,
+    "place": 4,
+    "meaning": "Entangled folly brings humiliation."
+  },
+  {
+    "id": 23,
+    "king_wen_number": 4,
+    "place": 5,
+    "meaning": "Childlike folly brings good fortune."
+  },
+  {
+    "id": 24,
+    "king_wen_number": 4,
+    "place": 6,
+    "meaning": "In punishing folly\nIt does not further one\nTo commit transgressions.\nThe only thing that furthers\nIs to prevent transgressions."
+  },
+  {
+    "id": 25,
+    "king_wen_number": 5,
+    "place": 1,
+    "meaning": "Waiting in the meadow.\nIt furthers one to abide in what endures.\nNo blame."
+  },
+  {
+    "id": 26,
+    "king_wen_number": 5,
+    "place": 2,
+    "meaning": "Waiting on the sand.\nThere is some gossip.\nThe end brings good fortune."
+  },
+  {
+    "id": 27,
+    "king_wen_number": 5,
+    "place": 3,
+    "meaning": "Waiting in the mud\nBrings about the arrival of the enemy."
+  },
+  {
+    "id": 28,
+    "king_wen_number": 5,
+    "place": 4,
+    "meaning": "Waiting in blood.\nGet out of the pit."
+  },
+  {
+    "id": 29,
+    "king_wen_number": 5,
+    "place": 5,
+    "meaning": "Waiting at meat and drink.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 30,
+    "king_wen_number": 5,
+    "place": 6,
+    "meaning": "One falls into the pit.\nThree uninvited guests arrive.\nHonor them, and in the end there will be good fortune."
+  },
+  {
+    "id": 31,
+    "king_wen_number": 6,
+    "place": 1,
+    "meaning": "If one does not perpetuate the affair,\nThere is a little gossip.\nIn the end, good fortune comes."
+  },
+  {
+    "id": 32,
+    "king_wen_number": 6,
+    "place": 2,
+    "meaning": "One cannot engage in conflict;\nOne returns home, gives way.\nThe people of his town,\nThree hundred households,\nRemain free of guilt."
+  },
+  {
+    "id": 33,
+    "king_wen_number": 6,
+    "place": 3,
+    "meaning": "To nourish oneself on ancient virtue induces perseverance.\nDanger. In the end, good fortune comes.\nIf by chance you are in the service of a king,\nSeek not works."
+  },
+  {
+    "id": 34,
+    "king_wen_number": 6,
+    "place": 4,
+    "meaning": "One cannot engage in conflict.\nOne turns back and submits to fate,\nChanges one's attitude,\nAnd finds peace in perseverance.\nGood fortune."
+  },
+  {
+    "id": 35,
+    "king_wen_number": 6,
+    "place": 5,
+    "meaning": "To contend before him\nBrings supreme good fortune."
+  },
+  {
+    "id": 36,
+    "king_wen_number": 6,
+    "place": 6,
+    "meaning": "Even if by chance a leather belt is bestowed on one,\nBy the end of a morning\nIt will have been snatched away three times."
+  },
+  {
+    "id": 37,
+    "king_wen_number": 7,
+    "place": 1,
+    "meaning": "An army must set forth in proper order.\nIf the order is not good, misfortune threatens."
+  },
+  {
+    "id": 38,
+    "king_wen_number": 7,
+    "place": 2,
+    "meaning": "In the midst of the army. Good fortune. No blame.\nThe king bestows a triple decoration."
+  },
+  {
+    "id": 39,
+    "king_wen_number": 7,
+    "place": 3,
+    "meaning": "Perchance the army carries corpses in the wagon.\nMisfortune."
+  },
+  {
+    "id": 40,
+    "king_wen_number": 7,
+    "place": 4,
+    "meaning": "The army retreats.\nNo blame."
+  },
+  {
+    "id": 41,
+    "king_wen_number": 7,
+    "place": 5,
+    "meaning": "There is game in the field.\nIt furthers one to catch it.\nWithout blame.\nLet the eldest lead the army.\nThe younger transports corpses;\nThen perseverance brings misfortune."
+  },
+  {
+    "id": 42,
+    "king_wen_number": 7,
+    "place": 6,
+    "meaning": "The great prince issues commands,\nFounds states, vests families with fiefs.\nInferior people should not be employed."
+  },
+  {
+    "id": 43,
+    "king_wen_number": 8,
+    "place": 1,
+    "meaning": "Hold to him in truth and loyalty;\nThis is without blame.\nTruth, like a full earthen bowl:\nThus in the end\nGood fortune comes from without."
+  },
+  {
+    "id": 44,
+    "king_wen_number": 8,
+    "place": 2,
+    "meaning": "Hold to him inwardly.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 45,
+    "king_wen_number": 8,
+    "place": 3,
+    "meaning": "You hold together with the wrong people."
+  },
+  {
+    "id": 46,
+    "king_wen_number": 8,
+    "place": 4,
+    "meaning": "Hold to him outwardly also.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 47,
+    "king_wen_number": 8,
+    "place": 5,
+    "meaning": "Manifestation of holding together.\nIn the hunt the king uses beaters on three sides only\nAnd foregoes game that runs off in front.\nThe citizens need no warning.\nGood fortune."
+  },
+  {
+    "id": 48,
+    "king_wen_number": 8,
+    "place": 6,
+    "meaning": "He finds no head for holding together.\nMisfortune."
+  },
+  {
+    "id": 49,
+    "king_wen_number": 9,
+    "place": 1,
+    "meaning": "Return to the way.\nHow could there be blame in this?\nGood fortune."
+  },
+  {
+    "id": 50,
+    "king_wen_number": 9,
+    "place": 2,
+    "meaning": "He allows himself to be drawn into returning.\nGood fortune."
+  },
+  {
+    "id": 51,
+    "king_wen_number": 9,
+    "place": 3,
+    "meaning": "The spokes burst out of the wagon wheels.\nMan and wife roll their eyes."
+  },
+  {
+    "id": 52,
+    "king_wen_number": 9,
+    "place": 4,
+    "meaning": "If you are sincere, blood vanishes and fear gives way.\nNo blame."
+  },
+  {
+    "id": 53,
+    "king_wen_number": 9,
+    "place": 5,
+    "meaning": "If you are sincere and loyally attached,\nYou are rich in your neighbor."
+  },
+  {
+    "id": 54,
+    "king_wen_number": 9,
+    "place": 6,
+    "meaning": "The rain comes, there is rest.\nThis is due to the lasting effect of character.\nPerseverance brings the woman into danger.\nThe moon is nearly full.\nIf the superior man persists,\nMisfortune comes."
+  },
+  {
+    "id": 55,
+    "king_wen_number": 10,
+    "place": 1,
+    "meaning": "Simple conduct. Progress without blame."
+  },
+  {
+    "id": 56,
+    "king_wen_number": 10,
+    "place": 2,
+    "meaning": "Treading a smooth, level course.\nThe perseverance of a dark man\nBrings good fortune."
+  },
+  {
+    "id": 57,
+    "king_wen_number": 10,
+    "place": 3,
+    "meaning": "A one-eyed man is able to see,\nA lame man is able to tread.\nHe treads on the tail of the tiger.\nThe tiger bites the man.\nMisfortune.\nThus does a warrior act on behalf of his great prince."
+  },
+  {
+    "id": 58,
+    "king_wen_number": 10,
+    "place": 4,
+    "meaning": "He treads on the tail of the tiger.\nCaution and circumspection\nLead ultimately to good fortune."
+  },
+  {
+    "id": 59,
+    "king_wen_number": 10,
+    "place": 5,
+    "meaning": "Resolute conduct.\nPerseverance with awareness of danger."
+  },
+  {
+    "id": 60,
+    "king_wen_number": 10,
+    "place": 6,
+    "meaning": "Look to your conduct and weigh the favorable signs.\nWhen everything is fulfilled, supreme good fortune comes."
+  },
+  {
+    "id": 61,
+    "king_wen_number": 11,
+    "place": 1,
+    "meaning": "When ribbon grass is pulled up, the sod comes with it.\nEach according to his kind.\nUndertakings bring good fortune."
+  },
+  {
+    "id": 62,
+    "king_wen_number": 11,
+    "place": 2,
+    "meaning": "Bearing with the uncultured in gentleness,\nFording the river with resolution,\nNot neglecting what is distant,\nNot regarding one's companions:\nThus one may manage to walk in the middle."
+  },
+  {
+    "id": 63,
+    "king_wen_number": 11,
+    "place": 3,
+    "meaning": "No plain not followed by a slope.\nNo going not followed by a return.\nHe who remains persevering in danger\nIs without blame.\nDo not complain about this truth;\nEnjoy the good fortune you still possess."
+  },
+  {
+    "id": 64,
+    "king_wen_number": 11,
+    "place": 4,
+    "meaning": "He flutters down, not boasting of his wealth,\nTogether with his neighbor,\nGuileless and sincere."
+  },
+  {
+    "id": 65,
+    "king_wen_number": 11,
+    "place": 5,
+    "meaning": "The sovereign I\nGives his daughter in marriage.\nThis brings blessing\nAnd supreme good fortune."
+  },
+  {
+    "id": 66,
+    "king_wen_number": 11,
+    "place": 6,
+    "meaning": "The wall falls back into the moat.\nUse no army now.\nMake your commands known within your own town.\nPerseverance brings humiliation."
+  },
+  {
+    "id": 67,
+    "king_wen_number": 12,
+    "place": 1,
+    "meaning": "When ribbon grass is pulled up, the sod comes with it.\nEach according to his kind.\nPerseverance brings good fortune and success."
+  },
+  {
+    "id": 68,
+    "king_wen_number": 12,
+    "place": 2,
+    "meaning": "They bear and endure;\nThis means good fortune for inferior people.\nThe standstill serves to help the great man to attain success."
+  },
+  {
+    "id": 69,
+    "king_wen_number": 12,
+    "place": 3,
+    "meaning": "They bear shame."
+  },
+  {
+    "id": 70,
+    "king_wen_number": 12,
+    "place": 4,
+    "meaning": "He who acts at the command of the highest\nRemains without blame.\nThose of like mind partake of the blessing."
+  },
+  {
+    "id": 71,
+    "king_wen_number": 12,
+    "place": 5,
+    "meaning": "Standstill is giving way.\nGood fortune for the great man.\n\"What if it should fail, what if it should fail?\"\nIn this way he ties it to a cluster of mulberry shoots."
+  },
+  {
+    "id": 72,
+    "king_wen_number": 12,
+    "place": 6,
+    "meaning": "The standstill comes to and end.\nFirst standstill, then good fortune."
+  },
+  {
+    "id": 73,
+    "king_wen_number": 13,
+    "place": 1,
+    "meaning": "Fellowship with men at the gate.\nNo blame."
+  },
+  {
+    "id": 74,
+    "king_wen_number": 13,
+    "place": 2,
+    "meaning": "Fellowship with men in the clan.\nHumiliation."
+  },
+  {
+    "id": 75,
+    "king_wen_number": 13,
+    "place": 3,
+    "meaning": "He hides weapons in the thicket;\nHe climbs the high hill in front of it.\nFor three years he does not rise up."
+  },
+  {
+    "id": 76,
+    "king_wen_number": 13,
+    "place": 4,
+    "meaning": "He climbs up on his wall; he cannot attack.\nGood fortune."
+  },
+  {
+    "id": 77,
+    "king_wen_number": 13,
+    "place": 5,
+    "meaning": "Men bound in fellowship first weep and lament,\nBut afterward they laugh.\nAfter great struggles they succeed in meeting."
+  },
+  {
+    "id": 78,
+    "king_wen_number": 13,
+    "place": 6,
+    "meaning": "Fellowship with men in the meadow.\nNo remorse."
+  },
+  {
+    "id": 79,
+    "king_wen_number": 14,
+    "place": 1,
+    "meaning": "No relationship with what is harmful;\nThere is no blame in this.\nIf one remains conscious of difficulty,\nOne remains without blame."
+  },
+  {
+    "id": 80,
+    "king_wen_number": 14,
+    "place": 2,
+    "meaning": "A big wagon for loading.\nOne may undertake something.\nNo blame."
+  },
+  {
+    "id": 81,
+    "king_wen_number": 14,
+    "place": 3,
+    "meaning": "A prince offers it to the Son of Heaven.\nA petty man cannot do this."
+  },
+  {
+    "id": 82,
+    "king_wen_number": 14,
+    "place": 4,
+    "meaning": "He makes a difference\nBetween himself and his neighbor.\nNo blame."
+  },
+  {
+    "id": 83,
+    "king_wen_number": 14,
+    "place": 5,
+    "meaning": "He whose truth is accessible, yet dignified,\nHas good fortune."
+  },
+  {
+    "id": 84,
+    "king_wen_number": 14,
+    "place": 6,
+    "meaning": "He is blessed by heaven.\nGood fortune.\nNothing that does not further."
+  },
+  {
+    "id": 85,
+    "king_wen_number": 15,
+    "place": 1,
+    "meaning": "A superior man modest about his modesty\nMay cross the great water.\nGood fortune."
+  },
+  {
+    "id": 86,
+    "king_wen_number": 15,
+    "place": 2,
+    "meaning": "Modesty that comes to expression.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 87,
+    "king_wen_number": 15,
+    "place": 3,
+    "meaning": "A superior man of modesty and merit\nCarries things to conclusion.\nGood fortune."
+  },
+  {
+    "id": 88,
+    "king_wen_number": 15,
+    "place": 4,
+    "meaning": "Nothing that would not further modesty\nIn movement."
+  },
+  {
+    "id": 89,
+    "king_wen_number": 15,
+    "place": 5,
+    "meaning": "No boasting of wealth before one's neighbor.\nIt is favorable to attack with force.\nNothing that would not further."
+  },
+  {
+    "id": 90,
+    "king_wen_number": 15,
+    "place": 6,
+    "meaning": "Modesty that comes to expression.\nIt is favorable to set armies marching\nTo chastise one's own city and one's country."
+  },
+  {
+    "id": 91,
+    "king_wen_number": 16,
+    "place": 1,
+    "meaning": "Enthusiasm that expresses itself\nBrings misfortune."
+  },
+  {
+    "id": 92,
+    "king_wen_number": 16,
+    "place": 2,
+    "meaning": "Firm as a rock. Not a whole day.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 93,
+    "king_wen_number": 16,
+    "place": 3,
+    "meaning": "Enthusiasm that looks upward creates remorse.\nHesitation brings remorse."
+  },
+  {
+    "id": 94,
+    "king_wen_number": 16,
+    "place": 4,
+    "meaning": "The source of enthusiasm.\nHe achieves great things.\nDoubt not.\nYou gather friends around you\nAs a hair clasp gathers the hair."
+  },
+  {
+    "id": 95,
+    "king_wen_number": 16,
+    "place": 5,
+    "meaning": "Persistently ill, and still does not die."
+  },
+  {
+    "id": 96,
+    "king_wen_number": 16,
+    "place": 6,
+    "meaning": "Deluded enthusiasm.\nBut if after completion one changes,\nThere is no blame."
+  },
+  {
+    "id": 97,
+    "king_wen_number": 17,
+    "place": 1,
+    "meaning": "The standard is changing.\nPerseverance brings good fortune.\nTo go out of the door in company\nProduces deeds."
+  },
+  {
+    "id": 98,
+    "king_wen_number": 17,
+    "place": 2,
+    "meaning": "If one clings to the little boy,\nOne loses the strong man."
+  },
+  {
+    "id": 99,
+    "king_wen_number": 17,
+    "place": 3,
+    "meaning": "If one clings to the strong man,\nOne loses the little boy.\nThrough following one finds what one seeks.\nIt furthers one to remain persevering."
+  },
+  {
+    "id": 100,
+    "king_wen_number": 17,
+    "place": 4,
+    "meaning": "Following creates success.\nPerseverance brings misfortune.\nTo go one's way with sincerity brings clarity.\nHow could there be blame in this?"
+  },
+  {
+    "id": 101,
+    "king_wen_number": 17,
+    "place": 5,
+    "meaning": "Sincere in the good. Good fortune."
+  },
+  {
+    "id": 102,
+    "king_wen_number": 17,
+    "place": 6,
+    "meaning": "He meets with firm allegiance\nAnd is still further bound.\nThe king introduces him\nTo the Western Mountain."
+  },
+  {
+    "id": 103,
+    "king_wen_number": 18,
+    "place": 1,
+    "meaning": "Setting right what has been spoiled by the father.\nIf there is a son,\nNo blame rests upon the departed father.\nDanger. In the end good fortune."
+  },
+  {
+    "id": 104,
+    "king_wen_number": 18,
+    "place": 2,
+    "meaning": "Setting right what has been spoiled by the mother.\nOne must not be too persevering."
+  },
+  {
+    "id": 105,
+    "king_wen_number": 18,
+    "place": 3,
+    "meaning": "Setting right what has been spoiled by the father.\nThere will be little remorse. No great blame."
+  },
+  {
+    "id": 106,
+    "king_wen_number": 18,
+    "place": 4,
+    "meaning": "Tolerating what has been spoiled by the father.\nIn continuing one sees humiliation."
+  },
+  {
+    "id": 107,
+    "king_wen_number": 18,
+    "place": 5,
+    "meaning": "Setting right what has been spoiled by the father.\nOne meets with praise."
+  },
+  {
+    "id": 108,
+    "king_wen_number": 18,
+    "place": 6,
+    "meaning": "He does no serve kings and princes,\nSets himself higher goals."
+  },
+  {
+    "id": 109,
+    "king_wen_number": 19,
+    "place": 1,
+    "meaning": "Joint approach.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 110,
+    "king_wen_number": 19,
+    "place": 2,
+    "meaning": "Joint approach.\nGood fortune.\nEverything furthers."
+  },
+  {
+    "id": 111,
+    "king_wen_number": 19,
+    "place": 3,
+    "meaning": "Comfortable approach.\nNothing that would further.\nIf one induced grief over it,\nOne becomes free of blame."
+  },
+  {
+    "id": 112,
+    "king_wen_number": 19,
+    "place": 4,
+    "meaning": "Complete approach.\nNo blame."
+  },
+  {
+    "id": 113,
+    "king_wen_number": 19,
+    "place": 5,
+    "meaning": "Wise approach.\nThis is right for a great prince.\nGood fortune."
+  },
+  {
+    "id": 114,
+    "king_wen_number": 19,
+    "place": 6,
+    "meaning": "Greathearted approach.\nGood fortune. No blame."
+  },
+  {
+    "id": 115,
+    "king_wen_number": 20,
+    "place": 1,
+    "meaning": "Boylike contemplation.\nFor an inferior man, no blame.\nFor a superior man, humiliation."
+  },
+  {
+    "id": 116,
+    "king_wen_number": 20,
+    "place": 2,
+    "meaning": "Contemplation through the crack in the door.\nFurthering for the perseverance of a woman."
+  },
+  {
+    "id": 117,
+    "king_wen_number": 20,
+    "place": 3,
+    "meaning": "Contemplation of my life\nDecides the choice\nBetween advance and retreat."
+  },
+  {
+    "id": 118,
+    "king_wen_number": 20,
+    "place": 4,
+    "meaning": "Contemplation of the light of the kingdom.\nIt furthers one to exert influence as the guest of a king."
+  },
+  {
+    "id": 119,
+    "king_wen_number": 20,
+    "place": 5,
+    "meaning": "Contemplation of my life.\nThe superior man is without blame."
+  },
+  {
+    "id": 120,
+    "king_wen_number": 20,
+    "place": 6,
+    "meaning": "Contemplation of his life.\nThe superior man is without blame."
+  },
+  {
+    "id": 121,
+    "king_wen_number": 21,
+    "place": 1,
+    "meaning": "His feet are fastened in the stocks,\nSo that his toes disappear.\nNo blame."
+  },
+  {
+    "id": 122,
+    "king_wen_number": 21,
+    "place": 2,
+    "meaning": "Bites through tender meat,\nSo that his nose disappears.\nNo blame."
+  },
+  {
+    "id": 123,
+    "king_wen_number": 21,
+    "place": 3,
+    "meaning": "Bites on old dried meat\nAnd strikes on something poisonous.\nSlight humiliation. No blame."
+  },
+  {
+    "id": 124,
+    "king_wen_number": 21,
+    "place": 4,
+    "meaning": "Bites on dried gristly meat.\nReceives metal arrows.\nIt furthers one to be mindful of difficulties\nAnd to be persevering.\nGood fortune."
+  },
+  {
+    "id": 125,
+    "king_wen_number": 21,
+    "place": 5,
+    "meaning": "Bites on dried lean meat.\nReceives yellow gold.\nPerseveringly aware of danger.\nNo blame."
+  },
+  {
+    "id": 126,
+    "king_wen_number": 21,
+    "place": 6,
+    "meaning": "His neck is fastened to the wooden cangue,\nSo that his ears disappear.\nMisfortune."
+  },
+  {
+    "id": 127,
+    "king_wen_number": 22,
+    "place": 1,
+    "meaning": "He lends grace to his toes, leaves the carriage, and walks."
+  },
+  {
+    "id": 128,
+    "king_wen_number": 22,
+    "place": 2,
+    "meaning": "Lends grace to the beard on his chin."
+  },
+  {
+    "id": 129,
+    "king_wen_number": 22,
+    "place": 3,
+    "meaning": "Graceful and moist.\nConstant perseverance brings good fortune."
+  },
+  {
+    "id": 130,
+    "king_wen_number": 22,
+    "place": 4,
+    "meaning": "Grace or simplicity?\nA white horse comes as if on wings.\nHe is not a robber,\nHe will woo at the right time."
+  },
+  {
+    "id": 131,
+    "king_wen_number": 22,
+    "place": 5,
+    "meaning": "Grace in hills and gardens.\nThe roll of silk is meager and small.\nHumiliation, but in the end good fortune."
+  },
+  {
+    "id": 132,
+    "king_wen_number": 22,
+    "place": 6,
+    "meaning": "Simple grace. No blame."
+  },
+  {
+    "id": 133,
+    "king_wen_number": 23,
+    "place": 1,
+    "meaning": "The leg of the bed is split.\nThose who persevere are destroyed.\nMisfortune."
+  },
+  {
+    "id": 134,
+    "king_wen_number": 23,
+    "place": 2,
+    "meaning": "The bed is split at the edge.\nThose who persevere are destroyed.\nMisfortune."
+  },
+  {
+    "id": 135,
+    "king_wen_number": 23,
+    "place": 3,
+    "meaning": "He splits with them.\nNo blame."
+  },
+  {
+    "id": 136,
+    "king_wen_number": 23,
+    "place": 4,
+    "meaning": "The bed is split up to the skin.\nMisfortune."
+  },
+  {
+    "id": 137,
+    "king_wen_number": 23,
+    "place": 5,
+    "meaning": "A shoal of fishes. Favor comes through the court ladies.\nEverything acts to further."
+  },
+  {
+    "id": 138,
+    "king_wen_number": 23,
+    "place": 6,
+    "meaning": "There is a large fruit still uneaten.\nThe superior man receives a carriage.\nThe house of the inferior man is split apart."
+  },
+  {
+    "id": 139,
+    "king_wen_number": 24,
+    "place": 1,
+    "meaning": "Return from a short distance.\nNo need for remorse.\nGreat good fortune."
+  },
+  {
+    "id": 140,
+    "king_wen_number": 24,
+    "place": 2,
+    "meaning": "Quiet return. Good fortune."
+  },
+  {
+    "id": 141,
+    "king_wen_number": 24,
+    "place": 3,
+    "meaning": "Repeated return. Danger. No blame."
+  },
+  {
+    "id": 142,
+    "king_wen_number": 24,
+    "place": 4,
+    "meaning": "Walking in the midst of others,\nOne returns alone."
+  },
+  {
+    "id": 143,
+    "king_wen_number": 24,
+    "place": 5,
+    "meaning": "Noblehearted return. No remorse."
+  },
+  {
+    "id": 144,
+    "king_wen_number": 24,
+    "place": 6,
+    "meaning": "Missing the return. Misfortune.\nMisfortune from within and without.\nIf armies are set marching in this way,\nOne will in the end suffer a great defeat,\nDisastrous for the ruler of the country.\nFor ten years\nIt will not be possible to attack again."
+  },
+  {
+    "id": 145,
+    "king_wen_number": 25,
+    "place": 1,
+    "meaning": "Innocent behavior brings good fortune."
+  },
+  {
+    "id": 146,
+    "king_wen_number": 25,
+    "place": 2,
+    "meaning": "If one does not count on the harvest while plowing,\nNor on the use of the ground while clearing it,\nIt furthers one to undertake something."
+  },
+  {
+    "id": 147,
+    "king_wen_number": 25,
+    "place": 3,
+    "meaning": "Undeserved misfortune.\nThe cow that was tethered by someone\nIs the wanderer's gain, the citizen's loss."
+  },
+  {
+    "id": 148,
+    "king_wen_number": 25,
+    "place": 4,
+    "meaning": "He who can be persevering\nRemains without blame."
+  },
+  {
+    "id": 149,
+    "king_wen_number": 25,
+    "place": 5,
+    "meaning": "Use no medicine in an illness\nIncurred through no fault of your own.\nIt will pass of itself."
+  },
+  {
+    "id": 150,
+    "king_wen_number": 25,
+    "place": 6,
+    "meaning": "Innocent action brings misfortune.\nNothing furthers."
+  },
+  {
+    "id": 151,
+    "king_wen_number": 26,
+    "place": 1,
+    "meaning": "Danger is at hand. It furthers one to desist."
+  },
+  {
+    "id": 152,
+    "king_wen_number": 26,
+    "place": 2,
+    "meaning": "The axletrees are taken from the wagon."
+  },
+  {
+    "id": 153,
+    "king_wen_number": 26,
+    "place": 3,
+    "meaning": "A good horse that follows others.\nAwareness of danger,\nWith perseverance, furthers.\nPractice chariot driving and armed defense daily.\nIt furthers one to have somewhere to go."
+  },
+  {
+    "id": 154,
+    "king_wen_number": 26,
+    "place": 4,
+    "meaning": "The headboard of a young bull.\nGreat good fortune."
+  },
+  {
+    "id": 155,
+    "king_wen_number": 26,
+    "place": 5,
+    "meaning": "The tusk of a gelded boar.\nGood fortune."
+  },
+  {
+    "id": 156,
+    "king_wen_number": 26,
+    "place": 6,
+    "meaning": "One attains the way of heaven. Success."
+  },
+  {
+    "id": 157,
+    "king_wen_number": 27,
+    "place": 1,
+    "meaning": "You let your magic tortoise go,\nAnd look at me with the corners of your mouth drooping.\nMisfortune."
+  },
+  {
+    "id": 158,
+    "king_wen_number": 27,
+    "place": 2,
+    "meaning": "Turning to the summit for nourishment,\nDeviating from the path\nTo seek nourishment from the hill.\nContinuing to do this brings misfortune."
+  },
+  {
+    "id": 159,
+    "king_wen_number": 27,
+    "place": 3,
+    "meaning": "Turning away from nourishment.\nPerseverance brings misfortune.\nDo not act thus for ten years.\nNothing serves to further."
+  },
+  {
+    "id": 160,
+    "king_wen_number": 27,
+    "place": 4,
+    "meaning": "Turning to the summit\nFor provision of nourishment\nBrings good fortune.\nSpying about with sharp eyes\nLike a tiger with insatiable craving.\nNo blame."
+  },
+  {
+    "id": 161,
+    "king_wen_number": 27,
+    "place": 5,
+    "meaning": "Turning away from the path.\nTo remain persevering brings good fortune.\nOne should not cross the great water."
+  },
+  {
+    "id": 162,
+    "king_wen_number": 27,
+    "place": 6,
+    "meaning": "The source of nourishment.\nAwareness of danger brings good fortune.\nIt furthers one to cross the great water."
+  },
+  {
+    "id": 163,
+    "king_wen_number": 28,
+    "place": 1,
+    "meaning": "To spread white rushes underneath. No blame."
+  },
+  {
+    "id": 164,
+    "king_wen_number": 28,
+    "place": 2,
+    "meaning": "A dry poplar sprouts at the root.\nAn older man takes a young wife.\nEverything furthers."
+  },
+  {
+    "id": 165,
+    "king_wen_number": 28,
+    "place": 3,
+    "meaning": "The ridgepole sags to the breaking point.\nMisfortune."
+  },
+  {
+    "id": 166,
+    "king_wen_number": 28,
+    "place": 4,
+    "meaning": "The ridgepole is braced. Good fortune.\nIf there are ulterior motives, it is humiliating."
+  },
+  {
+    "id": 167,
+    "king_wen_number": 28,
+    "place": 5,
+    "meaning": "A withered poplar puts forth flowers.\nAn older woman takes a husband.\nNo blame. No praise."
+  },
+  {
+    "id": 168,
+    "king_wen_number": 28,
+    "place": 6,
+    "meaning": "One must go through the water.\nIt goes over one's head.\nMisfortune. No blame."
+  },
+  {
+    "id": 169,
+    "king_wen_number": 29,
+    "place": 1,
+    "meaning": "Repetition of the Abysmal.\nIn the abyss one falls into a pit.\nMisfortune."
+  },
+  {
+    "id": 170,
+    "king_wen_number": 29,
+    "place": 2,
+    "meaning": "The abyss is dangerous.\nOne should strive to attain small things only."
+  },
+  {
+    "id": 171,
+    "king_wen_number": 29,
+    "place": 3,
+    "meaning": "Forward and backward, abyss on abyss.\nIn danger like this, pause at first and wait,\nOtherwise you will fall into a pit in the abyss.\nDo not act in this way."
+  },
+  {
+    "id": 172,
+    "king_wen_number": 29,
+    "place": 4,
+    "meaning": "A jug of wine, a bowl of rice with it;\nEarthen vessels\nSimply handed in through the window.\nThere is certainly no blame in this."
+  },
+  {
+    "id": 173,
+    "king_wen_number": 29,
+    "place": 5,
+    "meaning": "The abyss is not filled to overflowing,\nIt is filled only to the rim.\nNo blame."
+  },
+  {
+    "id": 174,
+    "king_wen_number": 29,
+    "place": 6,
+    "meaning": "Bound with cords and ropes,\nShut in between thorn-hedged prison walls:For three years one does not find the way.\nMisfortune."
+  },
+  {
+    "id": 175,
+    "king_wen_number": 30,
+    "place": 1,
+    "meaning": "The footprints run crisscross.\nIf one is seriously intent, no blame."
+  },
+  {
+    "id": 176,
+    "king_wen_number": 30,
+    "place": 2,
+    "meaning": "Yellow light. Supreme good fortune."
+  },
+  {
+    "id": 177,
+    "king_wen_number": 30,
+    "place": 3,
+    "meaning": "In the light of the setting sun,\nMen either beat the pot and sing\nOr loudly bewail the approach of old age.\nMisfortune."
+  },
+  {
+    "id": 178,
+    "king_wen_number": 30,
+    "place": 4,
+    "meaning": "Its coming is sudden;\nIt flames up, dies down, is thrown away."
+  },
+  {
+    "id": 179,
+    "king_wen_number": 30,
+    "place": 5,
+    "meaning": "Tears in floods, sighing and lamenting.\nGood fortune."
+  },
+  {
+    "id": 180,
+    "king_wen_number": 30,
+    "place": 6,
+    "meaning": "The king uses him to march forth and chastise.\nThen it is best to kill the leaders\nAnd take captive the followers. No blame."
+  },
+  {
+    "id": 181,
+    "king_wen_number": 31,
+    "place": 1,
+    "meaning": "The influence shows itself in the big toe."
+  },
+  {
+    "id": 182,
+    "king_wen_number": 31,
+    "place": 2,
+    "meaning": "The influence shows itself in the calves of the legs.\nMisfortune.\nTarrying brings good fortune."
+  },
+  {
+    "id": 183,
+    "king_wen_number": 31,
+    "place": 3,
+    "meaning": "The influence shows itself in the thighs.\nHold to that which follows it.\nTo continune is humiliating."
+  },
+  {
+    "id": 184,
+    "king_wen_number": 31,
+    "place": 4,
+    "meaning": "Perseverance brings good fortune.\nRemorse disappears.\nIf a man is agitated in mind,\nAnd his thoughts go hither and thither,\nOnly those friends\nOn whom he fixes his conscious thoughts\nWill follow."
+  },
+  {
+    "id": 185,
+    "king_wen_number": 31,
+    "place": 5,
+    "meaning": "The influence shows itself in the back of the neck.\nNo remorse."
+  },
+  {
+    "id": 186,
+    "king_wen_number": 31,
+    "place": 6,
+    "meaning": "The influence shows itself in the jaws, cheeks, and tongue."
+  },
+  {
+    "id": 187,
+    "king_wen_number": 32,
+    "place": 1,
+    "meaning": "Seeking duration too hastily brings misfortune persistently.\nNothing that would further."
+  },
+  {
+    "id": 188,
+    "king_wen_number": 32,
+    "place": 2,
+    "meaning": "Remorse disappears."
+  },
+  {
+    "id": 189,
+    "king_wen_number": 32,
+    "place": 3,
+    "meaning": "He who does not give duration to his character\nMeets with disgrace.\nPersistent humiliation."
+  },
+  {
+    "id": 190,
+    "king_wen_number": 32,
+    "place": 4,
+    "meaning": "No game in the field."
+  },
+  {
+    "id": 191,
+    "king_wen_number": 32,
+    "place": 5,
+    "meaning": "Giving duration to one's character through perseverance.\nThis is good fortune for a woman, misfortune for a man."
+  },
+  {
+    "id": 192,
+    "king_wen_number": 32,
+    "place": 6,
+    "meaning": "Restlessness as an enduring condition brings misfortune."
+  },
+  {
+    "id": 193,
+    "king_wen_number": 33,
+    "place": 1,
+    "meaning": "At the tail in retreat. This is dangerous.\nOne must not wish to undertake anything."
+  },
+  {
+    "id": 194,
+    "king_wen_number": 33,
+    "place": 2,
+    "meaning": "He holds him fast with yellow oxhide.\nNo one can tear him loose."
+  },
+  {
+    "id": 195,
+    "king_wen_number": 33,
+    "place": 3,
+    "meaning": "A halted retreat\nIs nerve-wracking and dangerous.\nTo retain people as men- and maidservants\nBrings good fortune."
+  },
+  {
+    "id": 196,
+    "king_wen_number": 33,
+    "place": 4,
+    "meaning": "Voluntary retreat brings good fortune to the superior man\nAnd downfall to the inferior man."
+  },
+  {
+    "id": 197,
+    "king_wen_number": 33,
+    "place": 5,
+    "meaning": "Friendly retreat. Perseverance brings good fortune."
+  },
+  {
+    "id": 198,
+    "king_wen_number": 33,
+    "place": 6,
+    "meaning": "Cheerful retreat. Everything serves to further."
+  },
+  {
+    "id": 199,
+    "king_wen_number": 34,
+    "place": 1,
+    "meaning": "Power in the toes.\nContinuing brings misfortune.\nThis is certainly true."
+  },
+  {
+    "id": 200,
+    "king_wen_number": 34,
+    "place": 2,
+    "meaning": "Perseverance brings good fortune."
+  },
+  {
+    "id": 201,
+    "king_wen_number": 34,
+    "place": 3,
+    "meaning": "The inferior man works through power.\nThe superior man does not act thus.\nTo continue is dangerous.\nA goat butts against a hedge.\nAnd gets its horns entangled."
+  },
+  {
+    "id": 202,
+    "king_wen_number": 34,
+    "place": 4,
+    "meaning": "Perseverance brings good fortune.\nRemorse disappears.\nThe hedge opens; there is no entanglement.\nPower depends upon the axle of a big cart."
+  },
+  {
+    "id": 203,
+    "king_wen_number": 34,
+    "place": 5,
+    "meaning": "Loses the goat with ease.\nNo remorse."
+  },
+  {
+    "id": 204,
+    "king_wen_number": 34,
+    "place": 6,
+    "meaning": "A goat butts against a hedge.\nIt cannot go backward, it cannot go forward.\nNothing serves to further.\nIf one notes the difficulty, this brings good fortune."
+  },
+  {
+    "id": 205,
+    "king_wen_number": 35,
+    "place": 1,
+    "meaning": "Progressing, but turned back.\nPerseverance brings good fortune.\nIf one meets with no confidence, one should remain calm.\nNo mistake."
+  },
+  {
+    "id": 206,
+    "king_wen_number": 35,
+    "place": 2,
+    "meaning": "Progressing, but in sorrow.\nPerseverance brings good fortune.\nThen one obtains great happiness from one's ancestress."
+  },
+  {
+    "id": 207,
+    "king_wen_number": 35,
+    "place": 3,
+    "meaning": "All are in accord. Remorse disappears."
+  },
+  {
+    "id": 208,
+    "king_wen_number": 35,
+    "place": 4,
+    "meaning": "Progress like a hamster.\nPerseverance brings danger."
+  },
+  {
+    "id": 209,
+    "king_wen_number": 35,
+    "place": 5,
+    "meaning": "Remorse disappears.\nTake not gain and loss to heart.\nUndertakings bring good fortune.\nEverything serves to further."
+  },
+  {
+    "id": 210,
+    "king_wen_number": 35,
+    "place": 6,
+    "meaning": "Making progress with the horns is permissible\nOnly for the purpose of punishing one's own city.\nTo be conscious of danger brings good fortune.\nNo blame.\nPerseverance brings humiliation."
+  },
+  {
+    "id": 211,
+    "king_wen_number": 36,
+    "place": 1,
+    "meaning": "Darkening of the light during flight.\nHe lowers his wings.\nThe superior man does not eat for three days\nOn his wanderings.\nBut he has somewhere to go.\nThe host has occasion to gossip about him."
+  },
+  {
+    "id": 212,
+    "king_wen_number": 36,
+    "place": 2,
+    "meaning": "Darkening of the light injures him in the left thigh.\nHe gives aid with the strength of a horse.\nGood fortune."
+  },
+  {
+    "id": 213,
+    "king_wen_number": 36,
+    "place": 3,
+    "meaning": "Darkening of the light during the hunt in the south.\nTheir great leader is captured.\nOne must not expect perseverance too soon."
+  },
+  {
+    "id": 214,
+    "king_wen_number": 36,
+    "place": 4,
+    "meaning": "He penetrates the left side of the belly.\nOne gets at the very heart of the darkening of the light,\nAnd leaves gate and courtyard."
+  },
+  {
+    "id": 215,
+    "king_wen_number": 36,
+    "place": 5,
+    "meaning": "Darkening of the light as with Prince Chi.\nPerseverance furthers."
+  },
+  {
+    "id": 216,
+    "king_wen_number": 36,
+    "place": 6,
+    "meaning": "Not light but darkness.\nFirst he climbed up to heaven,\nThen he plunged into the depths of the earth."
+  },
+  {
+    "id": 217,
+    "king_wen_number": 37,
+    "place": 1,
+    "meaning": "Firm seclusion within the family.\nRemorse disappears."
+  },
+  {
+    "id": 218,
+    "king_wen_number": 37,
+    "place": 2,
+    "meaning": "She should not follow her whims.\nShe must attend within to the food.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 219,
+    "king_wen_number": 37,
+    "place": 3,
+    "meaning": "When tempers flare up in the family,\nToo great severity brings remorse.\nGood fortune nonetheless.\nWhen woman and child dally and laugh,\nIt leads in the end to humiliation."
+  },
+  {
+    "id": 220,
+    "king_wen_number": 37,
+    "place": 4,
+    "meaning": "She is the treasure of the house.\nGreat good fortune."
+  },
+  {
+    "id": 221,
+    "king_wen_number": 37,
+    "place": 5,
+    "meaning": "As a king he approaches his family.\nFear not.\nGood fortune."
+  },
+  {
+    "id": 222,
+    "king_wen_number": 37,
+    "place": 6,
+    "meaning": "His work commands respect.\nIn the end good fortune comes."
+  },
+  {
+    "id": 223,
+    "king_wen_number": 38,
+    "place": 1,
+    "meaning": "Remorse disappears.\nIf you lose your horse, do not run after it;\nIt will come back of its own accord.\nWhen you see evil people,\nGuard yourself against mistakes."
+  },
+  {
+    "id": 224,
+    "king_wen_number": 38,
+    "place": 2,
+    "meaning": "One meets his lord in a narrow street.\nNo blame."
+  },
+  {
+    "id": 225,
+    "king_wen_number": 38,
+    "place": 3,
+    "meaning": "One sees the wagon dragged back,\nThe oxen halted,\nA man's hair and nose cut off.\nNot a good beginning, but a good end."
+  },
+  {
+    "id": 226,
+    "king_wen_number": 38,
+    "place": 4,
+    "meaning": "Isolated through opposition,\nOne meets a like-minded man\nWith whom one can associate in good faith.\nDespite the danger, no blame."
+  },
+  {
+    "id": 227,
+    "king_wen_number": 38,
+    "place": 5,
+    "meaning": "Remorse disappears.\nThe companion bites his way through the wrappings.\nIf one goes to him,\nHow could it be a mistake."
+  },
+  {
+    "id": 228,
+    "king_wen_number": 38,
+    "place": 6,
+    "meaning": "Isolated through opposition,\nOne sees one's companion as a pig covered with dirt,\nAs a wagon full of devils.\nFirst one draws a bow against him,\nThen one lays the bow aside.\nHe is not a robber; he will woo at the right time.\nAs one goes, rain falls; then good fortune comes."
+  },
+  {
+    "id": 229,
+    "king_wen_number": 39,
+    "place": 1,
+    "meaning": "Going leads to obstructions,\nComing meets with praise."
+  },
+  {
+    "id": 230,
+    "king_wen_number": 39,
+    "place": 2,
+    "meaning": "The kings' servant is beset by obstruction upon obstruction,\nBut it is not his own fault."
+  },
+  {
+    "id": 231,
+    "king_wen_number": 39,
+    "place": 3,
+    "meaning": "Going leads to obstructions;\nHence he comes back."
+  },
+  {
+    "id": 232,
+    "king_wen_number": 39,
+    "place": 4,
+    "meaning": "Going leads to obstructions,\nComing leads to union."
+  },
+  {
+    "id": 233,
+    "king_wen_number": 39,
+    "place": 5,
+    "meaning": "In the midst of the greatest obstructions,\nFriends come."
+  },
+  {
+    "id": 234,
+    "king_wen_number": 39,
+    "place": 6,
+    "meaning": "Going leads to obstructions,\nComing leads to great good fortune.\nIt furthers one to see the great man."
+  },
+  {
+    "id": 235,
+    "king_wen_number": 40,
+    "place": 1,
+    "meaning": "Without blame."
+  },
+  {
+    "id": 236,
+    "king_wen_number": 40,
+    "place": 2,
+    "meaning": "One kills three foxes in the field\nAnd receives a yellow arrow.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 237,
+    "king_wen_number": 40,
+    "place": 3,
+    "meaning": "If a man carries a burden on his back\nAnd nonetheless rides in a carriage,\nHe thereby encourages robbers to draw near.\nPerseverance leads to humiliation."
+  },
+  {
+    "id": 238,
+    "king_wen_number": 40,
+    "place": 4,
+    "meaning": "Deliver yourself from your great toe.\nThen the companion comes,\nAnd him you can trust."
+  },
+  {
+    "id": 239,
+    "king_wen_number": 40,
+    "place": 5,
+    "meaning": "If only the superior man can deliver himself,\nIt brings good fortune.\nThus he proves to inferior men that he is in earnest."
+  },
+  {
+    "id": 240,
+    "king_wen_number": 40,
+    "place": 6,
+    "meaning": "The prince shoots at a hawk on a high wall.\nHe kills it. Everything serves to further."
+  },
+  {
+    "id": 241,
+    "king_wen_number": 41,
+    "place": 1,
+    "meaning": "Going quickly when one's tasks are finished\nIs without blame.\nBut one must reflect on how much one may decrease others."
+  },
+  {
+    "id": 242,
+    "king_wen_number": 41,
+    "place": 2,
+    "meaning": "Perseverance furthers.\nTo undertake something brings misfortune.\nWithout decreasing oneself,\nOne is able to bring increase to others."
+  },
+  {
+    "id": 243,
+    "king_wen_number": 41,
+    "place": 3,
+    "meaning": "When three people journey together,\nTheir number decreases by one.\nWhen one man journeys alone,\nHe finds a companion."
+  },
+  {
+    "id": 244,
+    "king_wen_number": 41,
+    "place": 4,
+    "meaning": "If a man decreases his faults,\nIt makes the other hasten to come and rejoice.\nNo blame."
+  },
+  {
+    "id": 245,
+    "king_wen_number": 41,
+    "place": 5,
+    "meaning": "Someone does indeed increase him.\nTen pairs of tortoises cannot oppose it.\nSupreme good fortune."
+  },
+  {
+    "id": 246,
+    "king_wen_number": 41,
+    "place": 6,
+    "meaning": "If one is increased without depriving others,\nThere is no blame.\nPerseverance brings good fortune.\nIt furthers one to undertake something.\nOne obtains servants\nBut no longer has a separate home."
+  },
+  {
+    "id": 247,
+    "king_wen_number": 42,
+    "place": 1,
+    "meaning": "It furthers one to accomplish great deeds.\nSupreme good fortune. No blame."
+  },
+  {
+    "id": 248,
+    "king_wen_number": 42,
+    "place": 2,
+    "meaning": "Someone does indeed increase him;\nTen pairs of tortoises cannot oppose it.\nConstant perseverance brings good fortune.\nThe king presents him before God.\nGood fortune."
+  },
+  {
+    "id": 249,
+    "king_wen_number": 42,
+    "place": 3,
+    "meaning": "One is enriched through unfortunate events.\nNo blame, if you are sincere\nAnd walk in the middle,\nAnd report with a seal to the prince."
+  },
+  {
+    "id": 250,
+    "king_wen_number": 42,
+    "place": 4,
+    "meaning": "If you walk in the middle\nAnd report to the prince,\nHe will follow.\nIt furthers one to be used\nIn the removal of the capital."
+  },
+  {
+    "id": 251,
+    "king_wen_number": 42,
+    "place": 5,
+    "meaning": "If in truth you have a kind heart, ask not.\nSupreme good fortune.\nTruly, kindness will be recognized as your virtue."
+  },
+  {
+    "id": 252,
+    "king_wen_number": 42,
+    "place": 6,
+    "meaning": "He brings increase to ne one.\nIndeed, someone even strikes him.\nHe does not keep his heart constantly steady.\nMisfortune."
+  },
+  {
+    "id": 253,
+    "king_wen_number": 43,
+    "place": 1,
+    "meaning": "Mighty in the forward-striding toes.\nWhen one goes and is not equal to the task,\nOne makes a mistake."
+  },
+  {
+    "id": 254,
+    "king_wen_number": 43,
+    "place": 2,
+    "meaning": "A cry of alarm. Arms at evening and at night.\nFear nothing."
+  },
+  {
+    "id": 255,
+    "king_wen_number": 43,
+    "place": 3,
+    "meaning": "To be powerful in the cheekbones\nBrings misfortune.\nThe superior man is firmly resolved.\nHe walks alone and is caught in the rain.\nHe is bespattered,\nAnd people murmur against him.\nNo blame."
+  },
+  {
+    "id": 256,
+    "king_wen_number": 43,
+    "place": 4,
+    "meaning": "There is no skin on his thighs,\nAnd walking comes hard.\nIf a man were to let himself be led like a sheep,\nRemorse would disappear.\nBut if there words are heard\nThey will not be believed."
+  },
+  {
+    "id": 257,
+    "king_wen_number": 43,
+    "place": 5,
+    "meaning": "In dealing with weeds,\nFirm resolution is necessary.\nWalking in the middle\nRemains free of blame."
+  },
+  {
+    "id": 258,
+    "king_wen_number": 43,
+    "place": 6,
+    "meaning": "No cry.\nIn the end misfortune comes."
+  },
+  {
+    "id": 259,
+    "king_wen_number": 44,
+    "place": 1,
+    "meaning": "It must be checked with a brake of bronze.\nPerseverance brings good fortune.\nIf one lets it take its course, one experiences misfortune.\nEven a lean pig has it in him to rage around."
+  },
+  {
+    "id": 260,
+    "king_wen_number": 44,
+    "place": 2,
+    "meaning": "There is a fish in the tank. No blame.\nDoes not further guests."
+  },
+  {
+    "id": 261,
+    "king_wen_number": 44,
+    "place": 3,
+    "meaning": "There is no skin on his thighs,\nAnd walking comes hard.\nIf one is mindful of the danger,\nNo great mistake is made."
+  },
+  {
+    "id": 262,
+    "king_wen_number": 44,
+    "place": 4,
+    "meaning": "No fish in the tank.\nThis leads to misfortune."
+  },
+  {
+    "id": 263,
+    "king_wen_number": 44,
+    "place": 5,
+    "meaning": "A melon covered with willow leaves.\nHidden lines.\nThen it drops down to one from heaven."
+  },
+  {
+    "id": 264,
+    "king_wen_number": 44,
+    "place": 6,
+    "meaning": "He comes to meet with his horns.\nHumiliation. No blame."
+  },
+  {
+    "id": 265,
+    "king_wen_number": 45,
+    "place": 1,
+    "meaning": "If you are sincere, but not to the end,\nThere will sometimes be confusion, sometimes gathering together.\nIf you call out,\nThen after one grasp of the hand you can laugh again.\nRegret not. Going is without blame."
+  },
+  {
+    "id": 266,
+    "king_wen_number": 45,
+    "place": 2,
+    "meaning": "Letting oneself be drawn\nBrings good fortune and remains blameless.\nIf one is sincere,\nIt furthers one to bring even a small offering."
+  },
+  {
+    "id": 267,
+    "king_wen_number": 45,
+    "place": 3,
+    "meaning": "Gathering together amid sighs.\nNothing that would further.\nGoing is without blame.\nSlight humiliation."
+  },
+  {
+    "id": 268,
+    "king_wen_number": 45,
+    "place": 4,
+    "meaning": "Great good fortune. No blame."
+  },
+  {
+    "id": 269,
+    "king_wen_number": 45,
+    "place": 5,
+    "meaning": "If in gathering together one has position,\nThis brings no blame.\nIf there are some who are not yet sincerely in the work,\nSublime and enduring perseverance is needed.\nThen remorse disappears."
+  },
+  {
+    "id": 270,
+    "king_wen_number": 45,
+    "place": 6,
+    "meaning": "Lamenting and sighing, floods of tears.\nNo blame."
+  },
+  {
+    "id": 271,
+    "king_wen_number": 46,
+    "place": 1,
+    "meaning": "Pushing upward that meets with confidence\nBrings great good fortune."
+  },
+  {
+    "id": 272,
+    "king_wen_number": 46,
+    "place": 2,
+    "meaning": "If one is sincere,\nIt furthers one to bring even a small offering.\nNo blame."
+  },
+  {
+    "id": 273,
+    "king_wen_number": 46,
+    "place": 3,
+    "meaning": "One pushes upward into an empty city."
+  },
+  {
+    "id": 274,
+    "king_wen_number": 46,
+    "place": 4,
+    "meaning": "The king offers him Mount Ch'i.\nGood fortune. No blame."
+  },
+  {
+    "id": 275,
+    "king_wen_number": 46,
+    "place": 5,
+    "meaning": "Perseverance brings good fortune.\nOne pushes upward by steps."
+  },
+  {
+    "id": 276,
+    "king_wen_number": 46,
+    "place": 6,
+    "meaning": "Pushing upward in darkness.\nIt furthers one\tTo be unremittingly persevering."
+  },
+  {
+    "id": 277,
+    "king_wen_number": 47,
+    "place": 1,
+    "meaning": "One sits oppressed under a bare tree\nAnd strays into a gloomy valley.\nFor three years one sees nothing."
+  },
+  {
+    "id": 278,
+    "king_wen_number": 47,
+    "place": 2,
+    "meaning": "One in oppressed while at meat and drink.\nThe man with the scarlet knee bands is just coming.\nIt furthers one to offer sacrifice.\nTo set forth brings misfortune.\nNo blame."
+  },
+  {
+    "id": 279,
+    "king_wen_number": 47,
+    "place": 3,
+    "meaning": "A man permits himself to be oppressed by stone,\nAnd leans on thorns and thistles.\nHe enters his house and does not see his wife.\nMisfortune."
+  },
+  {
+    "id": 280,
+    "king_wen_number": 47,
+    "place": 4,
+    "meaning": "He comes very quietly, oppressed in a golden carriage.\nHumiliation, but the end is reached."
+  },
+  {
+    "id": 281,
+    "king_wen_number": 47,
+    "place": 5,
+    "meaning": "His nose and feet are cut off.\nOppression at the hands of the man with the purple knee bands.\nJoy comes softly.\nIt furthers one to make offerings and libations."
+  },
+  {
+    "id": 282,
+    "king_wen_number": 47,
+    "place": 6,
+    "meaning": "He is oppressed by creeping vines.\nHe moves uncertainly and says, \"Movement brings remorse.\"\nIf one feels remorse over this and makes a start,\nGood fortune comes."
+  },
+  {
+    "id": 283,
+    "king_wen_number": 48,
+    "place": 1,
+    "meaning": "One does not drink the mud of the well.\nNo animals come to an old well."
+  },
+  {
+    "id": 284,
+    "king_wen_number": 48,
+    "place": 2,
+    "meaning": "At the wellhole one shoots fishes.\nThe jug is broken and leaks."
+  },
+  {
+    "id": 285,
+    "king_wen_number": 48,
+    "place": 3,
+    "meaning": "The well is cleaned, but no one drinks from it.\nThis is my heart's sorrow,\nFor one might draw from it.\nIf the king were clear-minded,\nGood fortune might be enjoyed in common."
+  },
+  {
+    "id": 286,
+    "king_wen_number": 48,
+    "place": 4,
+    "meaning": "The well is being lined. No blame."
+  },
+  {
+    "id": 287,
+    "king_wen_number": 48,
+    "place": 5,
+    "meaning": "In the well there is a clear, cold spring\nFrom which one can drink."
+  },
+  {
+    "id": 288,
+    "king_wen_number": 48,
+    "place": 6,
+    "meaning": "One draws from the well\nWithout hindrance.\nIt is dependable.\nSupreme good fortune."
+  },
+  {
+    "id": 289,
+    "king_wen_number": 49,
+    "place": 1,
+    "meaning": "Wrapped in the hide of a yellow cow."
+  },
+  {
+    "id": 290,
+    "king_wen_number": 49,
+    "place": 2,
+    "meaning": "When one's own day comes, one my create revolution.\nStarting brings good fortune. No blame."
+  },
+  {
+    "id": 291,
+    "king_wen_number": 49,
+    "place": 3,
+    "meaning": "Starting brings misfortune.\nPerseverance brings danger.\nWhen talk of revolution has gone the rounds three times,\nOne may commit himself,\nAnd men will believe him."
+  },
+  {
+    "id": 292,
+    "king_wen_number": 49,
+    "place": 4,
+    "meaning": "Remorse disappears. Men believe him.\nChanging the form of government brings good fortune."
+  },
+  {
+    "id": 293,
+    "king_wen_number": 49,
+    "place": 5,
+    "meaning": "The great man changes like a tiger.\nEven before he questions the oracle\nHe is believed."
+  },
+  {
+    "id": 294,
+    "king_wen_number": 49,
+    "place": 6,
+    "meaning": "The superior man changes like a panther.\nThe inferior man molts in the face.\nStarting brings misfortune.\nTo remain persevering brings good fortune."
+  },
+  {
+    "id": 295,
+    "king_wen_number": 50,
+    "place": 1,
+    "meaning": "A *ting* with legs upturned.\nFurthers removal of stagnating stuff.\nOne takes a concubine for the sake of her son.\nNo blame."
+  },
+  {
+    "id": 296,
+    "king_wen_number": 50,
+    "place": 2,
+    "meaning": "There is food in the *ting*.\nMy comrades are envious,\nBut they cannot harm me.\nGood fortune."
+  },
+  {
+    "id": 297,
+    "king_wen_number": 50,
+    "place": 3,
+    "meaning": "The handle of the *ting* is altered.\nOne is impeded in his way of life.\nThe fat of the pheasant is not eaten.\nOnce rain falls, remorse is spent.\nGood fortune comes in the end."
+  },
+  {
+    "id": 298,
+    "king_wen_number": 50,
+    "place": 4,
+    "meaning": "The legs of the *ting* are broken.\nThe prince's meal is spilled\nAnd his person is soiled.\nMisfortune."
+  },
+  {
+    "id": 299,
+    "king_wen_number": 50,
+    "place": 5,
+    "meaning": "The *ting* has yellow handles, golden carrying rings.\nPerseverance furthers."
+  },
+  {
+    "id": 300,
+    "king_wen_number": 50,
+    "place": 6,
+    "meaning": "The *ting* has rings of jade.\nGreat good fortune.\nNothing that would not act to further."
+  },
+  {
+    "id": 301,
+    "king_wen_number": 51,
+    "place": 1,
+    "meaning": "Shock comes -- oh, oh!\nThen follow laughing words -- ha, ha!\nGood fortune."
+  },
+  {
+    "id": 302,
+    "king_wen_number": 51,
+    "place": 2,
+    "meaning": "Shock comes bringing danger.\nA hundred thousand times\nYou lose your treasures\nAnd must climb the nine hills.\nDo not go in pursuit of them.\nAfter seven days you will get them back again."
+  },
+  {
+    "id": 303,
+    "king_wen_number": 51,
+    "place": 3,
+    "meaning": "Shock comes and makes one distraught.\nIf shock spurs to action\nOne remains free of misfortune."
+  },
+  {
+    "id": 304,
+    "king_wen_number": 51,
+    "place": 4,
+    "meaning": "Shock is mired."
+  },
+  {
+    "id": 305,
+    "king_wen_number": 51,
+    "place": 5,
+    "meaning": "Shock goes hither and thither.\nDanger.\nHowever, nothing at all is lost.\nYet there are things to be done."
+  },
+  {
+    "id": 306,
+    "king_wen_number": 51,
+    "place": 6,
+    "meaning": "Shock brings ruin and terrified gazing around.\nGoing ahead brings misfortune.\nIf it has not yet touched one's own body\nBut has reached one's neighbor first,\nThere is no blame.\nOne's comrades have something to talk about."
+  },
+  {
+    "id": 307,
+    "king_wen_number": 52,
+    "place": 1,
+    "meaning": "Keeping his toes still.\nNo blame.\nContinued perseverance furthers."
+  },
+  {
+    "id": 308,
+    "king_wen_number": 52,
+    "place": 2,
+    "meaning": "Keeping his calves still.\nHe cannot rescue him whom he follows.\nHis heart is not glad."
+  },
+  {
+    "id": 309,
+    "king_wen_number": 52,
+    "place": 3,
+    "meaning": "Keeping his hips still.\nMaking his sacrum stiff.\nDangerous. The heart suffocates."
+  },
+  {
+    "id": 310,
+    "king_wen_number": 52,
+    "place": 4,
+    "meaning": "Keeping his trunk still.\nNo blame."
+  },
+  {
+    "id": 311,
+    "king_wen_number": 52,
+    "place": 5,
+    "meaning": "Keeping his jaw still.\nThe words have order.\nRemorse disappears."
+  },
+  {
+    "id": 312,
+    "king_wen_number": 52,
+    "place": 6,
+    "meaning": "Noblehearted keeping still.\nGood fortune."
+  },
+  {
+    "id": 313,
+    "king_wen_number": 53,
+    "place": 1,
+    "meaning": "The wild goose gradually draws near the shore.\nThe young son is in danger.\nThere is talk. No blame."
+  },
+  {
+    "id": 314,
+    "king_wen_number": 53,
+    "place": 2,
+    "meaning": "The wild goose gradually draws near the cliff.\nEating and drinking in peace and concord.\nGood fortune."
+  },
+  {
+    "id": 315,
+    "king_wen_number": 53,
+    "place": 3,
+    "meaning": "The wild goose gradually draws near the plateau.\nThe man goes forth and does not return.\nThe woman carries a child but does not bring it forth.\nMisfortune.\nIt furthers one to fight off robbers."
+  },
+  {
+    "id": 316,
+    "king_wen_number": 53,
+    "place": 4,
+    "meaning": "The wild goose gradually draws near the tree.\nPerhaps it will find a flat branch. No blame."
+  },
+  {
+    "id": 317,
+    "king_wen_number": 53,
+    "place": 5,
+    "meaning": "The wild goose gradually draws near the summit.\nFor three years the woman has no child.\nIn the end nothing can hinder her.\nGood fortune."
+  },
+  {
+    "id": 318,
+    "king_wen_number": 53,
+    "place": 6,
+    "meaning": "The wild goose gradually draws near the cloud heights.\nIts feathers can be used for the sacred dance.\nGood fortune."
+  },
+  {
+    "id": 319,
+    "king_wen_number": 54,
+    "place": 1,
+    "meaning": "The marrying maiden as a concubine.\nA lame man who is able to tread.\nUndertakings bring good fortune."
+  },
+  {
+    "id": 320,
+    "king_wen_number": 54,
+    "place": 2,
+    "meaning": "A one-eyed man who is able to see.\nThe perseverance of a solitary man furthers."
+  },
+  {
+    "id": 321,
+    "king_wen_number": 54,
+    "place": 3,
+    "meaning": "The marrying maiden as a slave.\nShe marries as a concubine."
+  },
+  {
+    "id": 322,
+    "king_wen_number": 54,
+    "place": 4,
+    "meaning": "The marrying maiden draws out the allotted time.\nA late marriage comes in due course."
+  },
+  {
+    "id": 323,
+    "king_wen_number": 54,
+    "place": 5,
+    "meaning": "The sovereign I gave his daughter in marriage.\nThe embroidered garments of the princess\nWere not as gorgeous\nAs those of the servingmaid.\nThe moon that is nearly full\nBrings good fortune."
+  },
+  {
+    "id": 324,
+    "king_wen_number": 54,
+    "place": 6,
+    "meaning": "the woman holds the basket, but there are no fruits in it.\nThe man stabs the sheep, but no blood flows.\nNothing that acts to further."
+  },
+  {
+    "id": 325,
+    "king_wen_number": 55,
+    "place": 1,
+    "meaning": "When a man meets his destined ruler,\nThey can be together ten days,\nAnd it is not a mistake.\nGoing meets with recognition."
+  },
+  {
+    "id": 326,
+    "king_wen_number": 55,
+    "place": 2,
+    "meaning": "The curtain is of such fullness\nThat the polestars can be seen at noon.\nThrough going one meets with mistrust and hate.\nIf one rouses him through truth,\nGood fortune comes."
+  },
+  {
+    "id": 327,
+    "king_wen_number": 55,
+    "place": 3,
+    "meaning": "The underbrush is of such abundance\nThat the small stars can be seen at noon.\nHe breaks his right arm. No blame."
+  },
+  {
+    "id": 328,
+    "king_wen_number": 55,
+    "place": 4,
+    "meaning": "The curtain is of such fullness\nThat the polestars can be seen at noon.\nHe meets his ruler, who is of like kind.\nGood fortune."
+  },
+  {
+    "id": 329,
+    "king_wen_number": 55,
+    "place": 5,
+    "meaning": "Lines are coming,\nBlessing and fame draw near.\nGood fortune."
+  },
+  {
+    "id": 330,
+    "king_wen_number": 55,
+    "place": 6,
+    "meaning": "His house is in a state of abundance.\nHe screens off his family.\nHe peers through the gate\nAnd no longer perceives anyone.\nFor three years he sees nothing.\nMisfortune."
+  },
+  {
+    "id": 331,
+    "king_wen_number": 56,
+    "place": 1,
+    "meaning": "If the wanderer busies himself with trivial things,\nHe draws down misfortune upon himself."
+  },
+  {
+    "id": 332,
+    "king_wen_number": 56,
+    "place": 2,
+    "meaning": "The wanderer comes to an inn.\nHe has his property with him.\nHe wins the steadfastness of a young servant."
+  },
+  {
+    "id": 333,
+    "king_wen_number": 56,
+    "place": 3,
+    "meaning": "The wanderer's inn burns down.\nHe loses the steadfastness of his young servant.\nDanger."
+  },
+  {
+    "id": 334,
+    "king_wen_number": 56,
+    "place": 4,
+    "meaning": "The wanderer rests in a shelter.\nHe obtains his property and an ax.\nMy heart is not glad."
+  },
+  {
+    "id": 335,
+    "king_wen_number": 56,
+    "place": 5,
+    "meaning": "He shoots a pheasant.\nIt drops with the first arrow.\nIn the end this brings both praise and office."
+  },
+  {
+    "id": 336,
+    "king_wen_number": 56,
+    "place": 6,
+    "meaning": "The bird's nest burns up.\nThe wanderer laughs at first,\nThen must needs lament and weep.\nThrough carelessness he loses his cow.\nMisfortune."
+  },
+  {
+    "id": 337,
+    "king_wen_number": 57,
+    "place": 1,
+    "meaning": "In advancing and in retreating,\nThe perseverance of a warrior furthers."
+  },
+  {
+    "id": 338,
+    "king_wen_number": 57,
+    "place": 2,
+    "meaning": "Penetration under the bed.\nPriests and magicians are used in great number.\nGood fortune. No blame."
+  },
+  {
+    "id": 339,
+    "king_wen_number": 57,
+    "place": 3,
+    "meaning": "Repeated penetration. Humiliation."
+  },
+  {
+    "id": 340,
+    "king_wen_number": 57,
+    "place": 4,
+    "meaning": "Remorse vanishes.\nDuring the hunt\nThree kinds of game are caught."
+  },
+  {
+    "id": 341,
+    "king_wen_number": 57,
+    "place": 5,
+    "meaning": "Perseverance brings good fortune.\nRemorse vanishes.\nNothing that does not further.\nNo beginning, but an end.\nBefore the change, three days.\nAfter the change, three days.\nGood fortune."
+  },
+  {
+    "id": 342,
+    "king_wen_number": 57,
+    "place": 6,
+    "meaning": "Penetration under the bed.\nHe loses his property and his ax.\nPerseverance brings misfortune."
+  },
+  {
+    "id": 343,
+    "king_wen_number": 58,
+    "place": 1,
+    "meaning": "Contented joyousness. Good fortune."
+  },
+  {
+    "id": 344,
+    "king_wen_number": 58,
+    "place": 2,
+    "meaning": "Sincere joyousness. Good fortune.\nRemorse disappears."
+  },
+  {
+    "id": 345,
+    "king_wen_number": 58,
+    "place": 3,
+    "meaning": "Coming joyousness. Misfortune."
+  },
+  {
+    "id": 346,
+    "king_wen_number": 58,
+    "place": 4,
+    "meaning": "Joyousness that is weighed is not at peace.\nAfter ridding himself of mistakes a man has joy."
+  },
+  {
+    "id": 347,
+    "king_wen_number": 58,
+    "place": 5,
+    "meaning": "Sincerity toward disintegrating influences is dangerous."
+  },
+  {
+    "id": 348,
+    "king_wen_number": 58,
+    "place": 6,
+    "meaning": "Seductive joyousness."
+  },
+  {
+    "id": 349,
+    "king_wen_number": 59,
+    "place": 1,
+    "meaning": "He brings help with the strength of a horse.\nGood fortune."
+  },
+  {
+    "id": 350,
+    "king_wen_number": 59,
+    "place": 2,
+    "meaning": "At the dissolution\nHe hurries to that which supports him.\nRemorse disappears."
+  },
+  {
+    "id": 351,
+    "king_wen_number": 59,
+    "place": 3,
+    "meaning": "He dissolves his self. No remorse."
+  },
+  {
+    "id": 352,
+    "king_wen_number": 59,
+    "place": 4,
+    "meaning": "He dissolves his bond with his group.\nSupreme good fortune.\nDispersion leads in turn to accumulation.\nThis is something that ordinary men do not think of."
+  },
+  {
+    "id": 353,
+    "king_wen_number": 59,
+    "place": 5,
+    "meaning": "His loud cries are as dissolving as sweat.\nDissolution! A king abides without blame."
+  },
+  {
+    "id": 354,
+    "king_wen_number": 59,
+    "place": 6,
+    "meaning": "He dissolves his blood.\nDeparting, keeping at a distance, going out,\nIs without blame."
+  },
+  {
+    "id": 355,
+    "king_wen_number": 60,
+    "place": 1,
+    "meaning": "Not going out of the door and the courtyard\nIs without blame."
+  },
+  {
+    "id": 356,
+    "king_wen_number": 60,
+    "place": 2,
+    "meaning": "Not going out of the gate and the courtyard\nBrings misfortune."
+  },
+  {
+    "id": 357,
+    "king_wen_number": 60,
+    "place": 3,
+    "meaning": "He who knows no limitation\nWill have cause to lament.\nNo blame."
+  },
+  {
+    "id": 358,
+    "king_wen_number": 60,
+    "place": 4,
+    "meaning": "Contended limitation. Success."
+  },
+  {
+    "id": 359,
+    "king_wen_number": 60,
+    "place": 5,
+    "meaning": "Sweet limitation brings good fortune.\nGoing brings esteem."
+  },
+  {
+    "id": 360,
+    "king_wen_number": 60,
+    "place": 6,
+    "meaning": "Galling limitation.\nPerseverance brings misfortune.\nRemorse disappears."
+  },
+  {
+    "id": 361,
+    "king_wen_number": 61,
+    "place": 1,
+    "meaning": "Being prepared brings good fortune.\nIf there are secret designs, it is disquieting."
+  },
+  {
+    "id": 362,
+    "king_wen_number": 61,
+    "place": 2,
+    "meaning": "A crane calling in the shade.\nIts young answers it.\nI have a good goblet.\nI will share it with you."
+  },
+  {
+    "id": 363,
+    "king_wen_number": 61,
+    "place": 3,
+    "meaning": "He finds a comrade.\nNow he beats the drum, now he stops.\nNow he sobs, now he sings."
+  },
+  {
+    "id": 364,
+    "king_wen_number": 61,
+    "place": 4,
+    "meaning": "The moon nearly at the full.\nThe team horse goes astray.\nNo blame."
+  },
+  {
+    "id": 365,
+    "king_wen_number": 61,
+    "place": 5,
+    "meaning": "He possesses truth, which links together.\nNo blame."
+  },
+  {
+    "id": 366,
+    "king_wen_number": 61,
+    "place": 6,
+    "meaning": "Cockcrow penetrating to heaven.\nPerseverance brings misfortune."
+  },
+  {
+    "id": 367,
+    "king_wen_number": 62,
+    "place": 1,
+    "meaning": "The bird meets with misfortune through flying."
+  },
+  {
+    "id": 368,
+    "king_wen_number": 62,
+    "place": 2,
+    "meaning": "She passes by her ancestor\nAnd meets her ancestress.\nHe does not reach his prince\nAnd meets the official.\nNo blame."
+  },
+  {
+    "id": 369,
+    "king_wen_number": 62,
+    "place": 3,
+    "meaning": "If one is not extremely careful,\nSomebody may come up from behind and strike him.\nMisfortune."
+  },
+  {
+    "id": 370,
+    "king_wen_number": 62,
+    "place": 4,
+    "meaning": "No blame. He meets him without passing by.\nGoing brings danger. One must be on guard.\nDo not act. Be constantly persevering."
+  },
+  {
+    "id": 371,
+    "king_wen_number": 62,
+    "place": 5,
+    "meaning": "Dense clouds,\nNo rain from our western territory.\nThe prince shoots and hits him who is in the cave."
+  },
+  {
+    "id": 372,
+    "king_wen_number": 62,
+    "place": 6,
+    "meaning": "He passes him by, not meeting him.\nThe flying bird leaves him.\nMisfortune.\nThis means bad luck and injury."
+  },
+  {
+    "id": 373,
+    "king_wen_number": 63,
+    "place": 1,
+    "meaning": "He brakes his wheels.\nHe gets his tail in the water.\nNo blame."
+  },
+  {
+    "id": 374,
+    "king_wen_number": 63,
+    "place": 2,
+    "meaning": "The woman loses the curtain of her carriage.\nDo not run after it;\nOn the seventh day you will get it."
+  },
+  {
+    "id": 375,
+    "king_wen_number": 63,
+    "place": 3,
+    "meaning": "The Illustrious Ancestor\nDisciplines the Devil's Country.\nAfter three years he conquers it.\nInferior people must not be employed."
+  },
+  {
+    "id": 376,
+    "king_wen_number": 63,
+    "place": 4,
+    "meaning": "The finest clothes turn to rags.\nBe careful all day long."
+  },
+  {
+    "id": 377,
+    "king_wen_number": 63,
+    "place": 5,
+    "meaning": "The neighbor in the east who slaughters an ox\nDoes not attain as much real happiness\nAs the neighbor in the west\nWith his small offering."
+  },
+  {
+    "id": 378,
+    "king_wen_number": 63,
+    "place": 6,
+    "meaning": "He gets his head in the water. Danger."
+  },
+  {
+    "id": 379,
+    "king_wen_number": 64,
+    "place": 1,
+    "meaning": "He gets his tail in the water.\nHumiliating."
+  },
+  {
+    "id": 380,
+    "king_wen_number": 64,
+    "place": 2,
+    "meaning": "He brakes his wheels.\nPerseverance brings good fortune."
+  },
+  {
+    "id": 381,
+    "king_wen_number": 64,
+    "place": 3,
+    "meaning": "Before completion, attack brings misfortune.\nIt furthers one to cross the great water."
+  },
+  {
+    "id": 382,
+    "king_wen_number": 64,
+    "place": 4,
+    "meaning": "Perseverance brings good fortune.\nRemorse disappears.\nShock, thus to discipline the Devil's Country.\nFor three years, great realms are awarded."
+  },
+  {
+    "id": 383,
+    "king_wen_number": 64,
+    "place": 5,
+    "meaning": "No remorse.\nThe light of the superior man is true.\nGood fortune."
+  },
+  {
+    "id": 384,
+    "king_wen_number": 64,
+    "place": 6,
+    "meaning": "There is drinking of wine\nIn genuine confidence. No blame.\nBut if one wets his head,\nHe loses it, in truth."
+  }
+]

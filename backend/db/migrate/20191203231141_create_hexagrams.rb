@@ -5,7 +5,9 @@ class CreateHexagrams < ActiveRecord::Migration[6.0]
       t.integer :number
       t.string :lower_triagram
       t.string :upper_triagram
-      t.string :name
+      t.string :english_name
+      t.string :chinese_name
+      t.string :characters
       t.text :judgement
       t.text :image
       t.string :first_line
