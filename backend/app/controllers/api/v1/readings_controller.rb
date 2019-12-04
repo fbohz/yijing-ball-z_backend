@@ -33,6 +33,6 @@ class Api::V1::readingsController < ApplicationController
     
       private
         def reading_params
-          params.require(:reading).permit(:body)
+          params.require(:reading).permit(:hexnum)
         end
 end

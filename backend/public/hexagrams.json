@@ -1,0 +1,642 @@
+[
+  {
+    "id": 1,
+    "king_wen_number": 1,
+    "binary": 63,
+    "english_name": "The Creative",
+    "chinese_name": "Qián",
+    "characters": "乾",
+    "judgement": "THE CREATIVE works sublime success,\nFurthering through perseverance.",
+    "image": "The movement of heaven is full of power.\nThus the superior man makes himself strong and untiring."
+  },
+  {
+    "id": 2,
+    "king_wen_number": 2,
+    "binary": 0,
+    "english_name": "The Receptive",
+    "chinese_name": "Kūn",
+    "characters": "坤",
+    "judgement": "THE RECEPTIVE brings about sublime success,\nFurthering through the perseverance of a mare.\nIf the superior man undertakes something and tries to lead,\nHe goes astray;\nBut if he follows, he finds guidance.\nIt is favorable to find friends in the west and south,\nTo forego friends in the east and north.\nQuiet perseverance brings good fortune.",
+    "image": "The earth's condition is receptive devotion.\nThus the superior man who has breadth of character\nCarries the outer world."
+  },
+  {
+    "id": 3,
+    "king_wen_number": 3,
+    "binary": 34,
+    "english_name": "Difficulty at the Beginning",
+    "chinese_name": "Zhūn",
+    "characters": "屯",
+    "judgement": "DIFFICULTY AT THE BEGINNING works supreme success,\nFurthering through perseverance.\nNothing should be undertaken.\nIt furthers one to appoint helpers.",
+    "image": "Clouds and thunder:\nThe image of DIFFICULTY AT THE BEGINNING.\nThus the superior man\nBrings order out of confusion."
+  },
+  {
+    "id": 4,
+    "king_wen_number": 4,
+    "binary": 17,
+    "english_name": "Youthful Folly",
+    "chinese_name": "Méng",
+    "characters": "蒙",
+    "judgement": "YOUTHFUL FOLLY has success.\nIt is not I who seek the young fool;\nThe young fool seeks me.\nAt the first oracle I inform him.\nIf he asks two or three times, it is importunity.\nIf he importunes, I give him no information.\nPerseverance furthers.",
+    "image": "A spring wells up at the foot of the mountain:\nThe image of YOUTH.\nThus the superior man fosters his character\nBy thoroughness in all that he does."
+  },
+  {
+    "id": 5,
+    "king_wen_number": 5,
+    "binary": 58,
+    "english_name": "Waiting (Nourishment)",
+    "chinese_name": "Xū",
+    "characters": "需",
+    "judgement": "WAITING. If you are sincere,\nYou have light and success.\nPerseverance brings good fortune.\nIt furthers one to cross the great water.",
+    "image": "Clouds rise up to heaven:\nThe image of WAITING.\nThus the superior man eats and drinks,\nIs joyous and of good cheer."
+  },
+  {
+    "id": 6,
+    "king_wen_number": 6,
+    "binary": 23,
+    "english_name": "Conflict",
+    "chinese_name": "Sòng",
+    "characters": "訟",
+    "judgement": "CONFLICT. You are sincere\nAnd are being obstructed.\nA cautious halt halfway brings good fortune.\nGoing through to the end brings misfortune.\nIt furthers one to see the great man.\nIt does not further one to cross the great water.",
+    "image": "Heaven and water go their opposite ways:\nThe image of CONFLICT.\nThus in all his transactions the superior man\nCarefully considers the beginning."
+  },
+  {
+    "id": 7,
+    "king_wen_number": 7,
+    "binary": 16,
+    "english_name": "The Army",
+    "chinese_name": "Shī",
+    "characters": "師",
+    "judgement": "THE ARMY. The army needs perseverance\nAnd a strong man.\nGood fortune without blame.",
+    "image": "In the middle of the earth is water:\nThe image of THE ARMY.\nThus the superior man increases his masses\nBy generosity toward the people."
+  },
+  {
+    "id": 8,
+    "king_wen_number": 8,
+    "binary": 2,
+    "english_name": "Holding Together [Union]",
+    "chinese_name": "Bǐ",
+    "characters": "比",
+    "judgement": "HOLDING TOGETHER brings good fortune.\nInquire of the oracle once again\nWhether you possess sublimity, constancy, and perseverance;\nThen there is no blame.\nThose who are uncertain gradually join.\nWhoever comes too late\nMeets with misfortune.",
+    "image": "On the earth is water:\nThe image of HOLDING TOGETHER.\nThus the kings of antiquity\nBestowed the different states as fiefs\nAnd cultivated friendly relations\nWith the feudal lords."
+  },
+  {
+    "id": 9,
+    "king_wen_number": 9,
+    "binary": 59,
+    "english_name": "The Taming Power of the Small",
+    "chinese_name": "Xiǎo chù",
+    "characters": "小畜",
+    "judgement": "THE TAMING POWER OF THE SMALL\nHas success.\nDense clouds, no rain from our western region.",
+    "image": "The wind drives across heaven:\nThe image of THE TAMING POWER OF THE SMALL.\nThus the superior man\nRefines the outward aspect of his nature."
+  },
+  {
+    "id": 10,
+    "king_wen_number": 10,
+    "binary": 55,
+    "english_name": "Treading [Conduct]",
+    "chinese_name": "Lǚ",
+    "characters": "履",
+    "judgement": "TREADING. Treading upon the tail of the tiger.\nIt does not bite the man. Success.",
+    "image": "Heaven above, the lake below:\nThe image of TREADING.\nThus the superior man discriminates between high and low,\nAnd thereby fortifies the thinking of the people."
+  },
+  {
+    "id": 11,
+    "king_wen_number": 11,
+    "binary": 56,
+    "english_name": "Peace",
+    "chinese_name": "Tài",
+    "characters": "泰",
+    "judgement": "PEACE. The small departs,\nThe great approaches.\nGood fortune. Success.",
+    "image": "Heaven and earth unite: the image of PEACE.\nThus the ruler\nDivides and completes the course of heaven and earth;\nHe furthers and regulates the gifts of heaven and earth,\nAnd so aids the people."
+  },
+  {
+    "id": 12,
+    "king_wen_number": 12,
+    "binary": 7,
+    "english_name": "Standstill [Stagnation]",
+    "chinese_name": "Pǐ",
+    "characters": "否",
+    "judgement": "STANDSTILL. Evil people do not further\nThe perseverance of the superior man.\nThe great departs; the small approaches.",
+    "image": "Heaven and earth do not unite:\nThe image of STANDSTILL.\nThus the superior man falls back upon his inner worth\nIn order to escape the difficulties.\nHe does not permit himself to be honored with revenue."
+  },
+  {
+    "id": 13,
+    "king_wen_number": 13,
+    "binary": 47,
+    "english_name": "Fellowship with Men",
+    "chinese_name": "Tóng rén",
+    "characters": "同人",
+    "judgement": "FELLOWSHIP WITH MEN in the open.\nSuccess.\nIt furthers one to cross the great water.\nThe perseverance of the superior man furthers.",
+    "image": "Heaven togethr with fire:\nThe image of FELLOWSHIP WITH MEN.\nThus the superior man organizes the clans\nAnd makes distinctions between things."
+  },
+  {
+    "id": 14,
+    "king_wen_number": 14,
+    "binary": 61,
+    "english_name": "Possession in Great Measure",
+    "chinese_name": "Dà yŏu",
+    "characters": "大有",
+    "judgement": "POSSESSION IN GREAT MEASURE.\nSupreme success.",
+    "image": "Fire in heaven above:\nThe image of POSSESSION IN GREAT MEASURE.\nThus the superior man curbs evil and furthers good,\nAnd thereby obeys the benevolent will of heaven."
+  },
+  {
+    "id": 15,
+    "king_wen_number": 15,
+    "binary": 8,
+    "english_name": "Modesty",
+    "chinese_name": "Qiān",
+    "characters": "謙",
+    "judgement": "MODESTY creates success.\nThe superior man carries things through.",
+    "image": "Within the earth, a mountain:\nThe image of MODESTY.\nThus the superior man reduces that which is too much,\nAnd augments that which is too little.\nHe weighs things and makes them equal."
+  },
+  {
+    "id": 16,
+    "king_wen_number": 16,
+    "binary": 4,
+    "english_name": "Enthusiasm",
+    "chinese_name": "Yù",
+    "characters": "豫",
+    "judgement": "ENTHUSIASM. It furthers one to install helpers\nAnd to set armies marching.",
+    "image": "Thunder comes resounding out of the earth:\nThe image of ENTHUSIASM.\nThus the ancient kings made music\nIn order to honor merit,\nAnd offered it with splendor\nTo the Supreme Deity,\nInviting their ancestors to be present."
+  },
+  {
+    "id": 17,
+    "king_wen_number": 17,
+    "binary": 38,
+    "english_name": "Following",
+    "chinese_name": "Suí",
+    "characters": "隨",
+    "judgement": "FOLLOWING has supreme success.\nPerseverance furthers. No blame.",
+    "image": "Thunder in the middle of the lake:\nThe image of FOLLOWING.\nThus the superior man at nightfall\nGoes indoors for the rest and recuperation."
+  },
+  {
+    "id": 18,
+    "king_wen_number": 18,
+    "binary": 25,
+    "english_name": "Work on What Has Been Spoiled [Decay]",
+    "chinese_name": "Gŭ",
+    "characters": "蠱",
+    "judgement": "WORK ON WHAT HAS BEEN SPOILED\nHas supreme success.\nIt furthers one to cross the great water.\nBefore the starting point, three days.\nAfter the starting point, three days.",
+    "image": "The wind blows low on the mountain:\nThe image of DECAY.\nThus the superior man stirs up the people\nAnd strengthens their spirit."
+  },
+  {
+    "id": 19,
+    "king_wen_number": 19,
+    "binary": 48,
+    "english_name": "Approach",
+    "chinese_name": "Lín",
+    "characters": "臨",
+    "judgement": "APPROACH has supreme success.\nPerseverance furthers.\nWhen the eighth month comes,\nThere will be misfortune.",
+    "image": "The earth above the lake:\nThe image of APPROACH.\nThus the superior man is inexhaustible\nIn his will to teach,\nAnd without limits\nIn his tolerance and protection of the people."
+  },
+  {
+    "id": 20,
+    "king_wen_number": 20,
+    "binary": 3,
+    "english_name": "Contemplation (View)",
+    "chinese_name": "Guān",
+    "characters": "觀",
+    "judgement": "CONTEMPLATION. The ablution has been made,\nBut not yet the offering.\nFull of trust they look up to him.",
+    "image": "The wind blows over the earth:\nThe image of CONTEMPLATION.\nThus the kings of old visited the regions of the world,\nContemplated the people,\nAnd gave them instruction."
+  },
+  {
+    "id": 21,
+    "king_wen_number": 21,
+    "binary": 37,
+    "english_name": "Biting Through",
+    "chinese_name": "Shì hè",
+    "characters": "噬嗑",
+    "judgement": "BITING THROUGH has success.\nIt is favorable to let justice be administered.",
+    "image": "Thunder and lightning:\nThe image of BITING THROUGH.\nThus the kings of former times made firm the laws\nThrough clearly defined penalties."
+  },
+  {
+    "id": 22,
+    "king_wen_number": 22,
+    "binary": 41,
+    "english_name": "Grace",
+    "chinese_name": "Bì",
+    "characters": "賁",
+    "judgement": "GRACE has success.\nIN small matters\nIt is favorable to undertake something.",
+    "image": "Fire at the foot of the mountain:\nThe image of GRACE.\nThus does the superior man proceed\nWhen clearing up current affairs.\nBut he dare not decide controversial issues in this way."
+  },
+  {
+    "id": 23,
+    "king_wen_number": 23,
+    "binary": 1,
+    "english_name": "Splitting Apart",
+    "chinese_name": "Bō",
+    "characters": "剝",
+    "judgement": "SPLITTING APART. It does not further one\nTo go anywhere.",
+    "image": "The mountain rests on the earth:\nThe image of SPLITTING APART.\nThus those above can ensure their position\nOnly by giving generously to those below."
+  },
+  {
+    "id": 24,
+    "king_wen_number": 24,
+    "binary": 32,
+    "english_name": "Return (The Turning Point)",
+    "chinese_name": "Fù",
+    "characters": "復",
+    "judgement": "RETURN. Success.\nGoing out and coming in without error.\nFriends come without blame.\nTo and fro goes the way.\nOn the seventh day comes return.\nIt furthers one to have somewhere to go.",
+    "image": "Thunder within the earth:\nThe image of THE TURNING POINT.\nThus the kings of antiquity closed the passes\nAt the time of solstice.\nMerchants and strangers did not go about,\nAnd the ruler\nDid not travel through the provinces."
+  },
+  {
+    "id": 25,
+    "king_wen_number": 25,
+    "binary": 39,
+    "english_name": "Innocence (The Unexpected)",
+    "chinese_name": "Wú wàng",
+    "characters": "無妄",
+    "judgement": "INNOCENCE. Supreme success.\nPerseverance furthers.\nIf someone is not as he should be,\nHe has misfortune,\nAnd it does not further him\nTo undertake anything.",
+    "image": "Under heaven thunder rolls:\nAll things attain the natural state of innocence.\nThus the kings of old,\nRich in virtue, and in harmony with the time,\nFostered and nourished all beings."
+  },
+  {
+    "id": 26,
+    "king_wen_number": 26,
+    "binary": 57,
+    "english_name": "The Taming Power of the Great",
+    "chinese_name": "Dà xù",
+    "characters": "大畜",
+    "judgement": "THE TAMING POWER OF THE GREAT.\nPerseverance furthers.\nNot eating at home brings good fortune.\nIt furthers one to cross the great water.",
+    "image": "Heaven within the mountain:\nThe image of THE TAMING POWER OF THE GREAT.\nThus the superior man acquaints himself with many sayings of antiquity\nAnd many deeds of the past,\nIn order to strengthen his character thereby."
+  },
+  {
+    "id": 27,
+    "king_wen_number": 27,
+    "binary": 33,
+    "english_name": "The Corners of the Mouth (Providing Nourishment)",
+    "chinese_name": "Yí",
+    "characters": "頤",
+    "judgement": "THE CORNERS OF THE MOUTH.\nPerseverance brings good fortune.\nPay heed to the providing of nourishment\nAnd to what a man seeks\nTo fill his own mouth with.",
+    "image": "At the foot of the mountain, thunder:\nThe image of PROVIDING NOURISHMENT.\nThus the superior man is careful of his words\nAnd temperate in eating and drinking."
+  },
+  {
+    "id": 28,
+    "king_wen_number": 28,
+    "binary": 30,
+    "english_name": "Preponderance of the Great",
+    "chinese_name": "Dà guò",
+    "characters": "大過",
+    "judgement": "PREPONDERANCE OF THE GREAT.\nThe ridgepole sags to the breaking point.\nIt furthers one to have to somewhere to go.\nSuccess.",
+    "image": "The lake rises above the trees:\nThe image of PREPONDERANCE OF THE GREAT.\nThus the superior man, when he stands alone,\nIs unconcerned,\nAnd if he has to renounce the world,\nHe is undaunted."
+  },
+  {
+    "id": 29,
+    "king_wen_number": 29,
+    "binary": 18,
+    "english_name": "The Abysmal (Water)",
+    "chinese_name": "Kăn",
+    "characters": "坎",
+    "judgement": "THE ABYSMAL repeated.\nIf you are sincere, you have success in your heart,\nAnd whatever you do succeeds.",
+    "image": "Water flows on uninterruptedly and reaches its goal:\nThe image of the Abysmal repeated.\nThus the superior man walks in lasting virtue\nAnd carries on the business of teaching."
+  },
+  {
+    "id": 30,
+    "king_wen_number": 30,
+    "binary": 45,
+    "english_name": "The Clinging Fire",
+    "chinese_name": "Lí",
+    "characters": "離",
+    "judgement": "THE CLINGING. Perseverance furthers.\nIt brings success.\nCare of the cow brings good fortune.",
+    "image": "That which is bright rises twice:\nThe image of FIRE.\nThus the great man, by perpetuating this brightness,\nIllumines the four quarters of the world."
+  },
+  {
+    "id": 31,
+    "king_wen_number": 31,
+    "binary": 14,
+    "english_name": "Influence (Wooing)",
+    "chinese_name": "Xián",
+    "characters": "咸",
+    "judgement": "INFLUENCE. Success.\nPerseverance furthers.\nTo take a maiden to wife brings good fortune.",
+    "image": "A lake on the mountain:\nThe image of influence.\nThus the superior man encourages people to approach him\nBy his readiness to receive them."
+  },
+  {
+    "id": 32,
+    "king_wen_number": 32,
+    "binary": 28,
+    "english_name": "Duration",
+    "chinese_name": "Héng",
+    "characters": "恆",
+    "judgement": "DURATION. Success. No blame.\nPerseverance furthers.\nIt furthers one to have somewhere to go.",
+    "image": "Thunder and wind: the image of DURATION.\nThus the superior man stands firm\nAnd does not change his direction."
+  },
+  {
+    "id": 33,
+    "king_wen_number": 33,
+    "binary": 15,
+    "english_name": "Retreat",
+    "chinese_name": "Dùn",
+    "characters": "遯",
+    "judgement": "RETREAT. Success.\nIn what is small, perseverance furthers.",
+    "image": "Mountain under heaven: the image of RETREAT.\nThus the superior man keeps the inferior man at a distance,\nNot angrily but with reserve."
+  },
+  {
+    "id": 34,
+    "king_wen_number": 34,
+    "binary": 60,
+    "english_name": "The Power of the Great",
+    "chinese_name": "Dà zhuàng",
+    "characters": "大壯",
+    "judgement": "THE POWER OF THE GREAT. Perseverance furthers.",
+    "image": "Thunder in heaven above:\nThe image of THE POWER OF THE GREAT.\nThus the superior man does not tread upon paths\nThat do not accord with established order."
+  },
+  {
+    "id": 35,
+    "king_wen_number": 35,
+    "binary": 5,
+    "english_name": "Progress",
+    "chinese_name": "Jìn",
+    "characters": "晉",
+    "judgement": "PROGRESS. The powerful prince\nIs honored with horses in large numbers.\nIn a single day he is granted audience three times.",
+    "image": "The sun rises over the earth:\nThe image of PROGRESS.\nThus the superior man himself\nBrightens his bright virtue."
+  },
+  {
+    "id": 36,
+    "king_wen_number": 36,
+    "binary": 40,
+    "english_name": "Darkening of the Light",
+    "chinese_name": "Míng yí",
+    "characters": "明夷",
+    "judgement": "DARKENING OF THE LIGHT. In adversity\nIt furthers one to be persevering.",
+    "image": "The light has sunk into the earth:\nThe image of DARKENING THE LIGHT.\nThus does the superior man live with the great mass:\nHe veils his light, yet still shines."
+  },
+  {
+    "id": 37,
+    "king_wen_number": 37,
+    "binary": 43,
+    "english_name": "The Family [The Clan]",
+    "chinese_name": "Jiā rén",
+    "characters": "家人",
+    "judgement": "THE FAMILY. The perseverance of the woman furthers.",
+    "image": "Wind comes forth from fire:\nThe image of THE FAMILY.\nThus the superior man has substance in his words\nAnd duration in his way of life."
+  },
+  {
+    "id": 38,
+    "king_wen_number": 38,
+    "binary": 53,
+    "english_name": "Opposition",
+    "chinese_name": "Kuí",
+    "characters": "睽",
+    "judgement": "OPPOSITION. In small matters, good fortune.",
+    "image": "Above, fire; below, the lake:\nThe image of OPPOSITION.\nThus amid all fellowship\nThe superior man retains his individuality."
+  },
+  {
+    "id": 39,
+    "king_wen_number": 39,
+    "binary": 10,
+    "english_name": "Obstruction",
+    "chinese_name": "Jiăn",
+    "characters": "蹇",
+    "judgement": "OBSTRUCTION. The southwest furthers.\nThe northeast does not further.\nIt furthers one to see the great man.\nPerseverance brings good fortune.",
+    "image": "Water on the mountain:\nThe image of OBSTRUCTION.\nThus the superior man turns his attention to himself\nAnd molds his character."
+  },
+  {
+    "id": 40,
+    "king_wen_number": 40,
+    "binary": 20,
+    "english_name": "Deliverance",
+    "chinese_name": "Xiè",
+    "characters": "解",
+    "judgement": "DELIVERANCE. The southwest furthers.\nIf there is no longer anything where one has to go,\nReturn brings good fortune.\nIf there is still something where one has to go,\nHastening brings good fortune.",
+    "image": "Thunder and rain set in:\nThe image of DELIVERANCE.\nThus the superior man pardons mistakes\nAnd forgives misdeeds."
+  },
+  {
+    "id": 41,
+    "king_wen_number": 41,
+    "binary": 49,
+    "english_name": "Decrease",
+    "chinese_name": "Sŭn",
+    "characters": "損",
+    "judgement": "DECREASE combined with sincerity\nBrings about supreme good fortune\nWithout blame.\nOne may be persevering in this.\nIt furthers one to undertake something.\nHow is this to be carried out?\nOne may use two small bowls for the sacrifice.",
+    "image": "At the foot of the mountain, the lake:\nThe image of DECREASE.\nThus the superior man controls his anger\nAnd restrains his instincts."
+  },
+  {
+    "id": 42,
+    "king_wen_number": 42,
+    "binary": 35,
+    "english_name": "Increase",
+    "chinese_name": "Yì",
+    "characters": "益",
+    "judgement": "INCREASE. It furthers one\nTo undertake something.\nIt furthers one to cross the great water.",
+    "image": "Wind and thunder: the image of INCREASE.\nThus the superior man:\nIf he sees good, he imitates it;\nIf he has faults, he rids himself of them."
+  },
+  {
+    "id": 43,
+    "king_wen_number": 43,
+    "binary": 62,
+    "english_name": "Break-through (Resoluteness)",
+    "chinese_name": "Kuài",
+    "characters": "夬",
+    "judgement": "BREAK-THROUGH. One must resolutely make the matter known\nAt the court of the king.\nIt must be announced truthfully. Danger.\nIt is necessary to notify one's own city.\nIt does not further to resort to arms.\nIt furthers one to undertake something.",
+    "image": "The lake has risen up to heaven:\nThe image of BREAK-THROUGH.\nThus the superior man\nDispenses riches downward\nAnd refrains from resting on his virture."
+  },
+  {
+    "id": 44,
+    "king_wen_number": 44,
+    "binary": 31,
+    "english_name": "Coming to Meet",
+    "chinese_name": "Gòu",
+    "characters": "姤",
+    "judgement": "COMING TO MEET. The maiden is powerful.\nOne should not marry such a maiden.",
+    "image": "Under heaven, wind:\nThe image of COMING TO MEET.\nThus does the prince act when disseminating his commands\nAnd proclaiming them to the four quarters of heaven."
+  },
+  {
+    "id": 45,
+    "king_wen_number": 45,
+    "binary": 6,
+    "english_name": "Gathering Together [Massing]",
+    "chinese_name": "Cuì",
+    "characters": "萃",
+    "judgement": "GATHERING TOGETHER. Success.\nThe king approaches his temple.\nIt furthers one to see the great man.\nThis brings success. Perseverance furthers.\nTo bring great offerings creates good fortune.\nIt furthers one to undertake something.",
+    "image": "Over the earth, the lake:\nThe image of GATHERING TOGETHER.\nThus the superior man renews his weapons\nIn order to meet the unforeseen."
+  },
+  {
+    "id": 46,
+    "king_wen_number": 46,
+    "binary": 24,
+    "english_name": "Pushing Upward",
+    "chinese_name": "Shēng",
+    "characters": "升",
+    "judgement": "PUSHING UPWARD has supreme success.\nOne must see the great man.\nFear not.\nDeparture toward the south\nBrings good fortune.",
+    "image": "Within the earth, wood grows:\nThe image of PUSHING UPWARD.\nThus the superior man of devoted character\nHeaps up small things\nIn order to achieve something high and great."
+  },
+  {
+    "id": 47,
+    "king_wen_number": 47,
+    "binary": 22,
+    "english_name": "Oppression (Exhaustion)",
+    "chinese_name": "Kùn",
+    "characters": "困",
+    "judgement": "OPPRESSION. Success. Perseverance.\nThe great man brings about good fortune.\nNo blame.\nWhen one has something to say,\nIt is not believed.",
+    "image": "There is no water in the lake:\nThe image of EXHAUSTION.\nThus the superior man stakes his life\nOn following his will."
+  },
+  {
+    "id": 48,
+    "king_wen_number": 48,
+    "binary": 26,
+    "english_name": "The Well",
+    "chinese_name": "Jĭng",
+    "characters": "井",
+    "judgement": "THE WELL. The town may be changed,\nBut the well cannot be changed.\nIt neither decreases nor increases.\nThey come and go and draw from the well.\nIf one gets down almost to the water\nAnd the rope does not go all the way,\nOr the jug breaks, it brings misfortune.",
+    "image": "Water over wood: the image of THE WELL.\nThus the superior man encourages the people at their work,\nAnd exhorts them to help one another."
+  },
+  {
+    "id": 49,
+    "king_wen_number": 49,
+    "binary": 46,
+    "english_name": "Revolution (Molting)",
+    "chinese_name": "Gé",
+    "characters": "革",
+    "judgement": "REVOLUTION. On your own day\nYou are believed.\nSupreme success,\nFurthering through perseverance.\nRemorse disappears.",
+    "image": "Fire in the lake: the image of REVOLUTION.\nThus the superior man\nSets the calendar in order\nAnd makes the seasons clear."
+  },
+  {
+    "id": 50,
+    "king_wen_number": 50,
+    "binary": 29,
+    "english_name": "The Caldron",
+    "chinese_name": "Dĭng",
+    "characters": "鼎",
+    "judgement": "THE CALDRON. Supreme good fortune.\nSuccess.",
+    "image": "Fire over wood:\nThe image of THE CALDRON.\nThus the superior man consolidates his fate\nBy making his position correct."
+  },
+  {
+    "id": 51,
+    "king_wen_number": 51,
+    "binary": 36,
+    "english_name": "The Arousing (Shock Thunder)",
+    "chinese_name": "Zhèn",
+    "characters": "震",
+    "judgement": "SHOCK brings success.\nShock comes-oh, oh!\nLaughing words-ha, ha!\nThe shock terrifies for a hundred miles,\nAnd he does not let fall the sacrificial spoon and chalice.",
+    "image": "Thunder repeated: the image of SHOCK.\nThus in fear and trembling\nThe superior man sets his life in order\nAnd examines himself."
+  },
+  {
+    "id": 52,
+    "king_wen_number": 52,
+    "binary": 9,
+    "english_name": "Keeping Still Mountain",
+    "chinese_name": "Gèn",
+    "characters": "艮",
+    "judgement": "KEEPING STILL. Keeping his back still\nSo that he no longer feels his body.\nHe goes into the courtyard\nAnd does not see his people.\nNo blame.",
+    "image": "Mountains standing close together:\nThe image of KEEPING STILL.\nThus the superior man\nDoes not permit his thoughts\nTo go beyond his situation."
+  },
+  {
+    "id": 53,
+    "king_wen_number": 53,
+    "binary": 11,
+    "english_name": "Development (Gradual Progress)",
+    "chinese_name": "Jiàn",
+    "characters": "漸",
+    "judgement": "DEVELOPMENT. The maiden\nIs given in marriage.\nGood fortune.\nPerseverance furthers.",
+    "image": "On the mountain, a tree:\nThe image of DEVELOPMENT.\nThus the superior man abides in dignity and virtue,\nIn order to improve the mores."
+  },
+  {
+    "id": 54,
+    "king_wen_number": 54,
+    "binary": 52,
+    "english_name": "The Marrying Maiden",
+    "chinese_name": "Guī mèi",
+    "characters": "歸妹",
+    "judgement": "THE MARRYING MAIDEN.\nUndertakings bring misfortune.\nNothing that would further.",
+    "image": "Thunder over the lake:\nThe image of THE MARRYING MAIDEN.\nThus the superior man\nUnderstands the transitory\nIn the light of the eternity of the end."
+  },
+  {
+    "id": 55,
+    "king_wen_number": 55,
+    "binary": 44,
+    "english_name": "Abundance [Fullness]",
+    "chinese_name": "Fēng",
+    "characters": "豐",
+    "judgement": "ABUNDANCE has success.\nThe king attains abundance.\nBe not sad.\nBe like the sun at midday.",
+    "image": "Both thunder and lightning come:\nThe image of ABUNDANCE.\nThus the superior man decides lawsuits\nAnd carries out punishments."
+  },
+  {
+    "id": 56,
+    "king_wen_number": 56,
+    "binary": 13,
+    "english_name": "The Wanderer",
+    "chinese_name": "Lǚ",
+    "characters": "旅",
+    "judgement": "THE WANDERER. Success through smallness.\nPerseverance brings good fortune\nTo the wanderer.",
+    "image": "Fire on the mountain:\nThe image of THE WANDERER.\n Thus the superior man\nIs clear-minded and cautious\nIn imposing penalties,\nAnd protracts no lawsuits."
+  },
+  {
+    "id": 57,
+    "king_wen_number": 57,
+    "binary": 27,
+    "english_name": "The Gentle (The Penetrating Wind)",
+    "chinese_name": "Sùn",
+    "characters": "巽",
+    "judgement": "THE GENTLE. Success through what is small.\nIt furthers one to have somewhere to go.\nIt furthers one to see the great man.",
+    "image": "Winds following one upon the other:\nThe image of THE GENTLY PENETRATING.\nThus the superior man\nSpreads his commands abroad\nAnd carries out his undertakings."
+  },
+  {
+    "id": 58,
+    "king_wen_number": 58,
+    "binary": 54,
+    "english_name": "The Joyous Lake",
+    "chinese_name": "Duì",
+    "characters": "兌",
+    "judgement": "THE JOYOUS. Success.\nPerseverance is favorable.",
+    "image": "Lakes resting one on the other:\nThe image of THE JOYOUS.\nThus the superior mans joins with his friends\nFor discussion and practice."
+  },
+  {
+    "id": 59,
+    "king_wen_number": 59,
+    "binary": 19,
+    "english_name": "Dispersion [Dissolution]",
+    "chinese_name": "Huàn",
+    "characters": "渙",
+    "judgement": "DISPERSION. Success.\nThe king approaches his temple.\nIt furthers one to cross the great water.\nPerseverance furthers.",
+    "image": "The wind drives over the water:\nThe image of DISPERSION.\nThus the kings of old sacrificed to the Lord\nAnd built temples."
+  },
+  {
+    "id": 60,
+    "king_wen_number": 60,
+    "binary": 50,
+    "english_name": "Limitation",
+    "chinese_name": "Jié",
+    "characters": "節",
+    "judgement": "LIMITATION. Success.\nGalling limitation must not be persevered in.",
+    "image": "Water over lake: the image of LIMITATION.\nThus the superior man\nCreates number and measure,\nAnd examines the nature of virtue and correct conduct."
+  },
+  {
+    "id": 61,
+    "king_wen_number": 61,
+    "binary": 51,
+    "english_name": "Inner Truth",
+    "chinese_name": "Zhōng fú",
+    "characters": "中孚",
+    "judgement": "INNER TRUTH. Pigs and fishes.\nGood fortune.\nIt furthers one to cross the great water.\nPerseverance furthers.",
+    "image": "Wind over lake: the image of INNER TRUTH.\nThus the superior man discusses criminal cases\nIn order to delay executions."
+  },
+  {
+    "id": 62,
+    "king_wen_number": 62,
+    "binary": 12,
+    "english_name": "Preponderance of the Small",
+    "chinese_name": "Xiăo guò",
+    "characters": "小過",
+    "judgement": "PREPONDERANCE OF THE SMALL. Success.\nPerseverance furthers.\nSmall things may be done; great things should not be done.\nThe flying bird brings the message:\nIt is not well to strive upward,\nIt is well to remain below.\nGreat good fortune.",
+    "image": "Thunder on the mountain:\nThe image of PREPONDERANCE OF THE SMALL.\nThus in his conduct the superior man gives preponderance to reverence.\nIn bereavement he gives preponderance to grief.\nIn his expenditures he gives preponderance to thrift."
+  },
+  {
+    "id": 63,
+    "king_wen_number": 63,
+    "binary": 42,
+    "english_name": "After Completion",
+    "chinese_name": "Jì jì",
+    "characters": "既濟",
+    "judgement": "AFTER COMPLETION. Success in small matters.\nPerseverance furthers.\nAt the beginning good fortune,\nAt the end disorder.",
+    "image": "Water over fire: the image of the condition\nIn AFTER COMPLETION.\nThus the superior man\nTakes thought of misfortune\nAnd arms himself against it in advance."
+  },
+  {
+    "id": 64,
+    "king_wen_number": 64,
+    "binary": 21,
+    "english_name": "Before Completion",
+    "chinese_name": "Wèi jì",
+    "characters": "未濟",
+    "judgement": "BEFORE COMPLETION. Success.\nBut if the little fox, after nearly completing the crossing,\nGets his tail in the water,\nThere is nothing that would further.",
+    "image": "Fire over water:\nThe image of the condition before transition.\nThus the superior man is careful\nIn the differentiation of things,\nSo that each finds its place."
+  }
+]
