@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2019_12_03_231141) do
   enable_extension "plpgsql"
 
   create_table "hexagrams", force: :cascade do |t|
-    t.bigint "reading_id", null: false
     t.integer "number"
     t.string "lower_triagram"
     t.string "upper_triagram"
@@ -25,16 +24,14 @@ ActiveRecord::Schema.define(version: 2019_12_03_231141) do
     t.string "characters"
     t.text "judgement"
     t.text "image"
-    t.string "first_line"
-    t.string "second_line"
-    t.string "third_line"
-    t.string "fourth_line"
-    t.string "fifth_line"
-    t.string "sixth_line"
-    t.string "url"
+    t.text "first_line"
+    t.text "second_line"
+    t.text "third_line"
+    t.text "fourth_line"
+    t.text "fifth_line"
+    t.text "sixth_line"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["reading_id"], name: "index_hexagrams_on_reading_id"
   end
 
   create_table "readings", force: :cascade do |t|
@@ -46,5 +43,4 @@ ActiveRecord::Schema.define(version: 2019_12_03_231141) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "hexagrams", "readings"
 end

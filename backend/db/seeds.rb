@@ -29,7 +29,7 @@ def get_files
     @hexagrams_json = JSON.parse(hexagrams_file)
 end 
 
-# def populate_hexagrams
+def populate_hexagrams
     get_files
     hexagrams = []
     lines = []
@@ -53,7 +53,7 @@ end
     end
 
     @counter = 0 
-    hexagrams.each.with_index do |h, i|
+    hexagrams.each do |h|
         h[:first_line] = lines[@counter][0]
         h[:second_line] = lines[@counter][1]
         h[:third_line] = lines[@counter][2]
@@ -62,10 +62,15 @@ end
         h[:sixth_line] = lines[@counter][5]
         @counter += 1
     end
-    binding.pry
+    @counter = 0 
+    
+    hexagrams.each do |h|
+        hexa = Hexagram.new(h)
+        hexa.save
+    end
+end
 
-# end
+populate_hexagrams
 
 
-# Hexagram.all
 # binding.pry

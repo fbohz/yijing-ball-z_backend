@@ -1,3 +1,3 @@
 class Hexagram < ApplicationRecord
-  belongs_to :reading
+  # belongs_to :reading
 end

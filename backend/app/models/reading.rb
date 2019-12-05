@@ -1,3 +1,3 @@
 class Reading < ApplicationRecord
-    has_many :hexagrams
+    # has_many :hexagrams
 end
