@@ -20823,17 +20823,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     // getHexagram(4)
-    function cast(question){
-        // return Yijing.ask(`${question}`);
-        console.log(Yijing.ask(`${question}`))
+    
+    function castHexagram() {
+        let reading = Yijing.ask()
+        console.log(reading.hexagram.number)
+        getHexagram(reading.hexagram.number)
     }
     
-    castButton.addEventListener("click", function(){
-        cast()
-     });
-     
-    // console.log(castHexagram)
+   let test = castButton.addEventListener("click", function(){
+        castHexagram()
+        castButton.remove()
+        // castButton.classList.add("casted");
+    });
     
+    
+    if (castButton.classList.contains("casted")) {
+        console.log(test)
+
+    }
     // var reading = cast("hi")
     // console.log(reading)
     
