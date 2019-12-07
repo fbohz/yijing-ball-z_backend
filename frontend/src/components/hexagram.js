@@ -1,0 +1,8 @@
+class Hexagram {
+    constructor() {
+     
+    }
+  
+
+
+}

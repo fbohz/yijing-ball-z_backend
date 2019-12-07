@@ -20821,13 +20821,10 @@ document.addEventListener("DOMContentLoaded", function() {
     function parseHex(promise) {
         let co = document.querySelector('.content')
         let par = document.createElement('p')
-        par.textContent = promise.id
+        par.textContent = promise.judgement
         co.appendChild(par)
-        console.log(promise.id)
+        console.log(promise)
     }
-
-    // let num = getHexagram(1)
-    // console.log(num)
 
     function castHexagram() {
         let reading = Yijing.ask()

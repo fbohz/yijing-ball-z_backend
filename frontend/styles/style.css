@@ -1,3 +1,18 @@
 .love {
     color:#e25555;
 }
+
+path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 8s linear alternate infinite;
+} 
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
