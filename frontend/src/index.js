@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // const app = new App()
     const apiAdapter = new ApiAdapter()
     const allHexagrams = apiAdapter.getAllHexagrams()
-    
+    const castButton = document.querySelector(".cast-button")
     function getHexagram(hexnum){
         allHexagrams.then(result => {
             // return result[hexnum - 1]
@@ -11,15 +11,20 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     }
     
-    getHexagram(4)
+    // getHexagram(4)
     function cast(question){
-        return Yijing.ask(`${question}`);
+        // return Yijing.ask(`${question}`);
+        console.log(Yijing.ask(`${question}`))
     }
     
+    castButton.addEventListener("click", function(){
+        cast()
+     });
+     
+    // console.log(castHexagram)
     
-    var reading = cast("hi")
-    console.log(reading)
-    console.log("test5")
+    // var reading = cast("hi")
+    // console.log(reading)
     
     //     var reading = iChing.ask('to be or not to be?');
 // console.log('%d %s %s', 
