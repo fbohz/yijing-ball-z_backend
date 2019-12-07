@@ -6,7 +6,9 @@ class ApiAdapter {
   
     getAllHexagrams() {
       const url = `${this.baseUrl}/api/v1/hexagrams/`  
+      // return fetch(url).then(res => res.json()).then(json => json)
       return fetch(url).then(res => res.json())
+
     }
 
 }

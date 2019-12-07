@@ -20815,22 +20815,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const apiAdapter = new ApiAdapter()
     const allHexagrams = apiAdapter.getAllHexagrams()
     const castButton = document.querySelector(".cast-button")
-    function getHexagram(hexnum){
-        allHexagrams.then(result => {
-            // return result[hexnum - 1]
-            console.log(result[hexnum - 1])
-        })
+    const getHexagram = (hexnum) => { 
+        allHexagrams.then(result => parseHex(result[hexnum - 1])
+    )}
+    function parseHex(promise) {
+        let co = document.querySelector('.content')
+        let par = document.createElement('p')
+        par.textContent = promise.id
+        co.appendChild(par)
+        console.log(promise.id)
     }
-    
-    // getHexagram(4)
-    
+
+    // let num = getHexagram(1)
+    // console.log(num)
+
     function castHexagram() {
         let reading = Yijing.ask()
-        console.log(reading.hexagram.number)
-        getHexagram(reading.hexagram.number)
+        num = reading.hexagram.number
+        getHexagram(num)
     }
     
-   let test = castButton.addEventListener("click", function(){
+   castButton.addEventListener("click", function(){
         castHexagram()
         castButton.remove()
         // castButton.classList.add("casted");
@@ -20838,7 +20843,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     
     if (castButton.classList.contains("casted")) {
-        console.log(test)
+        // console.log(test)
 
     }
     // var reading = cast("hi")
