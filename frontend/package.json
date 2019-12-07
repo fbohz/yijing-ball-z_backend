@@ -12,10 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^16.5.0",
     "i-ching": "^0.3.5"
   },
   "devDependencies": {
-    "browserify": "^16.5.0",
     "watchify": "^3.11.1"
   }
 }
