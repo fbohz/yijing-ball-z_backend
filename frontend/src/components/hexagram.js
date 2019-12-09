@@ -1,6 +1,7 @@
 class Hexagram {
     constructor() {
         this.adapter = new ApiAdapter()
+        this.reading = new Reading()
     }
     getHexagram(hexnum) { 
         this.adapter.getAllHexagrams().then(result => this.parseHex(result[hexnum - 1])
@@ -13,4 +14,6 @@ class Hexagram {
         co.appendChild(par)
         console.log(promise)
     }
+
+    
 }
