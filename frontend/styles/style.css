@@ -16,3 +16,8 @@ path {
     stroke-dashoffset: 0;
   }
 }
+
+#homeLatest {
+    background-image: url("img/ball.png");
+
+}
