@@ -1,5 +1,5 @@
 class Reading {
-    constructor(lines, hexname, hexnum, character, changelines, changenum, changechar){
+    constructor(lines, hexname, hexnum, notes, character, changelines, changenum, changechar){
         // changing lines logic goes elsewhere check if there is reading.change first. 
         this.lines = lines
         this.hexname = hexname
