@@ -20810,26 +20810,16 @@ function hasOwnProperty(obj, prop) {
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./support/isBuffer":16,"_process":6,"inherits":15}],18:[function(require,module,exports){
 var Yijing = require('i-ching');
+
 document.addEventListener("DOMContentLoaded", function() {
-    // const app = new App()
-    const apiAdapter = new ApiAdapter()
-    const allHexagrams = apiAdapter.getAllHexagrams()
     const castButton = document.querySelector(".cast-button")
-    const getHexagram = (hexnum) => { 
-        allHexagrams.then(result => parseHex(result[hexnum - 1])
-    )}
-    function parseHex(promise) {
-        let co = document.querySelector('.content')
-        let par = document.createElement('p')
-        par.textContent = promise.judgement
-        co.appendChild(par)
-        console.log(promise)
-    }
+    const hexagram = new Hexagram()
+
 
     function castHexagram() {
         let reading = Yijing.ask()
         num = reading.hexagram.number
-        getHexagram(num)
+        hexagram.getHexagram(num)
     }
     
    castButton.addEventListener("click", function(){
@@ -20837,12 +20827,11 @@ document.addEventListener("DOMContentLoaded", function() {
         castButton.remove()
         // castButton.classList.add("casted");
     });
-    
-    
-    if (castButton.classList.contains("casted")) {
-        // console.log(test)
+        
+    // if (castButton.classList.contains("casted")) {
+    //     // console.log(test)
 
-    }
+    // }
     // var reading = cast("hi")
     // console.log(reading)
     
@@ -20864,5 +20853,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
 });
+
 
 },{"i-ching":2}]},{},[18]);
