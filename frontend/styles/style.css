@@ -21,3 +21,22 @@ path {
     background-image: url("img/ball.png");
 
 } */
+
+#canvas {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index:-1;
+    background: linear-gradient(0deg, rgb(248, 91, 26),
+     rgb(255, 215, 193),rgb(213, 216, 10), rgb(229, 153, 130));
+    background-size: 600% 600%;
+    -webkit-animation: colors 60s ease infinite;
+    -moz-animation: colors 60s ease infinite;
+    animation: colors 60s ease infinite;
+  }
+ 
+  .ball {
+    max-width: 25%;
+    height: auto;
+}

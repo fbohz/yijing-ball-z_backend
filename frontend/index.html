@@ -35,25 +35,28 @@
         </div></div>
         
       </nav>
-    <main>
-            <section class="section">
+      <canvas id="canvas"></canvas>
+    <main class="content has-text-centered">
+            <section class="section" >
               <div class="container">
                 <!-- <div class="container" id="homeLatest"> -->
                   <h1 class="title">
                     Yijing-Ball Z!
                   </h1>
                   <p class="subtitle">
-                    <figure class="image is-128x128">
-                            <img class="is-rounded" src="styles/img/ball2.png">
-                      </figure>
+                    
+                      <div class="has-text-centered ">
+                    
+                          <img class="is-rounded ball" src="styles/img/ball2.png">
+                    </div>
                         Welcome, Shenron awaits you... <br> 
                         Meditate on a question and when you are ready ask away. Try to be as specific as you can. e.g. <em>What will happen if I do x? </em>.  <br>
                         <strong> Your interpretation is key </strong>. Think about Shenron as a very old man, talking from experience, only to guide you make the right choice. 
                         <br> <br>
                         Ready?
                       </p>
-                      <div class="field is-grouped content">
-                            <p class="control">
+                      <!-- <div class="field is-grouped content"> -->
+                          <div class=" has-text-centered">
                               <a class="button is-warning is-inverted cast-button">
                                 Cast your Yijing-Ball Z
                               </a>
@@ -76,7 +79,7 @@
          
                   </section>
     </main>
-    <footer class="footer">
+    <section class="section" >
             <div class="content has-text-centered">
               <p>
                <strong>© Yijing-Ball Z <i class="fas fa-dragon"></i></strong> <br> <span class="love"> <i class="fas fa-hat-wizard"></i> </span> Made by
@@ -84,13 +87,14 @@
                 
              </p>
             </div>
-    </footer>
+          </section>
 
     <script src="src/components/reading.js"></script>
     <script src="src/components/user.js"></script>
     <script src="src/components/app.js"></script>
     <script src="src/adapters/ApiAdapter.js"></script>
     <script src="src/components/hexagram.js"></script>
+    <script src="lib/animate.js"></script>
     <script src="lib/hamburger.js"></script>
     <script src="dist/bundle.js"></script>
     <!-- <script src="src/index.js"></script> -->
