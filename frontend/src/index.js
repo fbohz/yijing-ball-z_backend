@@ -3,6 +3,7 @@ var Yijing = require('i-ching');
 document.addEventListener("DOMContentLoaded", function() {
     const castButton = document.querySelector(".cast-button")
     const hexagram = new Hexagram()
+    const home = document.querySelector("div.container")
     
 
     function castHexagram() {
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
    castButton.addEventListener("click", function(){
         castHexagram()
-        castButton.remove()
+        home.remove()
         // castButton.classList.add("casted");
     });
         
