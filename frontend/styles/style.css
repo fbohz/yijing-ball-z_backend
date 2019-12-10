@@ -40,3 +40,7 @@ path {
     max-width: 25%;
     height: auto;
 }
+
+.title {
+    font-family: 'Kaushan Script', cursive;
+}
