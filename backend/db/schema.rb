@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_03_231141) do
+ActiveRecord::Schema.define(version: 2019_12_10_180707) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,12 +35,32 @@ ActiveRecord::Schema.define(version: 2019_12_03_231141) do
   end
 
   create_table "readings", force: :cascade do |t|
+    t.bigint "user_id", null: false
     t.integer "hexnum"
-    t.integer "changinghex"
+    t.integer "changenum"
     t.text "notes"
-    t.date "date"
+    t.string "lines"
+    t.string "changelines"
+    t.string "hexname"
+    t.string "changehexname"
+    t.string "character"
+    t.string "changechar"
+    t.string "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_readings_on_user_id"
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "provider"
+    t.string "uid"
+    t.string "remember_token"
+  end
+
+  add_foreign_key "readings", "users"
 end
