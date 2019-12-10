@@ -3,11 +3,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :hexagrams
+      resources :readings, :hexagrams
     end
   end
-
-  resources :readings 
     
   resources :users do
     resources :readings, shallow: true
