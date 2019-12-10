@@ -3,7 +3,7 @@ var Yijing = require('i-ching');
 document.addEventListener("DOMContentLoaded", function() {
     const castButton = document.querySelector(".cast-button")
     const hexagram = new Hexagram()
-
+    
 
     function castHexagram() {
         let reading = Yijing.ask()
