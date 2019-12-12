@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <title>Yijing-Ball Z</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js"></script>
 </head>
 <body>
@@ -64,14 +65,14 @@
                         <small> <em> <strong> Note: </strong> You should not ask Shenron the same question more than once. Only the first answer is valid.</em></small> 
               </div>
 
-              <div id="results_container" class="animate_res" style="display:none;">
+              <div id="results_container" class="" style="display:none;">
                         <div id="fist_hexagram">
                           <h2 class=""> Resulted Hexagram</h2>
-                          <object id="result_hex" type="image/svg+xml" width="202" height="202" data=""></object>
+                          <object id="result_hex" class="w3-animate-fading" type="image/svg+xml" width="202" height="202" data=""></object>
                           <p id="left_definition"></p>
                           <p id="left_description"></p>
                         </div>
-                        <div id="change_lines">
+                        <div id="change_lines" class="w3-animate-fading">
                           <h3><strong>Changing lines</strong></h3>
                           <p id="changing_lines"></p>
                           <p id="changing_desc"></p>
@@ -80,7 +81,7 @@
                         </div>
                         <div id="second_hexagram">
                           <h2>Changing Hexagram</h2>
-                          <object id="change_hex" type="image/svg+xml" width="202" height="202" data=""></object>
+                          <object id="change_hex" class="w3-animate-fading" type="image/svg+xml" width="202" height="202" data=""></object>
                           <p id="right_definition"></p>
                           <p id="right_description"></p>
                         </div>
