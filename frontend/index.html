@@ -53,7 +53,7 @@
                         <strong> Your interpretation is key </strong>. Think about Shenron as a very old man, talking from experience, only to guide you make the right choice. Ready?
                         
                       </p>
-                      <!-- <div class="field is-grouped content"> -->
+
                       <div class=" has-text-centered">
                               <a class="button is-large is-warning is-inverted cast-button" id="button">
                                 Cast your Yijing-Ball Z
@@ -68,25 +68,26 @@
               </div>
 
               <div id="results_container" class="results w3-animate-opacity" style="display:none;">
-                        <div id="fist_hexagram">
-                          <h2 class=""> Resulted Hexagram</h2>
-                          <object id="result_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object>
-                          <p id="left_definition"></p>
+                  <div class="columns is-mobile is-centered">
+                      <div id="fist_hexagram" class="column is-half">
+                          <h2 class="hexnum"> Number </h2>
+                          <object id="result_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object> 
+                          <p id="hexname">TBD</p>
                           <p id="left_description"></p>
                         </div>
-                        <div id="change_lines" class="">
-                          <h3><strong>Changing lines</strong></h3>
-                          <p id="changing_lines"></p>
-                          <p id="changing_desc"></p>
-                          
-                          <p id="changing_text"></p>
-                        </div>
-                        <div id="second_hexagram">
-                          <h2>Changing Hexagram</h2>
-                          <object id="change_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object>
-                          <p id="right_definition"></p>
+                        <div id="second_hexagram" class="column is-half">
+                          <h2 class="changenum"> Number2 </h2>
+                          <object id="change_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object> 
+                          <p id="changehexname"></p>
                           <p id="right_description"></p>
                         </div>
+                  </div>
+                        <div id="change_lines" class="">
+                            <h3><strong>Changing Lines</strong></h3>
+                            <p id="changing_lines"></p>
+                            <p id="changing_desc"></p>
+                            <p id="changing_text"></p>
+                          </div>
               </div>
          
                   </section>
