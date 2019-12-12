@@ -54,3 +54,7 @@ path {
 div.container {
     animation-duration: 3s;
 }
+
+div.results {
+    animation-duration: 10s;
+}
