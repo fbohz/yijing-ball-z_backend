@@ -31,7 +31,7 @@ path {
     animation: colors 60s ease infinite;
   }
  
-  .ball {
+.ball {
     max-width: 25%;
     height: auto;
 }
