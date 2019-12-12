@@ -11,11 +11,21 @@ document.addEventListener("DOMContentLoaded", function() {
         const numo = 2
         hexagram.renderHexagrams(num, numo)
     }
-    
+    const simulateCasting = () => {
+        const spinTemplate = `<p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Continue meditating on your question while we cast your hexagram... </strong> </small></p>`
+        const spin = document.getElementById("spin_container")
+        spin.innerHTML += spinTemplate
+        spin.style.display = 'inline'
+        console.log(spin)
+    }
+
     castButton.addEventListener("click", function(){
         document.querySelector("div.container").remove()
-         castHexagram()
-         // castButton.classList.add("casted");
+            simulateCasting()
+            // FYI setTimeout() delays execution. 4000 is 4 seconds. 
+            // production both seconds are set to 4000
+            setTimeout(() => { document.getElementById("spin_container").remove() }, 100);
+            setTimeout(() => { castHexagram() }, 100);
      });
      
     // function renderHexagrams(resultsHex, changeHex) {

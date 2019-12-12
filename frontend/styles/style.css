@@ -52,9 +52,12 @@ path {
 	}
 
 div.container {
-    animation-duration: 3s;
+    /* animation-duration: 3s; */
+    animation-duration: 0s;
 }
 
 div.results {
-    animation-duration: 10s;
+    /* animation-duration: 10s; */
+    animation-duration: 0s;
 }
+
