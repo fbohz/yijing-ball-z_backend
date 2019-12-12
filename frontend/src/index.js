@@ -4,14 +4,26 @@ document.addEventListener("DOMContentLoaded", function() {
     const castButton = document.querySelector(".cast-button")
     const hexagram = new Hexagram()
     const home = document.querySelector("div.container")
-    
-
-    function castHexagram() {
+    const castHexagram = () => {
         let reading = Yijing.ask()
         num = reading.hexagram.number
         hexagram.getHexagram(num)
+        renderHexagrams(num)
     }
     
+    function renderHexagrams(resultsHex, initialHex) {
+
+        // document.getElementById('result_hex').setAttribute('data',(`lib/hexagrams.svg#${resultsHex}}`))
+        document.getElementById('result_hex').setAttribute('data',(`lib/hexagrams.svg#4`))
+        let test = document.getElementById('result_hex')
+        console.log(test)
+        document.getElementById('results_container').style.display = 'inline-grid'
+
+        // document.getElementById('result_hex').setAttribute('data',('hex.svg#' + right_num))
+        // document.getElementById('change_hex').setAttribute('data',('hex.svg#' + left_num))
+    }
+
+
    castButton.addEventListener("click", function(){
         castHexagram()
         home.remove()
