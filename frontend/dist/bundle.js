@@ -20823,7 +20823,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hexagram.renderHexagrams(num, numo)
     }
     const simulateCasting = () => {
-        const spinTemplate = `<p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Continue meditating on your question while we cast your hexagram... </strong> </small></p>`
+        const spinTemplate = `<div class="has-text-centered "><img class="is-rounded ball" src="styles/img/shenron.png"><p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Continue meditating on your question while Shenron casts your hexagram... </strong> </small></p></div>`
         const spin = document.getElementById("spin_container")
         spin.innerHTML += spinTemplate
         spin.style.display = 'inline'
@@ -20834,9 +20834,9 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("div.container").remove()
             simulateCasting()
             // FYI setTimeout() delays execution. 4000 is 4 seconds. 
-            // production both seconds are set to 4000
-            setTimeout(() => { document.getElementById("spin_container").remove() }, 100);
-            setTimeout(() => { castHexagram() }, 100);
+                  // default seconds need to be set to 4000 for both.
+            setTimeout(() => { document.getElementById("spin_container").remove() }, 400);
+            setTimeout(() => { castHexagram() }, 400);
      });
      
     // function renderHexagrams(resultsHex, changeHex) {
