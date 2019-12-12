@@ -40,7 +40,7 @@
       <canvas id="canvas"></canvas>
     <main class="content has-text-centered">
             <section class="section" >
-              <div class="container" id="home">
+              <div class="container w3-animate-top" id="home">
                   <p class="title is-1">
                     Yijing-Ball Z!
                   </p>
@@ -62,17 +62,17 @@
                             </p><br>   
                       </div>
 
-                        <small> <em> <strong> Note: </strong> You should not ask Shenron the same question more than once. Only the first answer is valid.</em></small> 
+                        <small> <em> <strong> Notes: </strong>The <a href="https://en.wikipedia.org/wiki/I_Ching_divination#Yarrow_stalks" target="_blank">Yarrow Stalk</a> method is used to cast hexagrams. Do not ask Shenron the same question more than once. Only the first answer is valid. </em></small> 
               </div>
 
               <div id="results_container" class="" style="display:none;">
                         <div id="fist_hexagram">
                           <h2 class=""> Resulted Hexagram</h2>
-                          <object id="result_hex" class="w3-animate-fading" type="image/svg+xml" width="202" height="202" data=""></object>
+                          <object id="result_hex" class="w3-animate-opacity" type="image/svg+xml" width="202" height="202" data=""></object>
                           <p id="left_definition"></p>
                           <p id="left_description"></p>
                         </div>
-                        <div id="change_lines" class="w3-animate-fading">
+                        <div id="change_lines" class="w3-animate-opacity">
                           <h3><strong>Changing lines</strong></h3>
                           <p id="changing_lines"></p>
                           <p id="changing_desc"></p>
@@ -81,7 +81,7 @@
                         </div>
                         <div id="second_hexagram">
                           <h2>Changing Hexagram</h2>
-                          <object id="change_hex" class="w3-animate-fading" type="image/svg+xml" width="202" height="202" data=""></object>
+                          <object id="change_hex" class="w3-animate-opacity" type="image/svg+xml" width="202" height="202" data=""></object>
                           <p id="right_definition"></p>
                           <p id="right_description"></p>
                         </div>
@@ -89,7 +89,7 @@
          
                   </section>
     </main>
-    <section class="section" >
+    <!-- <section class="section" > -->
             <div class="content has-text-centered">
               <p>
                <strong>© Yijing-Ball Z <i class="fas fa-dragon"></i></strong> <br> <span class="love"> <i class="fas fa-hat-wizard"></i> </span> Made by
@@ -97,7 +97,7 @@
                 
              </p>
             </div>
-          </section>
+          <!-- </section> -->
 
     <script src="src/components/reading.js"></script>
     <script src="src/components/user.js"></script>

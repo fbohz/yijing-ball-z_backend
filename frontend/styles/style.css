@@ -50,3 +50,7 @@ path {
 #button:hover {
 		background:rgb(248, 91, 26);
 	}
+
+div.container {
+    animation-duration: 3s;
+}
