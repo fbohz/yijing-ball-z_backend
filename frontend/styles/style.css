@@ -17,11 +17,6 @@ path {
   }
 }
 
-/* #homeLatest {
-    background-image: url("img/ball.png");
-
-} */
-
 #canvas {
     top: 0;
     width: 100%;
@@ -44,3 +39,14 @@ path {
 .title {
     font-family: 'Kaushan Script', cursive;
 }
+
+
+#button {
+		font-size: 1.5em;
+		text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+		border: 5px solid transparent;
+		border-bottom-color: rgba(0,0,0,0.35);
+	}
+#button:hover {
+		background:rgb(248, 91, 26);
+	}

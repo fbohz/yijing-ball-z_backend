@@ -6,16 +6,16 @@
 		.sprite:target { display: inline; }
 	]]></style>
 </defs>
-<g class="sprite" id="01">
+<g class="sprite" id="1">
   <path stroke-width="66" stroke="#000" stroke-dasharray="6" d="m35,2v66"/>
 </g>
-<g class="sprite" id="02">
+<g class="sprite" id="2">
   <path stroke-width="28" stroke="#000" stroke-dasharray="6" d="M16,2v66m38,0V2"/>
 </g>
-<g class="sprite" id="03">
+<g class="sprite" id="3">
   <path stroke-width="28" stroke="#000" stroke-dasharray="6" d="M16,68V2m19,12v6m0,42v6m19,0V2"/>
 </g>
-<g class="sprite" id="04">
+<g class="sprite" id="4">
   <g id="g-line1" transform="translate(0,0)">
     <rect id="r-line1-yinleft" width="28" height="6" x="2" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
     <rect id="r-line1-yinright" width="28" height="6" x="40" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
@@ -39,7 +39,7 @@
     <rect id="r-line6-yang" width="66" height="6" x="2" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
   </g>
 </g>
-<g class="sprite" id="05">
+<g class="sprite" id="5">
   <g id="g-line1" transform="translate(0,0)">
     <rect id="r-line1-yang" width="66" height="6" x="2" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
   </g>
@@ -61,7 +61,7 @@
     <rect id="r-line6-yinright" width="28" height="6" x="40" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
   </g>
 </g>
-<g class="sprite" id="06">
+<g class="sprite" id="6">
   <g id="g-line1" transform="translate(0,0)">
     <rect id="r-line1-yinleft" width="28" height="6" x="2" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
     <rect id="r-line1-yinright" width="28" height="6" x="40" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
@@ -83,7 +83,7 @@
     <rect id="r-line6-yang" width="66" height="6" x="2" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
   </g>
 </g>
-<g class="sprite" id="07">
+<g class="sprite" id="7">
   <g id="g-line1" transform="translate(0,0)">
     <rect id="r-line1-yinleft" width="28" height="6" x="2" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
     <rect id="r-line1-yinright" width="28" height="6" x="40" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
@@ -108,10 +108,10 @@
     <rect id="r-line6-yinright" width="28" height="6" x="40" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
   </g>
 </g>
-<g class="sprite" id="08">
+<g class="sprite" id="8">
   <path xmlns="http://www.w3.org/2000/svg" stroke-width="6" stroke="#000" d="m2,5h28m10,0h28m0,12H2m0 12h28m10,0h28m0,12H40m-10,0H2m0,12H30m10,0H68m0,12H40m-10,0H2"/>
 </g>
-<g class="sprite" id="09">
+<g class="sprite" id="9">
   <g id="g-line1" transform="translate(0,0)">
     <rect id="r-line1-yang" width="66" height="6" x="2" y="62" style="fill:#000000;fill-opacity:1;stroke:none"/>
   </g>
