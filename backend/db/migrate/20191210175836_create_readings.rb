@@ -7,10 +7,6 @@ class CreateReadings < ActiveRecord::Migration[6.0]
       t.text :notes
       t.string :lines
       t.string :changelines
-      t.string :hexname
-      t.string :changehexname
-      t.string :character
-      t.string :changechar
       t.string :date
       t.timestamps
     end

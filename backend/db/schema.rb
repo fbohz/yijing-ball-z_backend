@@ -41,10 +41,6 @@ ActiveRecord::Schema.define(version: 2019_12_10_180707) do
     t.text "notes"
     t.string "lines"
     t.string "changelines"
-    t.string "hexname"
-    t.string "changehexname"
-    t.string "character"
-    t.string "changechar"
     t.string "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
