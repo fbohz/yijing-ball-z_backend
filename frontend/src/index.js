@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const castHexagram = () => {
         let reading = Yijing.ask()
         num = reading.hexagram.number
-        hexagram.getHexagram(num)
-        // console.log(typeof num)
         const numo = 2
+        hexagram.getHexagram(num, numo)
+        // console.log(typeof num)
         hexagram.renderHexagrams(num, numo)
     }
     const simulateCasting = () => {
