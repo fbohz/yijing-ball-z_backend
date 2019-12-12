@@ -15,5 +15,21 @@ class Hexagram {
         console.log(promise)
     }
 
-    
+    renderHexagrams(resultsHex, changeHex) {
+        // data Attribute in HTML is used to specify the URL of the Embedded file of an Object.
+        document.getElementById('result_hex').setAttribute('data',(`lib/hexagrams.svg#${resultsHex}`))
+
+        document.getElementById('results_container').style.display = 'inline-grid'
+        
+        if (changeHex) {
+            document.getElementById('change_hex').setAttribute('data',(`lib/hexagrams.svg#${changeHex}`))
+        } else {
+            document.getElementById('second_hexagram').style.display = 'none'
+        }
+        let test = document.getElementById('result_hex')
+        console.log(test)
+    }
+
+
+
 }
