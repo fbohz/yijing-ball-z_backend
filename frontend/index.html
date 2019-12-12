@@ -39,13 +39,11 @@
       <canvas id="canvas"></canvas>
     <main class="content has-text-centered">
             <section class="section" >
-              <div class="container">
-                <!-- <div class="container" id="homeLatest"> -->
+              <div class="container" id="home">
                   <p class="title is-1">
                     Yijing-Ball Z!
                   </p>
                   <p class="subtitle">
-                    
                       <div class="has-text-centered ">
                     
                           <img class="is-rounded ball" src="styles/img/ball2.png">
@@ -64,12 +62,12 @@
                       </div>
 
                         <small> <em> <strong> Note: </strong> You should not ask Shenron the same question more than once. Only the first answer is valid.</em></small> 
-                    </div>
+              </div>
 
-                    <div id="results_container" class="animate_res" style="display:none;">
-                        <div id="left-hexagram">
-                          <object id="result_hex" type="image/svg+xml" width="202" height="202" data=""></object>
+              <div id="results_container" class="animate_res" style="display:none;">
+                        <div id="fist_hexagram">
                           <h2 class=""> Resulted Hexagram</h2>
+                          <object id="result_hex" type="image/svg+xml" width="202" height="202" data=""></object>
                           <p id="left_definition"></p>
                           <p id="left_description"></p>
                         </div>
@@ -80,13 +78,13 @@
                           
                           <p id="changing_text"></p>
                         </div>
-                        <div id="right">
-                          <object id="change_hex" type="image/svg+xml" width="202" height="202" data=""></object>
+                        <div id="second_hexagram">
                           <h2>Changing Hexagram</h2>
+                          <object id="change_hex" type="image/svg+xml" width="202" height="202" data=""></object>
                           <p id="right_definition"></p>
                           <p id="right_description"></p>
                         </div>
-                    </div>
+              </div>
          
                   </section>
     </main>
