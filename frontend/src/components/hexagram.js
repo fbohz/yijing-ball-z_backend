@@ -26,6 +26,7 @@ class Hexagram {
                 console.log(this.changeHex)
                 // TODO: get reading lines from iChing npm.
                 this.parseHex()
+                // have change lines status here.
             })
 
         } else {
@@ -70,8 +71,9 @@ class Hexagram {
         
         if (changeHex) {
             document.getElementById('change_hex').setAttribute('data',(`lib/hexagrams.svg#${changeHex}`))
-        } else {
+        } else { 
             document.getElementById('second_hexagram').style.display = 'none'
+            document.getElementById('change_lines').style.display = 'none'
         }
         let test = document.getElementById('result_hex')
         console.log(test)

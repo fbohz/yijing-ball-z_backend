@@ -11,10 +11,10 @@ path {
 @keyframes dash {
   from {
     stroke-dashoffset: 1000;
-  }
-  to {
+}
+to {
     stroke-dashoffset: 0;
-  }
+}
 }
 
 #canvas {
@@ -24,13 +24,13 @@ path {
     position: fixed;
     z-index:-1;
     background: linear-gradient(0deg, rgb(248, 91, 26),
-     rgb(255, 215, 193),rgb(213, 216, 10), rgb(229, 153, 130));
+    rgb(255, 215, 193),rgb(213, 216, 10), rgb(229, 153, 130));
     background-size: 600% 600%;
     -webkit-animation: colors 60s ease infinite;
     -moz-animation: colors 60s ease infinite;
     animation: colors 60s ease infinite;
-  }
- 
+}
+
 .ball {
     max-width: 25%;
     height: auto;
@@ -60,4 +60,3 @@ div.results {
     /* animation-duration: 10s; */
     animation-duration: 0s;
 }
-
