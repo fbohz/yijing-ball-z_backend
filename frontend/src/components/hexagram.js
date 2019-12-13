@@ -62,20 +62,20 @@ class Hexagram {
 
     parseHex() {
         if (this.changeHex) {
-            document.getElementById("hexname").textContent = this.hexname
             document.getElementById("hexnum").textContent = this.castHex.number
+            document.getElementById("hexname").textContent = this.castHex.hexname
             document.getElementById("judgement").textContent = this.castHex.judgement
             document.getElementById("image").textContent = this.castHex.image
 
 
-            document.getElementById("changenum").textContent = this.hexname
             document.getElementById("changehexname").textContent = this.changeHex.number
+            document.getElementById("changenum").textContent = this.changeHex.hexname
             document.getElementById("chjudgement").textContent = this.changeHex.judgement
             document.getElementById("chimage").textContent = this.changeHex.image
 
 
         } else {
-            document.getElementById("hexname").textContent = this.hexname
+            document.getElementById("hexname").textContent = this.castHex.hexname
             document.getElementById("hexnum").textContent = this.castHex.number
             document.getElementById("judgement").textContent = this.castHex.judgement
             document.getElementById("image").textContent = this.castHex.image
