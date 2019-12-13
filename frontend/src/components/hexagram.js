@@ -37,16 +37,14 @@ class Hexagram {
                 this.changeHex["judgement"] = changeresults.judgement
 
                 this.parseHex()
-                // this.renderChangeLines()
                 this.changeLines.map(line =>{
                     const p = document.createElement("p")
                     p.innerHTML =  this.renderChangeLines(line)
                     document.getElementById("change_lines").appendChild(p)
                     
                 })
-                // console.log(findChangeLines)
+                console.log(findChangeLines)
                 // console.log(getChangeLines)
-                // console.log(getChangeLines[0])
             })
 
         } else {

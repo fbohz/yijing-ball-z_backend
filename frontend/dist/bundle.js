@@ -20825,9 +20825,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             hexagram.getHexagrams(num, changenum, castLines, changeLines)
             hexagram.renderHexagrams(num, changenum)
-            console.log(castLines)
-            console.log(changeLines)
-            // console.log(ch2)
+
         } else {
             hexagram.getHexagrams(num)
             hexagram.renderHexagrams(num)
