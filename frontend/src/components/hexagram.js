@@ -4,8 +4,7 @@ class Hexagram {
         this.reading = new Reading()
         this.castHex = {}
         this.changeHex = {}
-        // this.castLines = []
-        // this.changeLines = []
+        this.changeLines = []
     }
     getHexagrams(hexnum, changenum, castLines, changeLines) { 
         if (changenum) {
@@ -19,6 +18,14 @@ class Hexagram {
                      } 
                 }).filter(function(val){ return val!==undefined; });
 
+                const getChangeLines = findChangeLines.map(linenum => {
+                    const changeline = `line_${linenum}`
+                    const changeTexts = []
+                    changeTexts.push(changeresults[`${changeline}`])
+                    return changeTexts
+                })
+                this.changeLines = getChangeLines
+
                 this.castHex["hexname"] = `${castresults.english_name} / ${castresults.chinese_name} (${castresults.characters})`
                 this.castHex["number"] = castresults.number
                 this.castHex["image"] = castresults.image
@@ -30,7 +37,16 @@ class Hexagram {
                 this.changeHex["judgement"] = changeresults.judgement
 
                 this.parseHex()
-                // this.renderChangeLines(findChangeLines)
+                // this.renderChangeLines()
+                this.changeLines.map(line =>{
+                    const p = document.createElement("p")
+                    p.innerHTML =  this.renderChangeLines(line)
+                    document.getElementById("change_lines").appendChild(p)
+                    
+                })
+                // console.log(findChangeLines)
+                // console.log(getChangeLines)
+                // console.log(getChangeLines[0])
             })
 
         } else {
@@ -81,8 +97,12 @@ class Hexagram {
         }
     }
 
-    renderChangeLines(changeLines) {
-        
+    renderChangeLines(line) {
+        if (this.changeLines) {
+            return `
+                <p class="changing_lines"><strong>Line ${this.changeLines.indexOf(line) + 1}</strong>: ${line}</p>
+            `
+        }
     }
-
+    
 }
