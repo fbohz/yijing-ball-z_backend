@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   resources :users do
     resources :readings, shallow: true
   end
+
+  get '/auth/google_oauth2/callback' => 'sessions#create'
+
 end
