@@ -11,6 +11,6 @@ Rails.application.routes.draw do
     resources :readings, shallow: true
   end
 
-  get '/auth/google_oauth2/callback' => 'sessions#create'
+  get '/*a', to: 'application#not_found'
 
 end
