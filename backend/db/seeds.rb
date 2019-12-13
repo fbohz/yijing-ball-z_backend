@@ -54,12 +54,12 @@ def populate_hexagrams
 
     @counter = 0 
     hexagrams.each do |h|
-        h[:first_line] = lines[@counter][0]
-        h[:second_line] = lines[@counter][1]
-        h[:third_line] = lines[@counter][2]
-        h[:fourth_line] = lines[@counter][3]
-        h[:fifth_line] = lines[@counter][4]
-        h[:sixth_line] = lines[@counter][5]
+        h[:line_1] = lines[@counter][0]
+        h[:line_2] = lines[@counter][1]
+        h[:line_3] = lines[@counter][2]
+        h[:line_4] = lines[@counter][3]
+        h[:line_5] = lines[@counter][4]
+        h[:line_6] = lines[@counter][5]
         @counter += 1
     end
     @counter = 0 

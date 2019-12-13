@@ -4,19 +4,20 @@ class Hexagram {
         this.reading = new Reading()
         this.castHex = {}
         this.changeHex = {}
-        this.castLines = []
-        this.changeLines = []
+        // this.castLines = []
+        // this.changeLines = []
     }
     getHexagrams(hexnum, changenum, castLines, changeLines) { 
         if (changenum) {
             this.adapter.getAllHexagrams().then(result =>  {
                 const castresults = result[hexnum - 1]
                 const changeresults = result[changenum - 1]
+                // function finds the differences, adds one, then filters for values that are not undefined.
                 const findChangeLines = castLines.map((currElement, index) => {
                     if(currElement !== changeLines[index]) {
-                      return index;
+                        return index + 1;
                      } 
-                }).filter(Boolean)
+                }).filter(function(val){ return val!==undefined; });
 
                 this.castHex["hexname"] = `${castresults.english_name} / ${castresults.chinese_name} (${castresults.characters})`
                 this.castHex["number"] = castresults.number
@@ -29,7 +30,7 @@ class Hexagram {
                 this.changeHex["judgement"] = changeresults.judgement
 
                 this.parseHex()
-                this.renderChangeLines(findChangeLines)
+                // this.renderChangeLines(findChangeLines)
             })
 
         } else {

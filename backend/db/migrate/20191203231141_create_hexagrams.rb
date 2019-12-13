@@ -10,12 +10,12 @@ class CreateHexagrams < ActiveRecord::Migration[6.0]
       t.string :characters
       t.text :judgement
       t.text :image
-      t.text :first_line
-      t.text :second_line
-      t.text :third_line
-      t.text :fourth_line
-      t.text :fifth_line
-      t.text :sixth_line
+      t.text :line_1
+      t.text :line_2
+      t.text :line_3
+      t.text :line_4
+      t.text :line_5
+      t.text :line_6
       t.timestamps
     end
   end
