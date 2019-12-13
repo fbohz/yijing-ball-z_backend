@@ -20820,22 +20820,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (reading.change) {
             const changenum  = reading.change.to.number
-            hexagram.getHexagram(num, changenum)
+            const castLines = reading.hexagram.lines
+            const changeLines = Yijing.hexagram(changenum).lines
+
+            hexagram.getHexagrams(num, changenum, castLines, changeLines)
             hexagram.renderHexagrams(num, changenum)
+            console.log(castLines)
+            console.log(changeLines)
+            // console.log(ch2)
         } else {
-            hexagram.getHexagram(num)
+            hexagram.getHexagrams(num)
             hexagram.renderHexagrams(num)
         }
 
-        const numo = 2
-        console.log(reading.change)
     }
     const simulateCasting = () => {
         const spinTemplate = `<div class="has-text-centered "><img class="is-rounded ball" src="styles/img/shenron.png"><p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Continue meditating on your question while Shenron casts your hexagram... </strong> </small></p></div>`
         const spin = document.getElementById("spin_container")
         spin.innerHTML += spinTemplate
         spin.style.display = 'inline'
-        console.log(spin)
     }
 
     castButton.addEventListener("click", function(){

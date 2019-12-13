@@ -7,11 +7,16 @@ class Hexagram {
         this.castLines = []
         this.changeLines = []
     }
-    getHexagram(hexnum, changenum) { 
+    getHexagrams(hexnum, changenum, castLines, changeLines) { 
         if (changenum) {
             this.adapter.getAllHexagrams().then(result =>  {
-                let castresults = result[hexnum - 1]
-                let changeresults = result[changenum - 1]
+                const castresults = result[hexnum - 1]
+                const changeresults = result[changenum - 1]
+                const findChangeLines = castLines.map((currElement, index) => {
+                    if(currElement !== changeLines[index]) {
+                      return index;
+                     } 
+                }).filter(Boolean)
 
                 this.castHex["hexname"] = `${castresults.english_name} / ${castresults.chinese_name} (${castresults.characters})`
                 this.castHex["number"] = castresults.number
@@ -22,11 +27,9 @@ class Hexagram {
                 this.changeHex["number"] = changeresults.number
                 this.changeHex["image"] = changeresults.image
                 this.changeHex["judgement"] = changeresults.judgement
-                // console.log(castresults)
-                console.log(this.changeHex)
-                // TODO: get reading lines from iChing npm.
+
                 this.parseHex()
-                // have change lines status here.
+                this.renderChangeLines(findChangeLines)
             })
 
         } else {
@@ -75,10 +78,10 @@ class Hexagram {
             document.getElementById('second_hexagram').style.display = 'none'
             document.getElementById('change_lines').style.display = 'none'
         }
-        let test = document.getElementById('result_hex')
-        console.log(test)
     }
 
-
+    renderChangeLines(changeLines) {
+        
+    }
 
 }
