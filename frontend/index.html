@@ -11,30 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js"></script>
-
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="824891813535-v2lvg2e393otl6lhs8o20mtb2bl31roj.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      }
-    </script>
-
     <nav class="navbar is-light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href=""><img class="is-rounded" src="styles/img/ball2.png" alt="Home"></a>
