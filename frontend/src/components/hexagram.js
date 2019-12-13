@@ -20,9 +20,10 @@ class Hexagram {
                 
                 this.changeHex["hexname"] = `${changeresults.english_name} / ${changeresults.chinese_name} (${changeresults.characters})`
                 this.changeHex["number"] = changeresults.number
-                this.castHex["image"] = changeresults.image
-                this.castHex["judgement"] = changeresults.judgement
-
+                this.changeHex["image"] = changeresults.image
+                this.changeHex["judgement"] = changeresults.judgement
+                // console.log(castresults)
+                console.log(this.changeHex)
                 // TODO: get reading lines from iChing npm.
                 this.parseHex()
             })
