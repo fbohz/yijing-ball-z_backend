@@ -1,5 +1,6 @@
 # ignore frontend node_modules
 /node_modules
 
-# 
+# HTTPS server files.
 simple-https-server.py
+server.pem

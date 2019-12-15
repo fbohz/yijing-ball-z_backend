@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
             
           FB.AppEvents.logPageView();   
           checkLoginState()  
+          addScript(loginSub)
+
         };
       
         (function(d, s, id){
@@ -21,8 +23,26 @@ document.addEventListener("DOMContentLoaded", function() {
          }(document, 'script', 'facebook-jssdk'));
     // <!-- FB SDK LOAD END -->
     const user = new User() 
+    const logoutScript = `    
+      function logout() { 
+        document.getElementById("logoutbtn").addEventListener('click', 
+          FB.logout(function(response) {
+            location.reload();
+            // console.log('FB.logout', response);
+          //  flashMessage("Successfuly Logged Out!")
+          // logoutConfirmation()
+          // document.getElementById("flashmsg").innerHTML = "Successfuly Logged Out!"
+      })); 
+      }  `
+    const loginSub = `
+        FB.Event.subscribe('auth.login', function(response) {
+          // do something with response
+          // loginUser(response.name)
+          // document.getElementById("flashmsg").innerHTML = "Successfuly Logged In!"
+          location.reload(); 
+        }); `
 
-    function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+      function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
         console.log('statusChangeCallback');
         console.log(response);                   // The current login status of the person.
         if (response.status === 'connected') {   // Logged into your webpage and Facebook.
@@ -31,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //   document.getElementById('status').innerHTML = 'Please log ' +
         //     'into this webpage.';
         console.log('please login')
+
         }
       }
     
@@ -39,24 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
         FB.getLoginStatus(function(response) {   // See the onlogin handler
           statusChangeCallback(response);
           if (response.status === 'connected') {
-            loginUser()
+            testAPI(); 
+            // console.log(response)
           }
         });
       }
-    
-      FB.Event.subscribe('auth.login', function(response) {
-        // do something with response
-        statusChangeCallback(response);
-        loginUser()
-      });
-
-      //   Logout user.
-      document.getElementById("logoutbtn").addEventListener('click', 
-        FB.logout(function(response) {
-            // Person is now logged out
-            location.reload();
-            flashMessage("Successfuly Logged Out!")
-         }));
 
 
       function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
@@ -67,16 +75,36 @@ document.addEventListener("DOMContentLoaded", function() {
         //     'Thanks for logging in, ' + response.name + '!';
         console.log(`thanks for login ${response.name}`)
         user.name = response.name
+        user.uid = response.id
+        // logs user
+        loginUser(user.name)
+        console.log(response)
+        // location.reload();
         });
       }
 
-      function loginUser(){
-        document.getElementById("logbtn").innerHTML = `<a class="button is-small is-link is-inverted" id="logoutbtn">Logout</a>`
-        flashMessage("Successfuly Logged In!")
+      function loginUser(username){
+        document.getElementById("logbtn").innerHTML = `<a class="button is-small is-link is-inverted" id="logoutbtn" onclick="logout()">Logout</a>`
+        flashMessage(`Welcome ${username}!`)
+        addScript(logoutScript)
       }
-
+      
       function flashMessage(msg) {
-          document.getElementById("flashmsg").innerHTML = `<em> ${msg} </em>`
+        document.getElementById("flashmsg").innerHTML = `<em> ${msg} </em>`
+      }
+      
+      function addScript(js){
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        // script.onload = function() {
+            // logout() 
+        // 
+      // }
+        script.text = js
+        // script.src = 'path/to/your-script.js';
+        document.body.appendChild(script);
+        // console.log("hi")
+
       }
 
 });
