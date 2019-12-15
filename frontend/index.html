@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js"></script>
+
 </head>
 <body>
+
     <nav class="navbar is-light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href=""><img class="is-rounded" src="styles/img/ball2.png" alt="Home"></a>
@@ -27,7 +29,10 @@
         <!-- NEED IF Logged In -->
           <div class="navbar-start">
             <!-- <span class='navbar-item'> <em> Test Text</em></span> -->
-            <a class="navbar-item" href=""> <img src="styles/img/btnlight.png" alt="Google Sign-In"> </a>
+            <div class="navbar-item" id="logbtn">
+              <fb:login-button scope="public_profile,email">
+              </fb:login-button>
+          </div>
           </div>
           <div class="navbar-start"></div>
 
@@ -39,6 +44,7 @@
       </nav>
       <canvas id="canvas"></canvas>
     <main class="content has-text-centered">
+        <div class="container goo" id="flashmsg"> </div>
             <section class="section" >
               <div class="container w3-animate-top" id="home">
                   <p class="title is-1">
@@ -113,6 +119,7 @@
     <script src="src/components/hexagram.js"></script>
     <script src="lib/animate.js"></script>
     <script src="lib/hamburger.js"></script>
+    <script src="lib/fbsdk.js"></script>
     <script src="dist/bundle.js"></script>
     <!-- <script src="src/index.js"></script> -->
 </body>

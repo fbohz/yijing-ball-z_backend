@@ -2,6 +2,10 @@
     color:#e25555;
 }
 
+#flashmsg {
+    color: white;
+}
+
 path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
