@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
           FB.AppEvents.logPageView();   
           checkLoginState()  
           addScript(loginSub)
-          // addScript(logoutSub)
         };
       
         (function(d, s, id){
@@ -34,11 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
         FB.Event.subscribe('auth.login', function(response) {
           location.reload(); 
         }); `
-
-    // const logoutSub = `
-    //     FB.Event.subscribe('auth.logout', function(response) {
-    //       document.getElementById("flashmsg").innerHTML = "Successfuly Logged Out!"
-    // }); `
 
       function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
         // console.log('statusChangeCallback');
