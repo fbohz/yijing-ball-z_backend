@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
           FB.AppEvents.logPageView();   
           checkLoginState()  
           addScript(loginSub)
-
+          // addScript(logoutSub)
         };
       
         (function(d, s, id){
@@ -28,22 +28,20 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("logoutbtn").addEventListener('click', 
           FB.logout(function(response) {
             location.reload();
-            // console.log('FB.logout', response);
-          //  flashMessage("Successfuly Logged Out!")
-          // logoutConfirmation()
-          // document.getElementById("flashmsg").innerHTML = "Successfuly Logged Out!"
       })); 
       }  `
     const loginSub = `
         FB.Event.subscribe('auth.login', function(response) {
-          // do something with response
-          // loginUser(response.name)
-          // document.getElementById("flashmsg").innerHTML = "Successfuly Logged In!"
           location.reload(); 
         }); `
 
+    // const logoutSub = `
+    //     FB.Event.subscribe('auth.logout', function(response) {
+    //       document.getElementById("flashmsg").innerHTML = "Successfuly Logged Out!"
+    // }); `
+
       function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
-        console.log('statusChangeCallback');
+        // console.log('statusChangeCallback');
         console.log(response);                   // The current login status of the person.
         if (response.status === 'connected') {   // Logged into your webpage and Facebook.
           testAPI();  
@@ -56,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     
     
-      function checkLoginState() {               // Called when a person is finished with the Login Button.
+      function checkLoginState() {  // Called when a person is finished with the Login Button.
         FB.getLoginStatus(function(response) {   // See the onlogin handler
           statusChangeCallback(response);
         });
@@ -74,8 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
         user.uid = response.id
         // logs user
         loginUser(user.name)
-        // console.log(response)
-        // location.reload();
         });
       }
 
@@ -92,15 +88,8 @@ document.addEventListener("DOMContentLoaded", function() {
       function addScript(js){
         const script = document.createElement('script');
         script.type = 'text/javascript';
-        // script.onload = function() {
-            // logout() 
-        // 
-      // }
         script.text = js
-        // script.src = 'path/to/your-script.js';
         document.body.appendChild(script);
-        // console.log("hi")
-
       }
 
 });
