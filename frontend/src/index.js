@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     castButton.addEventListener("click", function(){
-        document.querySelector("div.container").remove()
+        document.querySelector("div#home.container").remove()
             simulateCasting()
             // FYI setTimeout() delays execution. 4000 is 4 seconds. 
                   // default seconds need to be set to 4000 for both.
