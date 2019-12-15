@@ -64,3 +64,8 @@ div.results {
     /* animation-duration: 10s; */
     animation-duration: 0s;
 }
+
+div.flashmsg {
+    /* animation-duration: 10s; */
+    animation-duration: 5s;
+}
