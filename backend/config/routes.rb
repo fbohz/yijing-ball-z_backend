@@ -4,11 +4,10 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :readings, :hexagrams
+      resources :users do
+        resources :readings, shallow: true
+      end
     end
-  end
-    
-  resources :users do
-    resources :readings, shallow: true
   end
 
   get '/*a', to: 'application#not_found'
