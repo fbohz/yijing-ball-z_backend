@@ -42,8 +42,24 @@ class User {
             const newDiv = document.createElement("div")
             newDiv.classList.add("container")
             newDiv.innerHTML = `<button class="button is-small is-warning w3-animate-opacity notesBtn">+ Notes</button> <br>`
+            newDiv.id = "notesDiv"
 
             referenceDiv.parentNode.insertBefore(newDiv, referenceDiv.nextSibling);
+            const notesBtn = document.querySelector(".notesBtn")
+
+            notesBtn.addEventListener('click', ()=>{
+                const textDiv = document.createElement("div")
+                const notesTextArea = document.querySelector(".notesField")
+                if (notesTextArea && notesTextArea.classList.contains("clicked")) {
+                    notesTextArea.closest('.clicked').remove()
+                    notesBtn.textContent = "+ Notes"
+                } else {
+                    textDiv.innerHTML = `<div class="notesField media-content has-text-centered "> <textarea id="usernotes" cols="50" rows="6" placeholder="Add Notes"></textarea> </div>`
+                    newDiv.appendChild(textDiv)
+                    notesBtn.textContent = "- Notes"
+                    document.querySelector(".notesField").classList.add("clicked")
+                }
+            })
         }
     }
 
