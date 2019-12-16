@@ -4,5 +4,8 @@ class User {
         this.uid = uid
     }
 
-    
+    getSaveBtn() {
+        const logoutBtn = document.getElementById("logoutbtn")
+        // document.getElementById("logoutbtn")
+    }
 }

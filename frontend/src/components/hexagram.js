@@ -68,8 +68,8 @@ class Hexagram {
             document.getElementById("image").textContent = this.castHex.image
 
 
-            document.getElementById("changehexname").textContent = this.changeHex.number
-            document.getElementById("changenum").textContent = this.changeHex.hexname
+            document.getElementById("changehexname").textContent = this.changeHex.hexname
+            document.getElementById("changenum").textContent = this.changeHex.number
             document.getElementById("chjudgement").textContent = this.changeHex.judgement
             document.getElementById("chimage").textContent = this.changeHex.image
 
