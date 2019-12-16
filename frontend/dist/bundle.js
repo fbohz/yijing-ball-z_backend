@@ -20860,11 +20860,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
      const saveListener = () => {
         const saveBtn = document.querySelector(".saveBtn")
-        saveBtn.addEventListener("click", function(){
-                user.uid = saveBtn.id
-                console.log(user)
-                console.log(hexagram.reading)
-        })
+        if (saveBtn) {
+            saveBtn.addEventListener("click", function(){
+                    user.uid = saveBtn.id
+                    console.log(user)
+                    console.log(hexagram.reading)
+        })}
     }
 });
 

@@ -8,11 +8,15 @@ class User {
         this.hexagrams = new Hexagram()
     }
 
-    renderSaveBtn() {
+    isLoggedIn() {
         const logoutBtn = document.querySelector(".logout")
+        return !!logoutBtn
+    }
+
+    renderSaveBtn() {
         const hexName = document.getElementById("hexname").textContent
 
-        if (logoutBtn && !!hexName) {
+        if (this.isLoggedIn() && !!hexName) {
             const saveBtn = document.createElement("button")
             saveBtn.classList.add("button", "is-medium", "is-warning", "is-inverted", "w3-animate-opacity", "saveBtn")
             saveBtn.textContent = "Save Reading"
@@ -32,6 +36,6 @@ class User {
     }
 
     saveReading(){
-        
+
     }
 }
