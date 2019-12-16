@@ -4,8 +4,26 @@ class User {
         this.uid = uid
     }
 
-    getSaveBtn() {
-        const logoutBtn = document.getElementById("logoutbtn")
-        // document.getElementById("logoutbtn")
+    renderSaveBtn() {
+        const logoutBtn = document.querySelector(".logout")
+        const hexName = document.getElementById("hexname").textContent
+
+        if (logoutBtn && !!hexName) {
+            const saveBtn = document.createElement("button")
+            saveBtn.classList.add("button", "is-medium", "is-warning", "is-inverted", "w3-animate-opacity", "saveBtn")
+            saveBtn.textContent = "Save Reading"
+            const referenceDiv = document.getElementById("change_lines")
+            const linebreak = document.createElement("br");
+            referenceDiv.appendChild(linebreak)
+
+            referenceDiv.parentNode.insertBefore(saveBtn, referenceDiv.nextSibling);
+            this.addButtonId("saveBtn")
+        }
+    }
+
+    addButtonId(className) {
+        const btn = document.querySelector(`.${className}`)
+        // get uid from logout btn previously set on FB SDK
+        btn.id = document.querySelector(".logout").id
     }
 }

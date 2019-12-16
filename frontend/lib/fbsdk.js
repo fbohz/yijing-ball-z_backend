@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const user = new User() 
     const logoutScript = `    
       function logout() { 
-        document.getElementById("logoutbtn").addEventListener('click', 
+        document.querySelector(".logout").addEventListener('click', 
           FB.logout(function(response) {
             location.reload();
       })); 
-      }  `
+      }  `  
     const loginSub = `
         FB.Event.subscribe('auth.login', function(response) {
           location.reload(); 
@@ -65,12 +65,12 @@ document.addEventListener("DOMContentLoaded", function() {
         user.name = response.name
         user.uid = response.id
         // logs user
-        loginUser(user.name)
+        loginUser(user.name, user.uid)
         });
       }
 
-      function loginUser(username){
-        document.getElementById("logbtn").innerHTML = `<a class="button is-small is-link is-inverted" id="logoutbtn" onclick="logout()">Logout</a>`
+      function loginUser(username, userid){
+        document.getElementById("logbtn").innerHTML = `<a class="button logout is-small is-link is-inverted" id="${userid}" onclick="logout()">Logout</a>`
         flashMessage(`Welcome ${username}!`)
         addScript(logoutScript)
         setTimeout(() => { document.getElementById("flashmsg").textContent = " " }, 4000);
@@ -86,5 +86,4 @@ document.addEventListener("DOMContentLoaded", function() {
         script.text = js
         document.body.appendChild(script);
       }
-
 });
