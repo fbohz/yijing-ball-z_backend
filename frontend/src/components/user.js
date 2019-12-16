@@ -13,19 +13,37 @@ class User {
         return !!logoutBtn
     }
 
+    setUserName(){
+        const userChest = document.querySelector(".usersaved")
+        if (userChest){
+            this.name = userChest.getAttribute("alt").replace(" - Casts", "")
+        }
+    }
     renderSaveBtn() {
         const hexName = document.getElementById("hexname").textContent
 
         if (this.isLoggedIn() && !!hexName) {
-            const saveBtn = document.createElement("button")
-            saveBtn.classList.add("button", "is-medium", "is-warning", "is-inverted", "w3-animate-opacity", "saveBtn")
-            saveBtn.textContent = "Save Reading"
             const referenceDiv = document.getElementById("change_lines")
+            const newDiv = document.createElement("div")
+            newDiv.innerHTML = `<br><button class="button is-medium is-warning is-inverted w3-animate-opacity saveBtn">Save Reading</button>`
+            newDiv.classList.add("container")
             const linebreak = document.createElement("br");
             referenceDiv.appendChild(linebreak)
 
-            referenceDiv.parentNode.insertBefore(saveBtn, referenceDiv.nextSibling);
+            referenceDiv.parentNode.insertBefore(newDiv, referenceDiv.nextSibling);
             this.addButtonUserId("saveBtn")
+            this.renderAddNotes()
+        }
+    }
+
+    renderAddNotes() {
+        if (this.isLoggedIn()){
+            const referenceDiv = document.getElementById("change_lines")
+            const newDiv = document.createElement("div")
+            newDiv.classList.add("container")
+            newDiv.innerHTML = `<button class="button is-small is-warning w3-animate-opacity notesBtn">+ Notes</button> <br>`
+
+            referenceDiv.parentNode.insertBefore(newDiv, referenceDiv.nextSibling);
         }
     }
 
@@ -40,16 +58,9 @@ class User {
             const referenceDiv = document.querySelector(".navbar-end")            
             const newDiv = document.createElement("div")
             newDiv.classList.add("myreadings")
-            newDiv.innerHTML = `<span class="tooltiptext">Chest</span>
-            <a class="navbar-item"><img class="is-rounded usersaved" src="styles/img/gokushenron.png" alt="${username} - Chest"></a></div>`
+            newDiv.innerHTML = `<span class="tooltiptext">Casts</span>
+            <a class="navbar-item"><img class="is-rounded usersaved" src="styles/img/gokushenron.png" alt="${username} - Casts"></a></div>`
             referenceDiv.appendChild(newDiv)
-        }
-    }
-
-    setUserName(){
-        const userChest = document.querySelector(".usersaved")
-        if (userChest){
-            this.name = userChest.getAttribute("alt").replace(" - Chest", "")
         }
     }
 

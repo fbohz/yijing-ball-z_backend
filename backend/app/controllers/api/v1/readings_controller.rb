@@ -1,33 +1,39 @@
 class Api::V1::ReadingsController < ApplicationController
     def index
-        @readings = Reading.all
-    
-        render json: @readings, status: 200
-      end
+      case
+      when params[:user_id]
+        user = User.find_by_id(params[:user_id])
+        if user 
+          readings = user.readings
+          render json: readings, status: 200
+        else 
+          readings = Reading.all
+        end 
+    end
       
       def show
-        @reading = Reading.find(params[:id])
+        reading = Reading.find(params[:id])
         
-        render json: @reading, status: 200
+        render json: reading, status: 200
       end
       
       def create
-        @reading = Reading.create(reading_params)
+        reading = Reading.create(reading_params)
         
-        render json: @reading, status: 200
+        render json: reading, status: 200
       end
       
       def update
-        @reading = Reading.find(params[:id])
-        @reading.update(reading_params)
-        render json: @reading, status: 200
+        reading = Reading.find(params[:id])
+        reading.update(reading_params)
+        render json: reading, status: 200
       end
       
       def destroy 
-        @reading = Reading.find(params[:id])
-        @reading.delete
+        reading = Reading.find(params[:id])
+        reading.delete
     
-        render json: {readingId: @reading.id}
+        render json: {readingId: reading.id}
       end
     
     
