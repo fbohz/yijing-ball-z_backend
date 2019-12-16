@@ -7,7 +7,7 @@ class Hexagram {
         this.changeLines = []
     }
     getHexagrams(hexnum, changenum, castLines, changeLines) { 
-        if (changenum) {
+        if (changenum) {    
             this.adapter.getAllHexagrams().then(result =>  {
                 const castresults = result[hexnum - 1]
                 const changeresults = result[changenum - 1]
@@ -45,7 +45,7 @@ class Hexagram {
                     
                 })
                 console.log(findChangeLines)
-                // console.log(getChangeLines)
+
             })
 
         } else {
@@ -101,6 +101,19 @@ class Hexagram {
             return `
                 <p class="changing_lines">${line}</p>
             `
+        }
+    }
+
+    saveReadingAttributes(hexnum, castLines, changenum, changeLines) {
+        if (changenum) {
+            this.reading["hexnum"] = hexnum
+            this.reading["lines"] = castLines
+            this.reading["changenum"] = changenum
+            this.reading["changeLines"] = changeLines
+
+        } else{
+            this.reading["hexnum"] = hexnum
+            this.reading["lines"] = castLines
         }
     }
     

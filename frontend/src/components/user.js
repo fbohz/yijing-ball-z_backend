@@ -3,7 +3,9 @@ class User {
         this.name = name
         this.uid = uid
         this.adapter = new ApiAdapter()
-        this.reading = new Reading()
+        // this.reading = new Reading()
+        // getting readings through Hexagram. Hexagram has methods will need.
+        this.hexagrams = new Hexagram()
     }
 
     renderSaveBtn() {
@@ -30,7 +32,6 @@ class User {
     }
 
     saveReading(){
-        const saveBtn = document.querySelector(".saveBtn")
-        const user = saveBtn.id
+        
     }
 }
