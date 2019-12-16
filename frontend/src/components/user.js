@@ -2,6 +2,8 @@ class User {
     constructor(name, uid){
         this.name = name
         this.uid = uid
+        this.adapter = new ApiAdapter()
+        this.reading = new Reading()
     }
 
     renderSaveBtn() {
@@ -17,13 +19,18 @@ class User {
             referenceDiv.appendChild(linebreak)
 
             referenceDiv.parentNode.insertBefore(saveBtn, referenceDiv.nextSibling);
-            this.addButtonId("saveBtn")
+            this.addButtonUserId("saveBtn")
         }
     }
 
-    addButtonId(className) {
+    addButtonUserId(className) {
         const btn = document.querySelector(`.${className}`)
         // get uid from logout btn previously set on FB SDK
         btn.id = document.querySelector(".logout").id
+    }
+
+    saveReading(){
+        const saveBtn = document.querySelector(".saveBtn")
+        const user = saveBtn.id
     }
 }
