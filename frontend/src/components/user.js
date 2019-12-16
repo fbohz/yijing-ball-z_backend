@@ -35,6 +35,24 @@ class User {
         btn.id = document.querySelector(".logout").id
     }
 
+    renderNavItem(username){
+        if (this.isLoggedIn()){
+            const referenceDiv = document.querySelector(".navbar-end")            
+            const newDiv = document.createElement("div")
+            newDiv.classList.add("myreadings")
+            newDiv.innerHTML = `<span class="tooltiptext">Chest</span>
+            <a class="navbar-item"><img class="is-rounded usersaved" src="styles/img/gokushenron.png" alt="${username} - Chest"></a></div>`
+            referenceDiv.appendChild(newDiv)
+        }
+    }
+
+    setUserName(){
+        const userChest = document.querySelector(".usersaved")
+        if (userChest){
+            this.name = userChest.getAttribute("alt").replace(" - Chest", "")
+        }
+    }
+
     saveReading(){
 
     }

@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("logbtn").innerHTML = `<a class="button logout is-small is-link is-inverted" id="${userid}" onclick="logout()">Logout</a>`
         flashMessage(`Welcome ${username}!`)
         addScript(logoutScript)
+        user.renderNavItem(username)
         setTimeout(() => { document.getElementById("flashmsg").textContent = " " }, 4000);
       }
       

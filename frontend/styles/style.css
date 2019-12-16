@@ -74,3 +74,21 @@ div.flashmsg {
 .saveBtn {
     animation-duration: 5s;
 }
+
+.tooltiptext {
+    position: relative;
+    display: inline-block;
+}
+
+.myreadings .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: -30px; 
+    /* left: 100%;
+    /* opacity: 1;  */
+}
+
+.myreadings:hover .tooltiptext {
+    visibility: visible;
+  }

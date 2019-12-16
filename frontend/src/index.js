@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(() => { document.getElementById("spin_container").remove() }, 400);
             setTimeout(() => { castHexagram() }, 400);
             setTimeout(() => { user.renderSaveBtn() }, 1000);
+            setTimeout(() => { user.setUserName() }, 1000);
             setTimeout(() => { saveListener()}, 1000);
      })
 
