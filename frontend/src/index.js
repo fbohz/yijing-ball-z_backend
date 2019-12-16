@@ -2,7 +2,6 @@ var Yijing = require('i-ching');
 
 document.addEventListener("DOMContentLoaded", function() {
     const castButton = document.querySelector(".cast-button")
-    const saveBtn = document.querySelector(".saveBtn")
     const hexagram = new Hexagram()
     const user = new User()
 
@@ -45,12 +44,16 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(() => { document.getElementById("spin_container").remove() }, 400);
             setTimeout(() => { castHexagram() }, 400);
             setTimeout(() => { user.renderSaveBtn() }, 1000);
+            setTimeout(() => { saveListener()}, 1000);
      })
 
-     if (saveBtn) {
-         saveBtn.addEventListener("click", function(){
-            user.uid = saveBtn.id
-            console.log("hi")
-    })}
+     const saveListener = () => {
+        const saveBtn = document.querySelector(".saveBtn")
+        saveBtn.addEventListener("click", function(){
+                user.uid = saveBtn.id
+                console.log(user)
+                console.log(hexagram.reading)
+        })
+    }
 });
 

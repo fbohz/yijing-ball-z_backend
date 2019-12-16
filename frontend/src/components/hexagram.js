@@ -109,7 +109,7 @@ class Hexagram {
             this.reading["hexnum"] = hexnum
             this.reading["lines"] = castLines
             this.reading["changenum"] = changenum
-            this.reading["changeLines"] = changeLines
+            this.reading["changelines"] = changeLines
 
         } else{
             this.reading["hexnum"] = hexnum
