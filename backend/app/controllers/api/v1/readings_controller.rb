@@ -13,17 +13,22 @@ class Api::V1::ReadingsController < ApplicationController
        
     end
       
-      def show
+    def show
         reading = Reading.find(params[:id])
         
         render json: reading, status: 200
-      end
+    end
       
-      def create
-        reading = Reading.create(reading_params)
-        
-        render json: reading, status: 200
+    def create
+      case
+      when params[:user_id]
+        user = User.find_or_create_by(uid: uid)
+        if user 
+          reading = user.readings.create(reading_params)
+          render json: reading, status: 200
+        end
       end
+    end
       
       def update
         reading = Reading.find(params[:id])

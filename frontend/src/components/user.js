@@ -3,8 +3,7 @@ class User {
         this.name = name
         this.uid = uid
         this.adapter = new ApiAdapter()
-        // this.reading = new Reading()
-        // getting readings through Hexagram. Hexagram has methods will need.
+        this.reading = new Reading()
         this.hexagrams = new Hexagram()
     }
 
@@ -80,7 +79,4 @@ class User {
         }
     }
 
-    saveReading(){
-
-    }
 }

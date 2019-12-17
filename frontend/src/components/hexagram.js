@@ -8,7 +8,7 @@ class Hexagram {
     }
     getHexagrams(hexnum, changenum, castLines, changeLines) { 
         if (changenum) {    
-            this.adapter.getAllHexagrams().then(result =>  {
+            this.adapter.getAll("hexagrams").then(result =>  {
                 const castresults = result[hexnum - 1]
                 const changeresults = result[changenum - 1]
                 // function finds the differences, adds one, then filters for values that are not undefined.
@@ -49,7 +49,7 @@ class Hexagram {
             })
 
         } else {
-                this.adapter.getAllHexagrams().then(result =>  {
+                this.adapter.getAll("hexagrams").then(result =>  {
                     let castresults = result[hexnum - 1]
                     this.castHex["hexname"] = `${castresults.english_name} / ${castresults.chinese_name} (${castresults.characters})`
                     this.castHex["number"] = castresults.number
