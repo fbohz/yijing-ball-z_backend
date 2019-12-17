@@ -5,7 +5,6 @@ class CreateReadings < ActiveRecord::Migration[6.0]
       t.integer :hexnum
       t.integer :changenum
       t.text :notes
-      t.string :lines
       t.string :changelines
       t.string :date
       t.timestamps

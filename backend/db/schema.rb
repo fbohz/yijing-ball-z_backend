@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 2019_12_10_180707) do
     t.integer "hexnum"
     t.integer "changenum"
     t.text "notes"
-    t.string "lines"
     t.string "changelines"
     t.string "date"
     t.datetime "created_at", precision: 6, null: false

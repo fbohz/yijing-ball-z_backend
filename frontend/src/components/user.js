@@ -74,7 +74,7 @@ class User {
             const newDiv = document.createElement("div")
             newDiv.classList.add("myreadings")
             newDiv.innerHTML = `<span class="tooltiptext">Casts</span>
-            <a class="navbar-item"><img class="is-rounded usersaved" src="styles/img/gokushenron.png" alt="${username} - Casts"></a></div>`
+            <a class="navbar-item" id="savedcasts"><img class="is-rounded usersaved" src="styles/img/gokushenron.png" alt="${username} - Casts"></a></div>`
             referenceDiv.appendChild(newDiv)
         }
     }
