@@ -25,7 +25,7 @@ class User {
         if (this.isLoggedIn() && !!hexName) {
             const referenceDiv = document.getElementById("change_lines")
             const newDiv = document.createElement("div")
-            newDiv.innerHTML = `<br><button class="button is-medium is-warning is-inverted w3-animate-opacity saveBtn">Save Reading</button>`
+            newDiv.innerHTML = `<br><button class="button is-medium is-warning w3-animate-opacity saveBtn">Save Reading</button>`
             newDiv.classList.add("container")
             const linebreak = document.createElement("br");
             referenceDiv.appendChild(linebreak)
@@ -41,7 +41,7 @@ class User {
             const referenceDiv = document.getElementById("change_lines")
             const newDiv = document.createElement("div")
             newDiv.classList.add("container")
-            newDiv.innerHTML = `<button class="button is-small is-warning w3-animate-opacity notesBtn">+ Notes</button> <br>`
+            newDiv.innerHTML = `<button class="button is-small is-warning is-inverted w3-animate-opacity notesBtn">+ Notes</button> <br>`
             newDiv.id = "notesDiv"
 
             referenceDiv.parentNode.insertBefore(newDiv, referenceDiv.nextSibling);

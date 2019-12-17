@@ -1,6 +1,6 @@
 class Api::V1::UsersController < ApplicationController
     def index
-        users = Reading.allu
+        users = Reading.all
         render json: users, status: 200
     end
 
