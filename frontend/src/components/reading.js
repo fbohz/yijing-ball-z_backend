@@ -20,18 +20,25 @@ class Reading {
     saveReading(userId){
         // userUid is used for endpoint only.
         const readingAttrs = {}
-        if (this.changenum) {
-            readingAttrs["hexnum"] = this.hexnum
-            readingAttrs["notes"] = this.notes || ""
+        const secondHex = document.getElementById("second_hexagram")
+        const notes = document.getElementById("usernotes")
+        
+        if (!!secondHex) {
+            const linesHTML = document.getElementById("change_lines").outerHTML
+
+            readingAttrs["hexnum"] = parseInt(document.getElementById("hexnum").textContent)
             readingAttrs["date"] = this.date
-            readingAttrs["changenum"] = this.changenum
-            readingAttrs["changelines"] = this.changelines
+            readingAttrs["changenum"] = parseInt(document.getElementById("changenum").textContent)
+            readingAttrs["changelines"] = linesHTML
         }else {
-            readingAttrs["hexnum"] = this.hexnum
-            readingAttrs["notes"] = this.notes || ""
+            readingAttrs["hexnum"] = parseInt(document.getElementById("hexnum").textContent)
             readingAttrs["date"] = this.date
         }
-        console.log(userId)
+
+        if (!!notes) {
+            readingAttrs["notes"] = notes.value 
+        }
+        
         // this.adapter.postUserReading(readingAttrs, userId)
         this.confMessage("<em> Reading has been added to your saved Casts! </em>")
     }
@@ -53,11 +60,9 @@ class Reading {
         </div></section>`
         main.innerHTML += template
         
-        // this.adapter.getUserReadings(userId).then(readings => {
-        //     console.log(readings)
-        // })
-
-        console.log(userId)
+        this.adapter.getUserReadings(userId).then(readings => {
+            console.log(readings)
+        })
     }
 
     getReading(userUid, readingId){

@@ -1,6 +1,6 @@
 class Reading < ApplicationRecord
   belongs_to :user
-  validates_presence_of :hexnum, :lines, :date
+  validates_presence_of :hexnum, :date
 
   def hexagram
     Hexagram.all.find_by(number: self.hexnum)

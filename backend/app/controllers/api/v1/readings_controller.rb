@@ -48,6 +48,6 @@ class Api::V1::ReadingsController < ApplicationController
       private
         def reading_params
           # permit body of frontend request.
-          params.require(:reading).permit(:body)
+          params.require(:reading).permit(:body, attributes: {})
         end
 end

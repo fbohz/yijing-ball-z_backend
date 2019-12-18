@@ -15,19 +15,6 @@ class ApiAdapter {
       return fetch(url).then(res => res.json())
     }
 
-    // postRequest(url, model){
-    //   return fetch(url, {
-    //     method: 'POST',
-    //     headers: {
-    //       'content-type': 'application/json',
-    //     },
-    //     body: JSON.stringify({ model }),
-    //   }).then(res => res.json()).catch(function(error) {
-    //     // this.main.innerHTML = error.message
-    //     console.log(error)
-    //   })  
-    // }
-
     userPost(attributes){
       const url = `${this.baseUrl}/api/v1/users`
       const user = {
@@ -39,13 +26,26 @@ class ApiAdapter {
           'content-type': 'application/json',
         },
         body: JSON.stringify({ user }),
-      }).then(res => res.json())
+      }).then(res => res.json()).catch(function(error) {
+        this.main.innerHTML = error.message
+      })  
     }
 
-    // postUserReading(value, id){
-    //   const url = `${this.baseUrl}/api/v1/users/${id}/readings/` 
-    //   this.postRequest(value, url)
-    // }
+    postUserReading(attributes, id){
+      const url = `${this.baseUrl}/api/v1/users/${id}/readings/` 
+      const reading = {
+        attributes,
+      } 
+      return fetch(url, {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify({ reading }),
+      }).then(res => res.json()).catch(function(error) {
+        this.main.innerHTML = error.message
+      })  
+    }
 
    updateReading(attributes, id) {
     const url = `${this.baseUrl}/api/v1/readings/${id}`  
