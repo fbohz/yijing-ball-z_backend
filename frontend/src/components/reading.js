@@ -35,9 +35,22 @@ class Reading {
         this.confMessage("<em> Reading has been added to your saved Casts! </em>")
     }
     
-    getAllUserReadings() {
+    getAllUserReadings(userUid, userName) {
         // simple use getUserReadings(id) from adapter - 1 AJAX call. Do
+        // removes current content
+        const oldSection = document.querySelector(".section")
 
+        if (oldSection){
+            oldSection.remove()
+        }
+        console.log(userName)
+        const main = document.querySelector("main")
+        const template = `<section class="section" > <div class="container w3-animate-opacity" id="section_savedcasts"> 
+            <div class="has-text-centered ">
+            <p class="title is-1">${userName} Saved Cast Balls</p> 
+            <img class="is-rounded ball imgcasts" src="styles/img/happygokushenron.png"> </div>
+        </div></section>`
+        main.innerHTML += template
     }
 
     getReading(userUid, readingId){

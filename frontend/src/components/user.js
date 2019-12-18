@@ -9,6 +9,9 @@ class User {
 
     isLoggedIn() {
         const logoutBtn = document.querySelector(".logout")
+        if (!!logoutBtn){
+            this.uid = logoutBtn.id
+        }
         return !!logoutBtn
     }
 

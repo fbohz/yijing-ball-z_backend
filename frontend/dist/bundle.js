@@ -20815,6 +20815,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const castButton = document.querySelector(".cast-button")
     const hexagram = new Hexagram()
     const user = new User()
+    const reading = new Reading()
+    const castListener = () => {
+        const userCasts = document.querySelector(".usersaved")
+        user.setUserName()
+        if (!!userCasts && user.isLoggedIn()) {
+            userCasts.addEventListener('click', () => {
+                reading.getAllUserReadings(user.uid, user.name)
+            })
+        }
+    }
+    setTimeout(() => { castListener() }, 1000);
 
     const castHexagram = () => {
         const reading = Yijing.ask()
@@ -20868,6 +20879,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     console.log(hexagram.reading)
         })}
     }
+
 });
 
 
