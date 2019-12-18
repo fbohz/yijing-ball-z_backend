@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
          }(document, 'script', 'facebook-jssdk'));
     // <!-- FB SDK LOAD END -->
     const user = new User() 
+    const adapter = new ApiAdapter()
+
     const logoutScript = `    
       function logout() { 
         document.querySelector(".logout").addEventListener('click', 
@@ -64,9 +66,15 @@ document.addEventListener("DOMContentLoaded", function() {
         // console.log(`thanks for login ${response.name}`)
         user.name = response.name
         user.uid = response.id
-        user.createOrFindUser(user.uid, user.name)
-        // logs user
-        loginUser(user.name, user.uid)
+
+          const userAttrs = {}
+            userAttrs["name"] = user.name
+            userAttrs["uid"] = user.uid
+            userAttrs["provider"] = "facebook"
+        
+          // make call to find OR create user then get res.id to pass to login so it is saved for later calls. This method finds or creates by UID.
+        adapter.userPost(userAttrs).then(res => loginUser(user.name, res.id))
+
         });
       }
 

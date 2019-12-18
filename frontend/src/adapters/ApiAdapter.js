@@ -33,17 +33,13 @@ class ApiAdapter {
       const user = {
         attributes,
       } 
-      console.log(JSON.stringify({ user }))
       return fetch(url, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
         },
         body: JSON.stringify({ user }),
-      }).then(res => res.json()).catch(function(error) {
-        // this.main.innerHTML = error.message
-        console.log(error)
-      })  
+      }).then(res => res.json())
     }
 
     // postUserReading(value, id){

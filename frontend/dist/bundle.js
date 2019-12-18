@@ -20821,7 +20821,7 @@ document.addEventListener("DOMContentLoaded", function() {
         user.setUserName()
         if (!!userCasts && user.isLoggedIn()) {
             userCasts.addEventListener('click', () => {
-                reading.getAllUserReadings(user.uid, user.name)
+                reading.getAllUserReadings(user.id, user.name)
             })
         }
     }
@@ -20875,10 +20875,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const saveBtn = document.querySelector(".saveBtn")
         if (saveBtn) {
             saveBtn.addEventListener("click", function(){
-                    user.uid = saveBtn.id
+                    user.id = saveBtn.id
                     console.log(user)
                     // console.log(hexagram.reading)
-                    reading.saveReading(user.uid)
+                    reading.saveReading(user.id)
         })}
     }
 

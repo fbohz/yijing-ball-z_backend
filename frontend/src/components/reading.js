@@ -17,7 +17,7 @@ class Reading {
         return date 
     }
 
-    saveReading(userUid){
+    saveReading(userId){
         // userUid is used for endpoint only.
         const readingAttrs = {}
         if (this.changenum) {
@@ -31,11 +31,12 @@ class Reading {
             readingAttrs["notes"] = this.notes || ""
             readingAttrs["date"] = this.date
         }
-        this.adapter.postUserReading(readingAttrs, userUid)
+        console.log(userId)
+        // this.adapter.postUserReading(readingAttrs, userId)
         this.confMessage("<em> Reading has been added to your saved Casts! </em>")
     }
     
-    getAllUserReadings(userUid, userName) {
+    getAllUserReadings(userId, userName) {
         // simple use getUserReadings(id) from adapter - 1 AJAX call. Do
         // removes current content
         const oldSection = document.querySelector(".section")
@@ -52,9 +53,11 @@ class Reading {
         </div></section>`
         main.innerHTML += template
         
-        this.adapter.getUserReadings(userUid).then(readings => {
-            console.log(readings)
-        })
+        // this.adapter.getUserReadings(userId).then(readings => {
+        //     console.log(readings)
+        // })
+
+        console.log(userId)
     }
 
     getReading(userUid, readingId){

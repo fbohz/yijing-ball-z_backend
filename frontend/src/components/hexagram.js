@@ -44,7 +44,7 @@ class Hexagram {
                     document.getElementById("change_lines").appendChild(p)
                     
                 })
-                console.log(findChangeLines)
+                // console.log(findChangeLines)
 
             })
 

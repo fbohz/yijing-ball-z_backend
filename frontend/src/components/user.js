@@ -1,7 +1,8 @@
 class User {
-    constructor(name, uid){
+    constructor(name, uid, id){
         this.name = name
         this.uid = uid
+        this.id = id
         this.adapter = new ApiAdapter()
         this.reading = new Reading()
         this.hexagrams = new Hexagram()
@@ -10,7 +11,7 @@ class User {
     isLoggedIn() {
         const logoutBtn = document.querySelector(".logout")
         if (!!logoutBtn){
-            this.uid = logoutBtn.id
+            this.id = logoutBtn.id
         }
         return !!logoutBtn
     }
@@ -67,7 +68,7 @@ class User {
 
     addButtonUserId(className) {
         const btn = document.querySelector(`.${className}`)
-        // get uid from logout btn previously set on FB SDK
+        // get Rails id from logout btn previously set on FB SDK
         btn.id = document.querySelector(".logout").id
     }
 
@@ -82,13 +83,13 @@ class User {
         }
     }
 
-    createOrFindUser(userUid, userName){
-        const userAttrs = {}
-        userAttrs["name"] = userName
-        userAttrs["uid"] = userUid
-        userAttrs["provider"] = "facebook"
+    // createOrFindUser(userUid, userName){
+    //     const userAttrs = {}
+    //     userAttrs["name"] = userName
+    //     userAttrs["uid"] = userUid
+    //     userAttrs["provider"] = "facebook"
         
-        this.adapter.userPost(userAttrs)
-    }
+    //     this.adapter.userPost(userAttrs).then(res => console.log(res))
+    // }
 
 }
