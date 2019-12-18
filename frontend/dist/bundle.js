@@ -20866,7 +20866,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   // default seconds need to be set to 4000 for both.
             setTimeout(() => { document.getElementById("spin_container").remove() }, 400);
             setTimeout(() => { castHexagram() }, 400);
-            setTimeout(() => { user.renderSaveBtn() }, 1000);
+            setTimeout(() => { user.renderSaveBtn() }, 800);
             setTimeout(() => { user.setUserName() }, 1000);
             setTimeout(() => { saveListener()}, 1000);
      })
@@ -20877,7 +20877,8 @@ document.addEventListener("DOMContentLoaded", function() {
             saveBtn.addEventListener("click", function(){
                     user.uid = saveBtn.id
                     console.log(user)
-                    console.log(hexagram.reading)
+                    // console.log(hexagram.reading)
+                    reading.saveReading(user.uid)
         })}
     }
 

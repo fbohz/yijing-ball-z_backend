@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // console.log(`thanks for login ${response.name}`)
         user.name = response.name
         user.uid = response.id
+        user.createOrFindUser(user.uid, user.name)
         // logs user
         loginUser(user.name, user.uid)
         });

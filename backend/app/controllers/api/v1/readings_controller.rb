@@ -22,7 +22,7 @@ class Api::V1::ReadingsController < ApplicationController
     def create
       case
       when params[:user_id]
-        user = User.find_or_create_by(uid: uid)
+        user = User.find_by_id(:user_id)
         if user 
           reading = user.readings.create(reading_params)
           render json: reading, status: 200

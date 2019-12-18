@@ -82,4 +82,13 @@ class User {
         }
     }
 
+    createOrFindUser(userUid, userName){
+        const userAttrs = {}
+        userAttrs["name"] = userName
+        userAttrs["uid"] = userUid
+        userAttrs["provider"] = "facebook"
+        
+        this.adapter.userPost(userAttrs)
+    }
+
 }

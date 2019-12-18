@@ -2,6 +2,7 @@
 class ApiAdapter {
     constructor() {
       this.baseUrl = 'http://localhost:3000'
+      this.main = document.querySelector("main")
     }
 
     getAll(endpoint){
@@ -14,28 +15,46 @@ class ApiAdapter {
       return fetch(url).then(res => res.json())
     }
 
-    postUserReading(value, id){
-      const url = `${this.baseUrl}/api/v1/users/${id}/readings/` 
-      const content = {
-        body: value,
-      }
-  
+    // postRequest(url, model){
+    //   return fetch(url, {
+    //     method: 'POST',
+    //     headers: {
+    //       'content-type': 'application/json',
+    //     },
+    //     body: JSON.stringify({ model }),
+    //   }).then(res => res.json()).catch(function(error) {
+    //     // this.main.innerHTML = error.message
+    //     console.log(error)
+    //   })  
+    // }
+
+    userPost(attributes){
+      const url = `${this.baseUrl}/api/v1/users`
+      const user = {
+        attributes,
+      } 
+      console.log(JSON.stringify({ user }))
       return fetch(url, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
         },
-        body: JSON.stringify({ content }),
+        body: JSON.stringify({ user }),
       }).then(res => res.json()).catch(function(error) {
-        main.innerHTML = error.message
+        // this.main.innerHTML = error.message
+        console.log(error)
       })  
-      
     }
 
-   updateReading(value, id) {
+    // postUserReading(value, id){
+    //   const url = `${this.baseUrl}/api/v1/users/${id}/readings/` 
+    //   this.postRequest(value, url)
+    // }
+
+   updateReading(attributes, id) {
     const url = `${this.baseUrl}/api/v1/readings/${id}`  
     const reading = {
-      body: value,
+      body: attributes,
     }
 
     return fetch(url, {
@@ -45,24 +64,19 @@ class ApiAdapter {
       },
       body: JSON.stringify({ reading }),
     }).then(res => res.json()).catch(function(error) {
-      main.innerHTML = error.message
+      this.main.innerHTML = error.message
     })  
   }
 
-  deleteReading(value, id) {
+  deleteReading(id) {
     const url = `${this.baseUrl}/api/v1/readings/${id}`  
-    const reading = {
-      body: value,
-    }
-    
     return fetch(url, {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json',
       },
-      body: JSON.stringify({ reading }),
     }).then(res => res.json()).catch(function(error) {
-      main.innerHTML = error.message
+      this.main.innerHTML = error.message
     })  
   }
 }

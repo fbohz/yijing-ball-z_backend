@@ -47,10 +47,14 @@ class Reading {
         const main = document.querySelector("main")
         const template = `<section class="section" > <div class="container w3-animate-opacity" id="section_savedcasts"> 
             <div class="has-text-centered ">
-            <p class="title is-1">${userName} Saved Cast Balls</p> 
+            <p class="title is-1">${userName} Cast Balls</p> 
             <img class="is-rounded ball imgcasts" src="styles/img/happygokushenron.png"> </div>
         </div></section>`
         main.innerHTML += template
+        
+        this.adapter.getUserReadings(userUid).then(readings => {
+            console.log(readings)
+        })
     }
 
     getReading(userUid, readingId){
