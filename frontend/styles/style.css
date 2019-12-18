@@ -58,7 +58,7 @@ to {
 
 div.container {
     /* animation-duration: 3s; */
-    animation-duration: 0s;
+    animation-duration: 0.5s;
 }
 
 div.results {

@@ -20825,6 +20825,7 @@ document.addEventListener("DOMContentLoaded", function() {
             })
         }
     }
+
     setTimeout(() => { castListener() }, 1000);
 
     const castHexagram = () => {
