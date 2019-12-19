@@ -32,8 +32,7 @@ class ApiAdapter {
       })  
     }
 
-    postUserReading(attributes, id){
-      // const url = `${this.baseUrl}/api/v1/users/${id}/readings/` 
+    postUserReading(attributes){
       const url = `${this.baseUrl}/api/v1/readings`
       const reading = {
         attributes,
@@ -47,8 +46,7 @@ class ApiAdapter {
         },
         body: JSON.stringify({ reading }),
       }).then(res => res.json()).catch(error => {
-        console.log(error.message)
-        // this.main.innerHTML = error.message
+        this.main.innerHTML = error.message
       })  
     }
 
@@ -77,12 +75,9 @@ class ApiAdapter {
         'content-type': 'application/json',
       },
     }).then(res => res.json()).catch(error => {
+      // console.log(error.message)
       this.main.innerHTML = error.message
     })  
   }
 
-  // renderError(message){
-  //   this.main.innerHTML = message
-
-  // }
 }

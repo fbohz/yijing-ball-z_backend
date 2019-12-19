@@ -42,8 +42,10 @@ class Reading {
             readingAttrs["notes"] = notes.value 
         }
         
-        this.adapter.postUserReading(readingAttrs, userId)
-        this.confMessage("<em> Reading has been added to your saved Casts! </em>")
+        // this.adapter.postUserReading(readingAttrs)
+        document.getElementById("results_container").remove()
+        const template = `<div class="has-text-centered "><p id="conf_texto"><br><br> <strong><em> Reading has been added to your saved casts! </em></strong></p><img class="is-rounded ball" src="styles/img/happygohan.png"></div>`        
+        this.confMessage(template, "section_main")
     }
     
     getAllUserReadings(userId, userName) {
@@ -81,8 +83,8 @@ class Reading {
         // deleteReading(value, id)
     }
 
-    confMessage(msg) {
-        document.getElementById("flashmsg").innerHTML = msg
+    confMessage(msg, elId) {
+        document.getElementById(elId).innerHTML = msg
     }
 
     renderReading() {

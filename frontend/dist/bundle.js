@@ -20850,7 +20850,6 @@ document.addEventListener("DOMContentLoaded", function() {
             hexagram.saveReadingAttributes(num, castLines)
 
         }
-        // console.log(reading)
     }
     const simulateCasting = () => {
         const spinTemplate = `<div class="has-text-centered "><img class="is-rounded ball" src="styles/img/shenron.png"><p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Continue meditating on your question while Shenron casts your hexagram... </strong> </small></p></div>`
@@ -20876,8 +20875,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (saveBtn) {
             saveBtn.addEventListener("click", function(){
                     user.id = saveBtn.id
-                    // console.log(user)
-                    // console.log(hexagram.reading)
                     reading.saveReading(user.id)
         })}
     }
