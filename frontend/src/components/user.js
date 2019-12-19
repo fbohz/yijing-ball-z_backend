@@ -87,14 +87,13 @@ class User {
     }
 
     getAllUserReadings(userId, userName) {
-        // simple use getUserReadings(id) from adapter - 1 AJAX call. Do
         // removes current content
         const oldSection = document.querySelector(".section")
 
         if (oldSection){
             oldSection.remove()
         }
-        // console.log(userName)
+
         const main = document.querySelector("main")
         const template = `<section class="section"> <div class="container w3-animate-opacity" id="section_savedcasts"> 
             <div class="has-text-centered">
@@ -104,22 +103,18 @@ class User {
         main.innerHTML += template
         const ul = document.querySelector("ul")
         const renderLi = (reading) => {
-            // const change = reading.changenum
             if (!!reading.changenum){
-                return `       <a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"> <li data-id=${reading.id}>Reading date: ${reading.date} | Casted Hex# ${reading.hexnum} | Changing Hex# ${reading.changenum}</li> </a>`
+                return `<a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"> <li data-id=${reading.id}>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong> | Changing Hex# <strong>${reading.changenum}</strong></li> </a>`
 
             } else {
-                return `<a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"><li data-id=${reading.id}>Reading date: ${reading.date} | Casted Hex# ${reading.hexnum}</li>  </a>`
+                return `<a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"><li data-id=${reading.id}>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong></li>  </a>`
             }
         }
         this.adapter.getUserReadings(userId).then(readings => 
-            // console.log(readings)
                 readings.map(reading => {
                     ul.innerHTML += renderLi(reading)
                 })
         )
-
-        // main.innerHTML += ul
     }   
 
 }
