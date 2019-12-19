@@ -20,30 +20,35 @@ class ApiAdapter {
       const user = {
         attributes,
       } 
+
       return fetch(url, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
         },
         body: JSON.stringify({ user }),
-      }).then(res => res.json()).catch(function(error) {
+      }).then(res => res.json()).catch(error => {
         this.main.innerHTML = error.message
       })  
     }
 
     postUserReading(attributes, id){
-      const url = `${this.baseUrl}/api/v1/users/${id}/readings/` 
+      // const url = `${this.baseUrl}/api/v1/users/${id}/readings/` 
+      const url = `${this.baseUrl}/api/v1/readings`
       const reading = {
         attributes,
       } 
+
+      console.log(JSON.stringify({ reading }))
       return fetch(url, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
         },
         body: JSON.stringify({ reading }),
-      }).then(res => res.json()).catch(function(error) {
-        this.main.innerHTML = error.message
+      }).then(res => res.json()).catch(error => {
+        console.log(error.message)
+        // this.main.innerHTML = error.message
       })  
     }
 
@@ -59,7 +64,7 @@ class ApiAdapter {
         'content-type': 'application/json',
       },
       body: JSON.stringify({ reading }),
-    }).then(res => res.json()).catch(function(error) {
+    }).then(res => res.json()).catch(error => {
       this.main.innerHTML = error.message
     })  
   }
@@ -71,8 +76,13 @@ class ApiAdapter {
       headers: {
         'content-type': 'application/json',
       },
-    }).then(res => res.json()).catch(function(error) {
+    }).then(res => res.json()).catch(error => {
       this.main.innerHTML = error.message
     })  
   }
+
+  // renderError(message){
+  //   this.main.innerHTML = message
+
+  // }
 }

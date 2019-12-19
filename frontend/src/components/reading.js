@@ -29,17 +29,20 @@ class Reading {
             readingAttrs["hexnum"] = parseInt(document.getElementById("hexnum").textContent)
             readingAttrs["date"] = this.date
             readingAttrs["changenum"] = parseInt(document.getElementById("changenum").textContent)
-            readingAttrs["changelines"] = linesHTML
+            // strip all leading and trailing, and compress internal whitespace to a single space
+            readingAttrs["changelines"] = linesHTML.replace(/\s+/g, " ").trim();
+            readingAttrs["user_id"] = userId
         }else {
             readingAttrs["hexnum"] = parseInt(document.getElementById("hexnum").textContent)
             readingAttrs["date"] = this.date
+            readingAttrs["user_id"] = userId
         }
 
         if (!!notes) {
             readingAttrs["notes"] = notes.value 
         }
         
-        // this.adapter.postUserReading(readingAttrs, userId)
+        this.adapter.postUserReading(readingAttrs, userId)
         this.confMessage("<em> Reading has been added to your saved Casts! </em>")
     }
     

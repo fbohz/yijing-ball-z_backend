@@ -20,15 +20,18 @@ class Api::V1::ReadingsController < ApplicationController
     end
       
     def create
-      binding.pry
-      # case
-      # when params[:user_id]
-      #   user = User.find_by_id(:user_id)
-      #   if user 
-      #     reading = user.readings.create(reading_params)
-      #     render json: reading, status: 200
-      #   end
-      # end
+      # binding.pry
+      case
+      when params[:user_id]
+        user = User.find_by_id(:user_id)
+        if user 
+          reading = user.readings.create(reading_params)
+          render json: reading, status: 200
+        end
+      else
+          reading = Reading.create(reading_params)
+          render json: reading, status: 200
+      end
     end
       
       def update
