@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         }
         setTimeout(() => { user.renderSaveBtn() }, 1000);
+        setTimeout(() => { saveListener()}, 1000);
     }
     const simulateCasting = () => {
         const spinTemplate = `<div class="has-text-centered "><img class="is-rounded ball" src="styles/img/shenron.png"><p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Continue meditating on your question while Shenron casts your hexagram... </strong> </small></p></div>`
@@ -45,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(() => { document.getElementById("spin_container").remove() }, 400);
             setTimeout(() => { castHexagram() }, 400);
             setTimeout(() => { user.setUserName() }, 800);
-            setTimeout(() => { saveListener()}, 1000);
      })
 
      const saveListener = () => {
