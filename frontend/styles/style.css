@@ -92,3 +92,7 @@ div.flashmsg {
 .myreadings:hover .tooltiptext {
     visibility: visible;
   }
+
+  /* ul {
+    list-style: none;
+  } */

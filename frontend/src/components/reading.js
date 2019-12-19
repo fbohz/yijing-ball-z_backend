@@ -42,33 +42,11 @@ class Reading {
             readingAttrs["notes"] = notes.value 
         }
         
-        // this.adapter.postUserReading(readingAttrs)
+        this.adapter.postUserReading(readingAttrs)
         document.getElementById("results_container").remove()
         const template = `<div class="has-text-centered "><p id="conf_texto"><br><br> <strong><em> Reading has been added to your saved casts! </em></strong></p><img class="is-rounded ball" src="styles/img/happygohan.png"></div>`        
         this.confMessage(template, "section_main")
-    }
-    
-    getAllUserReadings(userId, userName) {
-        // simple use getUserReadings(id) from adapter - 1 AJAX call. Do
-        // removes current content
-        const oldSection = document.querySelector(".section")
-
-        if (oldSection){
-            oldSection.remove()
-        }
-        console.log(userName)
-        const main = document.querySelector("main")
-        const template = `<section class="section" > <div class="container w3-animate-opacity" id="section_savedcasts"> 
-            <div class="has-text-centered ">
-            <p class="title is-1">${userName} Cast Balls</p> 
-            <img class="is-rounded ball imgcasts" src="styles/img/happygokushenron.png"> </div>
-        </div></section>`
-        main.innerHTML += template
-        
-        this.adapter.getUserReadings(userId).then(readings => {
-            console.log(readings)
-        })
-    }
+    }    
 
     getReading(userUid, readingId){
         // start with getUserReadings then find specific reading by readingId 1 AJAX call.  .then as hexagram js

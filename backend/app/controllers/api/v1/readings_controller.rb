@@ -20,7 +20,6 @@ class Api::V1::ReadingsController < ApplicationController
     end
       
     def create
-      # binding.pry
       case
       when params[:user_id]
         user = User.find_by_id(:user_id)
@@ -34,23 +33,23 @@ class Api::V1::ReadingsController < ApplicationController
       end
     end
       
-      def update
+    def update
         reading = Reading.find(params[:id])
         reading.update(reading_params)
         render json: reading, status: 200
-      end
+    end
       
-      def destroy 
+    def destroy 
         reading = Reading.find(params[:id])
         reading.delete
     
         render json: {readingId: reading.id}
-      end
+    end
     
     
-      private
-        def reading_params
-          # permit body of frontend request.
-          params.require(:reading).permit(:body, attributes: {})
-        end
+    private
+    def reading_params
+      # permit body, attributes of frontend request.
+      params.require(:reading).permit(:body, attributes: {})
+    end
 end

@@ -20816,17 +20816,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const hexagram = new Hexagram()
     const user = new User()
     const reading = new Reading()
-    const castListener = () => {
-        const userCasts = document.querySelector(".usersaved")
-        user.setUserName()
-        if (!!userCasts && user.isLoggedIn()) {
-            userCasts.addEventListener('click', () => {
-                reading.getAllUserReadings(user.id, user.name)
-            })
-        }
-    }
-
-    setTimeout(() => { castListener() }, 1000);
 
     const castHexagram = () => {
         const reading = Yijing.ask()
@@ -20850,6 +20839,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hexagram.saveReadingAttributes(num, castLines)
 
         }
+        setTimeout(() => { user.renderSaveBtn() }, 1000);
     }
     const simulateCasting = () => {
         const spinTemplate = `<div class="has-text-centered "><img class="is-rounded ball" src="styles/img/shenron.png"><p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Continue meditating on your question while Shenron casts your hexagram... </strong> </small></p></div>`
@@ -20865,8 +20855,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   // default seconds need to be set to 4000 for both.
             setTimeout(() => { document.getElementById("spin_container").remove() }, 400);
             setTimeout(() => { castHexagram() }, 400);
-            setTimeout(() => { user.renderSaveBtn() }, 800);
-            setTimeout(() => { user.setUserName() }, 1000);
+            setTimeout(() => { user.setUserName() }, 800);
             setTimeout(() => { saveListener()}, 1000);
      })
 

@@ -23,9 +23,9 @@ class User {
         }
     }
     renderSaveBtn() {
-        const hexName = document.getElementById("hexname").textContent
+        // const hexName = document.getElementById("hexname").textContent
 
-        if (this.isLoggedIn() && !!hexName) {
+        if (this.isLoggedIn()) {
             const referenceDiv = document.getElementById("change_lines")
             const newDiv = document.createElement("div")
             newDiv.innerHTML = `<br><button class="button is-medium is-warning w3-animate-opacity saveBtn">Save Reading</button>`
@@ -80,7 +80,46 @@ class User {
             newDiv.innerHTML = `<span class="tooltiptext">Casts</span>
             <a class="navbar-item" id="savedcasts"><img class="is-rounded usersaved" src="styles/img/gokushenron.png" alt="${username} - Casts"></a></div>`
             referenceDiv.appendChild(newDiv)
+            newDiv.addEventListener('click', () => {
+                this.getAllUserReadings(this.id, username)
+            })
         }
     }
+
+    getAllUserReadings(userId, userName) {
+        // simple use getUserReadings(id) from adapter - 1 AJAX call. Do
+        // removes current content
+        const oldSection = document.querySelector(".section")
+
+        if (oldSection){
+            oldSection.remove()
+        }
+        // console.log(userName)
+        const main = document.querySelector("main")
+        const template = `<section class="section"> <div class="container w3-animate-opacity" id="section_savedcasts"> 
+            <div class="has-text-centered">
+            <p class="title is-1">${userName} Cast Balls</p> 
+            <img class="is-rounded ball imgcasts" src="styles/img/happygokushenron.png"> </div></div> 
+            <div class="container"> <ul style="list-style: none;"></ul> </div></section>`
+        main.innerHTML += template
+        const ul = document.querySelector("ul")
+        const renderLi = (reading) => {
+            // const change = reading.changenum
+            if (!!reading.changenum){
+                return `       <a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"> <li data-id=${reading.id}>Reading date: ${reading.date} | Casted Hex# ${reading.hexnum} | Changing Hex# ${reading.changenum}</li> </a>`
+
+            } else {
+                return `<a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"><li data-id=${reading.id}>Reading date: ${reading.date} | Casted Hex# ${reading.hexnum}</li>  </a>`
+            }
+        }
+        this.adapter.getUserReadings(userId).then(readings => 
+            // console.log(readings)
+                readings.map(reading => {
+                    ul.innerHTML += renderLi(reading)
+                })
+        )
+
+        // main.innerHTML += ul
+    }   
 
 }
