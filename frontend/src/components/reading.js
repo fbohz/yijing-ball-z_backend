@@ -69,6 +69,7 @@ class Reading {
 
         xNodes.forEach(xBtn => {
             xBtn.addEventListener ('click', e => {
+                e.stopImmediatePropagation()
                 const conf = confirm("Are you sure you want to delete this reading? This action cannot be undone.")
                 const aTag = e.target.closest("a")
                 // if conf pop-up clicks 'ok' conf is 'true'

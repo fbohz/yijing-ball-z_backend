@@ -20830,7 +20830,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hexagram.renderHexagrams(num, changenum)
 
             // make sure save hexagram.reading attributes
-            hexagram.saveReadingAttributes(num, castLines, changenum, changeLines)
+            hexagram.saveReadingAttributes(num, changenum, castLines, changeLines)
 
         } else {
             hexagram.getHexagrams(num)

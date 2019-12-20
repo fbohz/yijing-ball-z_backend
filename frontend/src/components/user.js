@@ -89,10 +89,14 @@ class User {
     getAllUserReadings(userId, userName) {
         // removes current content
         const oldSection = document.querySelector(".section")
+        const resultsCont = document.getElementById("results_container")
 
         if (oldSection){
             oldSection.remove()
-        }
+        } else if (resultsCont){
+            resultsCont.remove()
+            // oldSection.remove()
+        } 
 
         const main = document.querySelector("main")
         const template = `<section class="section"> <div class="container w3-animate-opacity" id="section_savedcasts"> 
@@ -135,21 +139,28 @@ class User {
     showUserReading(reading_id) {
         console.log(reading_id)
         const oldSection = document.querySelector(".section")
+        // const resultsCont = document.getElementById("results_container")
 
         if (oldSection){
             oldSection.remove()
-        }
+            // resultsCont.remove()
+        } 
 
         const main = document.querySelector("main")
         let template = `<div id="results_container" class="results w3-animate-opacity" style="display:none;"> <div class="columns is-multiline is-1-mobile is-centered"> <div id="fist_hexagram" class="column is-half"> <p id="hexname"></p> <object id="result_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object> <p id="hexnum"> </p> <p id="judgement"></p> <p id="image"></p> </div> <div id="second_hexagram" class="column is-half"> <p id="changehexname"></p> <object id="change_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object> <p id="changenum"> </p> <p id="chjudgement"></p> <p id="chimage" ></p> </div> </div> <div id="change_lines" class=""> <h3><strong>Changing Lines</strong></h3> </div> </div>`
         
         main.innerHTML += template
-        
+
         this.adapter.getSingleReading(reading_id).then(reading => {
+            
             if (!!reading.changenum) {
+                this.hexagrams.getHexagrams(reading.hexnum, reading.changenum)
                 this.hexagrams.renderHexagrams(reading.hexnum, reading.changenum)
+                this.hexagrams.saveReadingAttributes(reading.hexnum, reading.changenum)
             } else {
+                this.hexagrams.getHexagrams(reading.hexnum)
                 this.hexagrams.renderHexagrams(reading.hexnum)
+                this.hexagrams.saveReadingAttributes(reading.hexnum)
             }
         })
 

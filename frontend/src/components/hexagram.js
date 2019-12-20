@@ -12,20 +12,6 @@ class Hexagram {
                 const castresults = result[hexnum - 1]
                 const changeresults = result[changenum - 1]
                 // function finds the differences, adds one, then filters for values that are not undefined.
-                const findChangeLines = castLines.map((currElement, index) => {
-                    if(currElement !== changeLines[index]) {
-                        return index + 1;
-                     } 
-                }).filter(function(val){ return val!==undefined; });
-
-                const getChangeLines = findChangeLines.map(linenum => {
-                    const changeline = `line_${linenum}`
-                    const changeTexts = []
-
-                    changeTexts.push(`<strong>Line ${linenum}: </strong> ${changeresults[changeline]}`)
-                    return changeTexts
-                })
-                this.changeLines = getChangeLines
 
                 this.castHex["hexname"] = `${castresults.english_name} / ${castresults.chinese_name} (${castresults.characters})`
                 this.castHex["number"] = castresults.number
@@ -38,13 +24,10 @@ class Hexagram {
                 this.changeHex["judgement"] = changeresults.judgement
 
                 this.parseHex()
-                this.changeLines.map(line =>{
-                    const p = document.createElement("p")
-                    p.innerHTML =  this.renderChangeLines(line)
-                    document.getElementById("change_lines").appendChild(p)
-                    
-                })
-                // console.log(findChangeLines)
+
+                if (!!castLines) {
+                    this.processChangeLines(castLines, changeLines, changeresults)
+                }
 
             })
 
@@ -58,6 +41,30 @@ class Hexagram {
                 this.parseHex()
         })
         }
+    }
+
+    processChangeLines(castLines, changeLines, changeresults) {
+        const findChangeLines = castLines.map((currElement, index) => {
+            if(currElement !== changeLines[index]) {
+                return index + 1;
+             } 
+        }).filter(function(val){ return val!==undefined; });
+
+        const getChangeLines = findChangeLines.map(linenum => {
+            const changeline = `line_${linenum}`
+            const changeTexts = []
+
+            changeTexts.push(`<strong>Line ${linenum}: </strong> ${changeresults[changeline]}`)
+            return changeTexts
+        })
+        this.changeLines = getChangeLines
+
+        this.changeLines.map(line =>{
+            const p = document.createElement("p")
+            p.innerHTML =  this.renderChangeLines(line)
+            document.getElementById("change_lines").appendChild(p)
+            
+        })
     }
 
     parseHex() {
@@ -104,11 +111,11 @@ class Hexagram {
         }
     }
 
-    saveReadingAttributes(hexnum, castLines, changenum, changeLines) {
+    saveReadingAttributes(hexnum, changenum, castLines, changeLines) {
         if (changenum) {
             this.reading["hexnum"] = hexnum
-            this.reading["lines"] = castLines
             this.reading["changenum"] = changenum
+            this.reading["lines"] = castLines
             this.reading["changelines"] = changeLines
 
         } else{
