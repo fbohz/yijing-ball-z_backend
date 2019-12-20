@@ -105,10 +105,10 @@ class User {
         const renderLi = (reading) => {
 
             if (!!reading.changenum){
-                return `<a  id="${reading.id}" class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"> <li>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong> | Changing Hex# <strong>${reading.changenum}</strong>&nbsp;<i class="fas fa-times-circle delete_reading"></i></li> </a>`
+                return `<a  id="${reading.id}" class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"> <li>Reading Date: <strong> ${reading.date} </strong> | Casted Hex# <strong>${reading.hexnum}</strong> | Changing Hex# <strong>${reading.changenum}</strong>&nbsp;<i class="fas fa-times-circle delete_reading"></i></li> </a>`
 
             } else {
-                return `<a id="${reading.id}" class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"><li>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong> &nbsp; <i   class="fas fa-times-circle delete_reading"></i></li>  </a>`
+                return `<a id="${reading.id}" class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"><li> <strong> Reading Date: ${reading.date} </strong> | Casted Hex# <strong>${reading.hexnum}</strong> &nbsp; <i   class="fas fa-times-circle delete_reading"></i></li>  </a>`
             }
         }
         this.adapter.getUserReadings(userId).then(readings => 
