@@ -103,7 +103,7 @@ class User {
         main.innerHTML += template
         const ul = document.querySelector("ul")
         const renderLi = (reading) => {
-            // const xBtn = `<a class="delete_reading"><i class="fas fa-times-circle"></i></a>`
+
             if (!!reading.changenum){
                 return `<a  id="${reading.id}" class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"> <li>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong> | Changing Hex# <strong>${reading.changenum}</strong>&nbsp;<i class="fas fa-times-circle delete_reading"></i></li> </a>`
 

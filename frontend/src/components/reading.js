@@ -57,36 +57,31 @@ class Reading {
     }
 
 
-    deleteReading(readingId) {
-        console.log(readingId)
+    renderReading() {
+        
     }
 
+    deleteReading(readingId) {
+        // console.log(readingId)
+        this.adapter.deleteReading(readingId)
+    }
+    
     confMessage(msg, elId) {
         document.getElementById(elId).innerHTML = msg
     }
 
-    renderReading() {
-
-    }
-
     xButtonsListeners() {
         const xNodes = document.querySelectorAll(".delete_reading")
-        // const xNodes2 = document.getElementsByClassName("delete_reading")
-        // const xButtons = Array.from(xNodes)
-        // console.log(xNodes)
+
         xNodes.forEach(xBtn => {
             xBtn.addEventListener ('click', e => {
-                // console.log(e.target.parentNode)
                 const conf = confirm("Are you sure you want to delete this reading? This action cannot be undone.")
                 const aTag = e.target.closest("a")
-                // console.log(aTag)
-
+                // if conf pop-up clicks 'ok' conf is 'true'
                 if (conf) {
-                    console.log(aTag.id)
-                    // const id = e.target.parentNode.id
-                    // if (!!id) {
-                    //     console.log("hi")
-                    // }
+                    this.deleteReading(aTag.id)
+                    aTag.remove()
+                    this.confMessage("Reading Successfully Deleted!", "flashmsg")
                 }      
             })
         })
