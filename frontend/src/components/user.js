@@ -90,12 +90,13 @@ class User {
         // removes current content
         const oldSection = document.querySelector(".section")
         const resultsCont = document.getElementById("results_container")
+        const read_date = document.getElementById("date_read")
 
         if (oldSection){
             oldSection.remove()
-        } else if (resultsCont){
+        } else if (resultsCont && read_date){
             resultsCont.remove()
-            // oldSection.remove()
+            read_date.remove()
         } 
 
         const main = document.querySelector("main")
@@ -107,12 +108,15 @@ class User {
         main.innerHTML += template
         const ul = document.querySelector("ul")
         const renderLi = (reading) => {
+            if (!!reading) {
+                if (!!reading.changenum){
+                    return `<a id="${reading.id}" class="navbar-item reading_li"><img class="image is-24x24" src="styles/img/ball2.png"> <li class=""> &nbsp;Reading Date: <strong> ${reading.date} </strong> | Casted Hex# <strong>${reading.hexnum}</strong> | Changing Hex# <strong>${reading.changenum}</strong>&nbsp;<i class="fas fa-times-circle delete_reading"></i></li> </a>`
 
-            if (!!reading.changenum){
-                return `<a id="${reading.id}" class="navbar-item reading_li"><img class="image is-24x24" src="styles/img/ball2.png"> <li class=""> &nbsp;Reading Date: <strong> ${reading.date} </strong> | Casted Hex# <strong>${reading.hexnum}</strong> | Changing Hex# <strong>${reading.changenum}</strong>&nbsp;<i class="fas fa-times-circle delete_reading"></i></li> </a>`
-
+                } else {
+                    return `<a id="${reading.id}" class="navbar-item reading_li"><img class="image is-24x24" src="styles/img/ball2.png"> <li class=""> &nbsp;Reading Date: <strong> ${reading.date} </strong> | Casted Hex# <strong>${reading.hexnum}</strong> &nbsp; <i class="fas fa-times-circle delete_reading"></i></li>  </a>`
+                }
             } else {
-                return `<a id="${reading.id}" class="navbar-item reading_li"><img class="image is-24x24" src="styles/img/ball2.png"> <li class=""> &nbsp;Reading Date: <strong> ${reading.date} </strong> | Casted Hex# <strong>${reading.hexnum}</strong> &nbsp; <i class="fas fa-times-circle delete_reading"></i></li>  </a>`
+                return `<li>No readings saved. Cast a new reading and save to add one!</li>`
             }
         }
         this.adapter.getUserReadings(userId).then(readings => 
@@ -139,15 +143,13 @@ class User {
     showUserReading(reading_id) {
         console.log(reading_id)
         const oldSection = document.querySelector(".section")
-        // const resultsCont = document.getElementById("results_container")
 
         if (oldSection){
             oldSection.remove()
-            // resultsCont.remove()
         } 
 
         const main = document.querySelector("main")
-        let template = `<div id="results_container" class="results w3-animate-opacity" style="display:none;"> <div class="columns is-multiline is-1-mobile is-centered"> <div id="fist_hexagram" class="column is-half"> <p id="hexname"></p> <object id="result_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object> <p id="hexnum"> </p> <p id="judgement"></p> <p id="image"></p> </div> <div id="second_hexagram" class="column is-half"> <p id="changehexname"></p> <object id="change_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object> <p id="changenum"> </p> <p id="chjudgement"></p> <p id="chimage" ></p> </div> </div> <div id="change_lines" class=""> <h3><strong>Changing Lines</strong></h3> </div> </div>`
+        let template = ` <div id="date_read" class="">  </div> <div id="results_container" class="results w3-animate-opacity" style="display:none;"> <div class="columns is-multiline is-1-mobile is-centered"> <div id="fist_hexagram" class="column is-half"> <p id="hexname"></p> <object id="result_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object> <p id="hexnum"> </p> <p id="judgement"></p> <p id="image"></p> </div> <div id="second_hexagram" class="column is-half"> <p id="changehexname"></p> <object id="change_hex" class="" type="image/svg+xml" width="202" height="202" data=""></object> <p id="changenum"> </p> <p id="chjudgement"></p> <p id="chimage" ></p> </div> </div> <div id="change_lines" class=""> </div> <div id="notes_usr"> </div> </div>`
         
         main.innerHTML += template
 
@@ -156,18 +158,74 @@ class User {
             if (!!reading.changenum) {
                 this.hexagrams.getHexagrams(reading.hexnum, reading.changenum)
                 this.hexagrams.renderHexagrams(reading.hexnum, reading.changenum)
+                document.getElementById("change_lines").innerHTML += reading.changelines
+                document.getElementById("date_read").innerHTML = `<h4><strong>Reading Date: </strong> ${reading.date}</h4>`
                 this.hexagrams.saveReadingAttributes(reading.hexnum, reading.changenum)
             } else {
                 this.hexagrams.getHexagrams(reading.hexnum)
                 this.hexagrams.renderHexagrams(reading.hexnum)
+                document.getElementById("date_read").innerHTML = `<h4><strong>Reading Date: </strong> ${reading.date}</h4>`
                 this.hexagrams.saveReadingAttributes(reading.hexnum)
             }
+
+            if (!!reading.notes) {
+                const notes = document.getElementById("notes_usr")
+                notes.style.display = 'block'
+                notes.innerHTML = `<h3><strong>Notes</strong></h3> <p id="un_input">${reading.notes}</p>`
+            }
+            this.renderEditBtn()
         })
-
-
-
     }
 
-    
+    renderEditBtn() {
+        if (this.isLoggedIn()) {
+            const referenceDiv = document.getElementById("notes_usr")
+            const newDiv = document.createElement("div")
+            newDiv.innerHTML = `<br><button class="button is-medium is-warning is-inverted w3-animate-opacity editBtn">Edit Notes </button>`
+            newDiv.classList.add("container")
+            // const linebreak = document.createElement("br");
+            // referenceDiv.appendChild(linebreak)
 
+            referenceDiv.parentNode.insertBefore(newDiv, referenceDiv.nextSibling);
+            this.addButtonUserId("editBtn")
+            setTimeout(() => { this.editBtnListener()}, 600);
+        }
+    }
+
+    editBtnListener(){
+        const notesNode = document.getElementById("notes_usr")
+        const notesText = document.getElementById("un_input").textContent
+        
+            const editBtn = document.querySelector(".editBtn")
+            editBtn.addEventListener('click', ()=>{
+                // const editBtn = document.querySelector(".editBtn")
+                // const textDiv = document.createElement("div")
+                //     notesTextArea.closest('.clicked').remove()
+                //     editBtn.textContent = "Edit Notes"
+                // } else { 
+                    // textDiv.innerHTML = `<h3><strong>Notes</strong></h3><div class="notesField media-content has-text-centered "> <textarea id="notes_usr" cols="50" rows="6">${notesText}</textarea> </div>`
+                    notesNode.innerHTML =  `<div class="notesField media-content has-text-centered "> <textarea id="notes_usr" cols="50" rows="6">${notesText}</textarea>  <i class="fas fa-minus-circle discard_update"></i></div>`
+                    notesNode.classList.add("clicked")
+                    editBtn.textContent = "Update Notes"
+                    editBtn.classList.remove("editBtn")
+                    editBtn.classList.add("updateBtn")
+                    discardListen()
+
+                })
+       const discardListen = () => {
+        // if (notesNode.classList.contains("clicked")) {
+        //     console.log("hi")
+          const notesNode = document.getElementById("notes_usr")
+           const updateBtn = document.querySelector(".updateBtn")
+           const minusNode = document.querySelector(".discard_update")
+           minusNode.addEventListener ('click', e => {
+               notesNode.closest('.clicked').remove()
+                updateBtn.textContent = "Edit Notes"
+                notesNode.classList.remove("clicked")
+                updateBtn.classList.remove("updateBtn")
+                updateBtn.classList.add("editBtn")
+            })   
+    //    }
+       }         
+    }
 }

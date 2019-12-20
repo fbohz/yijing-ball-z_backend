@@ -96,3 +96,7 @@ div.flashmsg {
 .delete_reading:hover {
     color:#e25555;
 }
+
+.discard_update:hover {
+    color:#e25555;
+}

@@ -48,10 +48,6 @@ class Reading {
         this.confMessage(template, "section_main")
     }    
 
-    getReading(userUid, readingId){
-        // start with getUserReadings then find specific reading by readingId 1 AJAX call.  .then as hexagram js
-    }
-
     updateReading(readingId) {
         // updateReading(value, id)
     }
