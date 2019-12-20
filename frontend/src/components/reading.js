@@ -71,22 +71,24 @@ class Reading {
 
     xButtonsListeners() {
         const xNodes = document.querySelectorAll(".delete_reading")
-        const xButtons = Array.from(xNodes)
-        console.log(xNodes)
-        xButtons.map(xBtn => {
+        // const xNodes2 = document.getElementsByClassName("delete_reading")
+        // const xButtons = Array.from(xNodes)
+        // console.log(xNodes)
+        xNodes.forEach(xBtn => {
             xBtn.addEventListener ('click', e => {
-                console.log(e.target.parentNode.id)
+                // console.log(e.target.parentNode)
                 const conf = confirm("Are you sure you want to delete this reading? This action cannot be undone.")
+                const aTag = e.target.closest("a")
+                // console.log(aTag)
+
                 if (conf) {
-                    console.log(e.target.parentNode.id)
+                    console.log(aTag.id)
                     // const id = e.target.parentNode.id
                     // if (!!id) {
                     //     console.log("hi")
                     // }
                 }      
-                })
-
- 
+            })
         })
     }
 
