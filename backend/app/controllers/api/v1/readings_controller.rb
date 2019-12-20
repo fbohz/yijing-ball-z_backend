@@ -34,6 +34,7 @@ class Api::V1::ReadingsController < ApplicationController
     end
       
     def update
+      binding.pry
         reading = Reading.find(params[:id])
         reading.update(reading_params)
         render json: reading, status: 200

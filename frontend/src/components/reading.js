@@ -56,13 +56,7 @@ class Reading {
         // updateReading(value, id)
     }
 
-
-    renderReading() {
-        
-    }
-
     deleteReading(readingId) {
-        // console.log(readingId)
         this.adapter.deleteReading(readingId)
     }
     
@@ -86,5 +80,9 @@ class Reading {
             })
         })
     }
+
+   truncateText(input){
+    input.length > 8 ? `${input.substring(0, 8)}...` : input;
+   } 
 
 }

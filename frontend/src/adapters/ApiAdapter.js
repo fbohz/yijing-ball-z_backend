@@ -15,6 +15,11 @@ class ApiAdapter {
       return fetch(url).then(res => res.json())
     }
 
+    getSingleReading(reading_id){
+      const url = `${this.baseUrl}/api/v1/readings/${reading_id}/`  
+      return fetch(url).then(res => res.json())
+    }
+
     userPost(attributes){
       const url = `${this.baseUrl}/api/v1/users`
       const user = {
@@ -50,18 +55,17 @@ class ApiAdapter {
       })  
     }
 
-   updateReading(attributes, id) {
+   updateReading(updatedNotes, id) {
     const url = `${this.baseUrl}/api/v1/readings/${id}`  
-    const reading = {
-      body: attributes,
-    }
 
     return fetch(url, {
       method: 'PATCH',
       headers: {
         'content-type': 'application/json',
       },
-      body: JSON.stringify({ reading }),
+      body: JSON.stringify({
+        "notes": updatedNotes
+      })
     }).then(res => res.json()).catch(error => {
       this.main.innerHTML = error.message
     })  
@@ -75,7 +79,6 @@ class ApiAdapter {
         'content-type': 'application/json',
       },
     }).then(res => res.json()).catch(error => {
-      // console.log(error.message)
       this.main.innerHTML = error.message
     })  
   }

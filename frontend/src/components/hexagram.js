@@ -21,7 +21,7 @@ class Hexagram {
                 const getChangeLines = findChangeLines.map(linenum => {
                     const changeline = `line_${linenum}`
                     const changeTexts = []
-                    // changeTexts.push(changeresults[`${changeline}`])
+
                     changeTexts.push(`<strong>Line ${linenum}: </strong> ${changeresults[changeline]}`)
                     return changeTexts
                 })
