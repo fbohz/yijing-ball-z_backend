@@ -103,11 +103,12 @@ class User {
         main.innerHTML += template
         const ul = document.querySelector("ul")
         const renderLi = (reading) => {
+            // const xBtn = `<a class="delete_reading"><i class="fas fa-times-circle"></i></a>`
             if (!!reading.changenum){
-                return `<a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"> <li data-id=${reading.id}>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong> | Changing Hex# <strong>${reading.changenum}</strong></li> </a>`
+                return `<a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"> <li>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong> | Changing Hex# <strong>${reading.changenum}</strong>&nbsp;<i id="${reading.id}" class="fas fa-times-circle delete_reading"></i></li> </a>`
 
             } else {
-                return `<a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"><li data-id=${reading.id}>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong></li>  </a>`
+                return `<a class="navbar-item"><img class="image is-24x24" src="styles/img/ball2.png"><li>Reading date: ${reading.date} | Casted Hex# <strong>${reading.hexnum}</strong> &nbsp; <i  id="${reading.id}" class="fas fa-times-circle delete_reading"></i></li>  </a>`
             }
         }
         this.adapter.getUserReadings(userId).then(readings => 
@@ -115,6 +116,8 @@ class User {
                     ul.innerHTML += renderLi(reading)
                 })
         )
+        setTimeout(() => { this.reading.xButtonsListeners()}, 600);        
+        
     }   
 
 }

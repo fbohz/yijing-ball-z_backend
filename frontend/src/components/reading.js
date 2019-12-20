@@ -58,7 +58,7 @@ class Reading {
 
 
     deleteReading(readingId) {
-        // deleteReading(value, id)
+        console.log(readingId)
     }
 
     confMessage(msg, elId) {
@@ -67,6 +67,27 @@ class Reading {
 
     renderReading() {
 
+    }
+
+    xButtonsListeners() {
+        const xNodes = document.querySelectorAll(".delete_reading")
+        const xButtons = Array.from(xNodes)
+        console.log(xNodes)
+        xButtons.map(xBtn => {
+            xBtn.addEventListener ('click', e => {
+                console.log(e.target.parentNode.id)
+                const conf = confirm("Are you sure you want to delete this reading? This action cannot be undone.")
+                if (conf) {
+                    console.log(e.target.parentNode.id)
+                    // const id = e.target.parentNode.id
+                    // if (!!id) {
+                    //     console.log("hi")
+                    // }
+                }      
+                })
+
+ 
+        })
     }
 
 }

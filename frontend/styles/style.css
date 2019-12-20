@@ -93,6 +93,6 @@ div.flashmsg {
     visibility: visible;
   }
 
-  /* ul {
-    list-style: none;
-  } */
+.delete_reading:hover {
+    color:#e25555;
+}
