@@ -183,8 +183,6 @@ class User {
             const newDiv = document.createElement("div")
             newDiv.innerHTML = `<br><button class="button is-medium is-warning is-inverted w3-animate-opacity editBtn">Edit Notes </button>`
             newDiv.classList.add("container")
-            // const linebreak = document.createElement("br");
-            // referenceDiv.appendChild(linebreak)
 
             referenceDiv.parentNode.insertBefore(newDiv, referenceDiv.nextSibling);
             this.addButtonUserId("editBtn")
@@ -198,13 +196,7 @@ class User {
         
             const editBtn = document.querySelector(".editBtn")
             editBtn.addEventListener('click', ()=>{
-                // const editBtn = document.querySelector(".editBtn")
-                // const textDiv = document.createElement("div")
-                //     notesTextArea.closest('.clicked').remove()
-                //     editBtn.textContent = "Edit Notes"
-                // } else { 
-                    // textDiv.innerHTML = `<h3><strong>Notes</strong></h3><div class="notesField media-content has-text-centered "> <textarea id="notes_usr" cols="50" rows="6">${notesText}</textarea> </div>`
-                    notesNode.innerHTML =  `<div class="notesField media-content has-text-centered "> <textarea id="notes_usr" cols="50" rows="6">${notesText}</textarea>  <i class="fas fa-minus-circle discard_update"></i></div>`
+                    notesNode.innerHTML =  `<div class="notesField media-content has-text-centered "> <textarea id="notes_usr" cols="50" rows="6">${notesText}</textarea><br></div>`
                     notesNode.classList.add("clicked")
                     editBtn.textContent = "Update Notes"
                     editBtn.classList.remove("editBtn")
@@ -213,19 +205,19 @@ class User {
 
                 })
        const discardListen = () => {
-        // if (notesNode.classList.contains("clicked")) {
-        //     console.log("hi")
-          const notesNode = document.getElementById("notes_usr")
+        if (notesNode.classList.contains("clicked")) {
            const updateBtn = document.querySelector(".updateBtn")
-           const minusNode = document.querySelector(".discard_update")
-           minusNode.addEventListener ('click', e => {
-               notesNode.closest('.clicked').remove()
-                updateBtn.textContent = "Edit Notes"
-                notesNode.classList.remove("clicked")
-                updateBtn.classList.remove("updateBtn")
-                updateBtn.classList.add("editBtn")
+           const notesUp = document.querySelector("textarea#notes_usr")
+           updateBtn.addEventListener ('click', e => {
+                // console.log(notesUp.value)
+                notesNode.innerHTML = `<h3><strong>Notes</strong></h3> <p id="un_input">${notesUp.value}</p>`
+                this.reading.confMessage("Reading Notes Successfully Updated!", "flashmsg")
+                editBtn.textContent = "Edit Notes"
+                editBtn.classList.add("editBtn")
+                editBtn.classList.remove("updateBtn")
+            //    this.adapter.updateReading(notesUp.value, updateBtn.id)
             })   
-    //    }
+       }
        }         
     }
 }
