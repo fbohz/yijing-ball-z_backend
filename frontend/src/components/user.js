@@ -141,7 +141,7 @@ class User {
     }
     
     showUserReading(reading_id) {
-        console.log(reading_id)
+        // console.log(reading_id)
         const oldSection = document.querySelector(".section")
 
         if (oldSection){
@@ -173,11 +173,11 @@ class User {
                 notes.style.display = 'block'
                 notes.innerHTML = `<h3><strong>Notes</strong></h3> <p id="un_input">${reading.notes}</p>`
             }
-            this.renderEditBtn()
+            this.renderEditBtn(reading_id)
         })
     }
 
-    renderEditBtn() {
+    renderEditBtn(reading_id) {
         if (this.isLoggedIn()) {
             const referenceDiv = document.getElementById("notes_usr")
             const newDiv = document.createElement("div")
@@ -185,7 +185,7 @@ class User {
             newDiv.classList.add("container")
 
             referenceDiv.parentNode.insertBefore(newDiv, referenceDiv.nextSibling);
-            this.addButtonUserId("editBtn")
+            document.querySelector(".editBtn").id = reading_id
             setTimeout(() => { this.editBtnListener()}, 600);
         }
     }
@@ -201,6 +201,7 @@ class User {
                     editBtn.textContent = "Update Notes"
                     editBtn.classList.remove("editBtn")
                     editBtn.classList.add("updateBtn")
+                    // console.log(editBtn.id)
                     discardListen()
 
                 })
@@ -209,13 +210,10 @@ class User {
            const updateBtn = document.querySelector(".updateBtn")
            const notesUp = document.querySelector("textarea#notes_usr")
            updateBtn.addEventListener ('click', e => {
-                // console.log(notesUp.value)
                 notesNode.innerHTML = `<h3><strong>Notes</strong></h3> <p id="un_input">${notesUp.value}</p>`
                 this.reading.confMessage("Reading Notes Successfully Updated!", "flashmsg")
-                updateBtn.textContent = "Edit Notes"
-                updateBtn.classList.add("editBtn")
-                updateBtn.classList.remove("updateBtn")
-            //    this.adapter.updateReading(notesUp.value, updateBtn.id)
+                this.adapter.updateReading(notesUp.value, editBtn.id)
+                // updateBtn.remove()
             })   
        }
        }         

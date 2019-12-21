@@ -34,7 +34,6 @@ class Api::V1::ReadingsController < ApplicationController
     end
       
     def update
-      binding.pry
         reading = Reading.find(params[:id])
         reading.update(reading_params)
         render json: reading, status: 200
@@ -51,6 +50,6 @@ class Api::V1::ReadingsController < ApplicationController
     private
     def reading_params
       # permit body, attributes of frontend request.
-      params.require(:reading).permit(:body, attributes: {})
+      params.require(:reading).permit(:body, :notes, attributes: {})
     end
 end

@@ -57,7 +57,8 @@ class ApiAdapter {
 
    updateReading(updatedNotes, id) {
     const url = `${this.baseUrl}/api/v1/readings/${id}`  
-
+    // console.log(url)
+    // console.log(updatedNotes)
     return fetch(url, {
       method: 'PATCH',
       headers: {
