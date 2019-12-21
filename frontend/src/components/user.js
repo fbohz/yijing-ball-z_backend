@@ -212,9 +212,9 @@ class User {
                 // console.log(notesUp.value)
                 notesNode.innerHTML = `<h3><strong>Notes</strong></h3> <p id="un_input">${notesUp.value}</p>`
                 this.reading.confMessage("Reading Notes Successfully Updated!", "flashmsg")
-                editBtn.textContent = "Edit Notes"
-                editBtn.classList.add("editBtn")
-                editBtn.classList.remove("updateBtn")
+                updateBtn.textContent = "Edit Notes"
+                updateBtn.classList.add("editBtn")
+                updateBtn.classList.remove("updateBtn")
             //    this.adapter.updateReading(notesUp.value, updateBtn.id)
             })   
        }
