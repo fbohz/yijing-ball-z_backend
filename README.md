@@ -1,7 +1,7 @@
 # [Yijing Ball-Z]()
 Dragon Ball Z takes on the Yijing! Done with Vanilla JS frontend and the backed is a Rails API.
 
-![yijingballz_screenshots](https://user-images.githubusercontent.com/15071636/71324897-8bbf1580-24c3-11ea-9e83-1162dc808105.JPG)
+![yijingballz_screenshots](https://user-images.githubusercontent.com/15071636/71324928-fec88c00-24c3-11ea-9c69-dcb72b48085d.jpg)
 
 The Yijing (iChing) is an influential book of divinitation with a history of over two millenia. This online Yijing takes a different style by letting you cast your questions in the spirit of Dragon Ball and its characters! Go ahead and give it a try, Shenron will be please to guide you through your hardest decisions.
 
