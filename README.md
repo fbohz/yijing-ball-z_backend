@@ -1,24 +1,35 @@
-# README
+# [Yijing Ball-Z]()
+Dragon Ball Z takes on the Yijing! Done with Vanilla JS frontend and the backed is a Rails API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![yijingballz_screenshots](https://user-images.githubusercontent.com/15071636/71324897-8bbf1580-24c3-11ea-9e83-1162dc808105.JPG)
 
-Things you may want to cover:
+The Yijing (iChing) is an influential book of divinitation with a history of over two millenia. This online Yijing takes a different style by letting you cast your questions in the spirit of Dragon Ball and its characters! Go ahead and give it a try, Shenron will be please to guide you through your hardest decisions.
 
-* Ruby version
+## Usage
+Try here: [tbd](tbd). <br/>
+FB Sign-In possible frontend by Facebook SDK for JavaScript.
 
-* System dependencies
+To use this app:
+Backend: just clone, run `bundle install`,`rake db:create`, `rake db:migrate`, `rake db:seed` and then run `rails s`.
+Frontend: Run a simple HTTPS server on terminal `python simple-https-server.py`.
 
-* Configuration
+Make sure you have Postgres  installed as this app uses this for its database. Questions? Email me at misguidedapps@gmail.com.
 
-* Database creation
+## Contribution
+For submitting something back, be it a patch, some documentation, or new feature requires some level of community interactions. Let's connect!
 
-* Database initialization
+Committing code is easy:
 
-* How to run the test suite
+* Fork this repository
+* Create a local development branch for the bug fix, new feature.
+* Make the change, and push your local branch to your Github fork with descriptive commits in the standard format.
+* Send me a pull request for your changes to be included
 
-* Services (job queues, cache servers, search engines, etc.)
+ Feel free to email me at misguidedapps@gmail.com.
 
-* Deployment instructions
+## License
+[Yijing Ball-Z](https://github.com/fbohz/yijing-ball-z/blob/master/LICENSE.md) is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
-* ...
+## More Info
+Watch my demo [here](TBD).
+Read my blog post [here](TBD).
