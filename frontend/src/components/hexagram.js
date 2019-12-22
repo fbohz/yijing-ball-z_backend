@@ -7,6 +7,8 @@ class Hexagram {
         this.changeLines = []
     }
     getHexagrams(hexnum, changenum, castLines, changeLines) { 
+        // console.log(`Num ${hexnum} index: ${hexnum - 1}`)
+        // console.log(`Ch ${changenum} index: ${changenum - 1}`)
         if (changenum) {    
             this.adapter.getAll("hexagrams").then(result =>  {
                 const castresults = result[hexnum - 1]
@@ -14,12 +16,12 @@ class Hexagram {
                 // function finds the differences, adds one, then filters for values that are not undefined.
 
                 this.castHex["hexname"] = `${castresults.english_name} / ${castresults.chinese_name} (${castresults.characters})`
-                this.castHex["number"] = castresults.number
+                this.castHex["number"] = hexnum
                 this.castHex["image"] = castresults.image
                 this.castHex["judgement"] = castresults.judgement
                 
                 this.changeHex["hexname"] = `${changeresults.english_name} / ${changeresults.chinese_name} (${changeresults.characters})`
-                this.changeHex["number"] = changeresults.number
+                this.changeHex["number"] = changenum
                 this.changeHex["image"] = changeresults.image
                 this.changeHex["judgement"] = changeresults.judgement
 
@@ -35,7 +37,7 @@ class Hexagram {
                 this.adapter.getAll("hexagrams").then(result =>  {
                     let castresults = result[hexnum - 1]
                     this.castHex["hexname"] = `${castresults.english_name} / ${castresults.chinese_name} (${castresults.characters})`
-                    this.castHex["number"] = castresults.number
+                    this.castHex["number"] = hexnum
                     this.castHex["image"] = castresults.image
                     this.castHex["judgement"] = castresults.judgement
                 this.parseHex()

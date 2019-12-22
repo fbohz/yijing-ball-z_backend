@@ -20825,7 +20825,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (reading.change) {
             const changenum  = reading.change.to.number
             const changeLines = Yijing.hexagram(changenum).lines
-
             hexagram.getHexagrams(num, changenum, castLines, changeLines)
             hexagram.renderHexagrams(num, changenum)
 
