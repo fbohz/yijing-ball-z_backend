@@ -3,11 +3,11 @@ Dragon Ball Z takes on the Yijing! Done with Vanilla JS frontend and the backed 
 
 ![yijingballz_screenshots](https://user-images.githubusercontent.com/15071636/71324928-fec88c00-24c3-11ea-9c69-dcb72b48085d.jpg)
 
-The Yijing (iChing) is an influential book of divinitation with a history of over two millenia. This online Yijing takes a different style by letting you cast your questions in the spirit of Dragon Ball and its characters! Go ahead and give it a try, Shenron will be please to guide you through your hardest decisions.
+The Yijing (iChing) is an influential book of divinitation with a history of over two millenia. This online Yijing takes on a different style by letting you cast your questions in the spirit of Dragon Ball and its characters! Go ahead and give it a try, Shenron will be pleased to guide you through your hardest decisions.
 
 ## Usage
 Try here: [tbd](tbd). <br/>
-FB Sign-In possible frontend by Facebook SDK for JavaScript.
+Note: FB Sign-In possible frontend by Facebook SDK for JavaScript.
 
 To use this app:
 Backend: just clone, run `bundle install`,`rake db:create`, `rake db:migrate`, `rake db:seed` and then run `rails s`.
