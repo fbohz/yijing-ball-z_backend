@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
           });
             
           FB.AppEvents.logPageView(); 
-          simulateLogin()  
+          startUpDiv()  
           checkLoginState()  
           addScript(loginSub)
         };
@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // console.log(response);                   // The current login status of the person.
         if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-          resetLoginDiv()
+          resetStartupDiv()
           setTimeout(() => { testAPI() }, 550);
           // testAPI();  
         } else {                                 // Not logged into your webpage or we are unable to tell.
         //   document.getElementById('status').innerHTML = 'Please log ' +
         //     'into this webpage.';
-          resetLoginDiv()
+          resetStartupDiv()
           console.log('please login')
 
         }
@@ -101,14 +101,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.appendChild(script);
       }
 
-      function simulateLogin() {
+      function startUpDiv() {
         const spin = document.getElementById("spin_container")
-        const spinTemplate = `<div class="has-text-centered "><img class="is-rounded ball" src="styles/img/dbzfam.png"><p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Welcome! Getting everything ready...</strong> </small></p></div>`
+        const spinTemplate = `<div class="has-text-centered "><img class="is-rounded ball" src="styles/img/dbzfam.png"><p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Getting things ready...</strong> </small></p></div>`
         spin.innerHTML += spinTemplate
         spin.style.display = 'inline'
     }
 
-    function resetLoginDiv(){
+    function resetStartupDiv(){
       setTimeout(() => { document.getElementById("spin_container").innerHTML = "" }, 500);
       setTimeout(() => { document.getElementById("spin_container").style.display = 'none' }, 500);
       setTimeout(() => { document.getElementById("home").style.display = 'block' }, 500);
