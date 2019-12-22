@@ -41,16 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // console.log(response);                   // The current login status of the person.
         if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-          setTimeout(() => { document.getElementById("spin_container").style.display = 'none' }, 500);
-          setTimeout(() => { document.getElementById("home").style.display = 'block' }, 500);
+          resetLoginDiv()
           setTimeout(() => { testAPI() }, 550);
           // testAPI();  
         } else {                                 // Not logged into your webpage or we are unable to tell.
         //   document.getElementById('status').innerHTML = 'Please log ' +
         //     'into this webpage.';
-          setTimeout(() => { document.getElementById("spin_container").style.display = 'none' }, 500);
-          setTimeout(() => { document.getElementById("home").style.display = 'block' }, 500);
-
+          resetLoginDiv()
           console.log('please login')
 
         }
@@ -109,6 +106,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const spinTemplate = `<div class="has-text-centered "><img class="is-rounded ball" src="styles/img/dbzfam.png"><p><i class="fa fa-spinner w3-spin spin" style="font-size:64px"></i> <br><br> <small> <strong> Welcome! Getting everything ready...</strong> </small></p></div>`
         spin.innerHTML += spinTemplate
         spin.style.display = 'inline'
+    }
+
+    function resetLoginDiv(){
+      setTimeout(() => { document.getElementById("spin_container").innerHTML = "" }, 500);
+      setTimeout(() => { document.getElementById("spin_container").style.display = 'none' }, 500);
+      setTimeout(() => { document.getElementById("home").style.display = 'block' }, 500);
     }
 
 });
