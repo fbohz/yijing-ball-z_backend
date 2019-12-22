@@ -201,7 +201,6 @@ class User {
                     editBtn.textContent = "Update Notes"
                     editBtn.classList.remove("editBtn")
                     editBtn.classList.add("updateBtn")
-                    // console.log(editBtn.id)
                     discardListen()
 
                 })
@@ -213,7 +212,8 @@ class User {
                 notesNode.innerHTML = `<h3><strong>Notes</strong></h3> <p id="un_input">${notesUp.value}</p>`
                 this.reading.confMessage("Reading Notes Successfully Updated!", "flashmsg")
                 this.adapter.updateReading(notesUp.value, editBtn.id)
-                // updateBtn.remove()
+                updateBtn.remove()
+                setTimeout(() => { document.getElementById("flashmsg").textContent = " " }, 4000);
             })   
        }
        }         
