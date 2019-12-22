@@ -43,7 +43,7 @@ class ApiAdapter {
         attributes,
       } 
 
-      console.log(JSON.stringify({ reading }))
+      // console.log(JSON.stringify({ reading }))
       return fetch(url, {
         method: 'POST',
         headers: {

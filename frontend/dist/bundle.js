@@ -20853,9 +20853,9 @@ document.addEventListener("DOMContentLoaded", function() {
             simulateCasting()
             // FYI setTimeout() delays execution. 4000 is 4 seconds. 
                   // default seconds need to be set to 4000 for both.
-            setTimeout(() => { document.getElementById("spin_container").remove() }, 400);
-            setTimeout(() => { castHexagram() }, 400);
-            setTimeout(() => { user.setUserName() }, 800);
+            setTimeout(() => { document.getElementById("spin_container").remove() }, 4000);
+            setTimeout(() => { castHexagram() }, 4000);
+            setTimeout(() => { user.setUserName() }, 4800);
      })
 
      const saveListener = () => {
