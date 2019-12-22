@@ -31,5 +31,5 @@ Committing code is easy:
 [Yijing Ball-Z](https://github.com/fbohz/yijing-ball-z/blob/master/LICENSE.md) is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## More Info
-Watch my demo [here](TBD).
+Watch my demo [here](https://youtu.be/F7mGfHanf38).
 Read my blog post [here](TBD).
