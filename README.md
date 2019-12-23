@@ -33,3 +33,8 @@ Committing code is easy:
 ## More Info
 Watch my demo [here](https://youtu.be/F7mGfHanf38).
 Read my blog post [here](TBD).
+
+## AppShots
+![yi1](https://user-images.githubusercontent.com/15071636/71361331-6e488500-2571-11ea-830f-cfa903bec36e.GIF)
+![yi2](https://user-images.githubusercontent.com/15071636/71360544-0729d100-256f-11ea-8b53-36aa55161f4c.gif)
+![yi3](https://user-images.githubusercontent.com/15071636/71361336-70aadf00-2571-11ea-9e92-4851e27d6628.GIF)
