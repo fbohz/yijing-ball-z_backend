@@ -201,12 +201,12 @@ class User {
                     editBtn.textContent = "Update Notes"
                     editBtn.classList.remove("editBtn")
                     editBtn.classList.add("updateBtn")
-                    discardListen()
+                    updateListen()
 
                 })
        
                 
-        const discardListen = () => {
+        const updateListen = () => {
         if (notesNode.classList.contains("clicked")) {
            const updateBtn = document.querySelector(".updateBtn")
            const notesUp = document.querySelector("textarea#notes_usr")
