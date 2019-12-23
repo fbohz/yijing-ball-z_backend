@@ -57,7 +57,7 @@ class User {
                     notesTextArea.closest('.clicked').remove()
                     notesBtn.textContent = "+ Notes"
                 } else {
-                    textDiv.innerHTML = `<div class="notesField media-content has-text-centered "> <textarea id="usernotes" cols="50" rows="6" placeholder="Add Notes"></textarea> </div>`
+                    textDiv.innerHTML = `<div class="notesField media-content has-text-centered "> <textarea id="usernotes" cols="45" rows="6" placeholder="Add Notes"></textarea> </div>`
                     newDiv.appendChild(textDiv)
                     notesBtn.textContent = "- Notes"
                     document.querySelector(".notesField").classList.add("clicked")
