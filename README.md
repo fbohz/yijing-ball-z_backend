@@ -1,7 +1,9 @@
 # [Yijing Ball-Z]()
 Dragon Ball Z takes on the Yijing! Done with Vanilla JS frontend and the backed is a Rails API.
 
-![yijingballz_screenshots](https://user-images.githubusercontent.com/15071636/71324980-a04fdd80-24c4-11ea-9e97-9a7654618083.jpg)
+![yi1](https://user-images.githubusercontent.com/15071636/71361331-6e488500-2571-11ea-830f-cfa903bec36e.GIF)
+![yi2](https://user-images.githubusercontent.com/15071636/71360544-0729d100-256f-11ea-8b53-36aa55161f4c.gif)
+![yi3](https://user-images.githubusercontent.com/15071636/71361336-70aadf00-2571-11ea-9e92-4851e27d6628.GIF)
 
 The Yijing (iChing) is an influential book of divinitation with a history of over two millenia. This online Yijing takes on a different style by letting you cast your questions in the spirit of Dragon Ball and its characters! Go ahead and give it a try, Shenron will be pleased to guide you through your hardest decisions.
 
@@ -33,8 +35,3 @@ Committing code is easy:
 ## More Info
 Watch my demo [here](https://youtu.be/F7mGfHanf38).
 Read my blog post [here](TBD).
-
-## AppShots
-![yi1](https://user-images.githubusercontent.com/15071636/71361331-6e488500-2571-11ea-830f-cfa903bec36e.GIF)
-![yi2](https://user-images.githubusercontent.com/15071636/71360544-0729d100-256f-11ea-8b53-36aa55161f4c.gif)
-![yi3](https://user-images.githubusercontent.com/15071636/71361336-70aadf00-2571-11ea-9e92-4851e27d6628.GIF)
