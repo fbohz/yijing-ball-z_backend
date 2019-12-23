@@ -4,7 +4,6 @@ class Api::V1::ReadingsController < ApplicationController
       when params[:user_id]
         user = User.find_by_id(params[:user_id])
         if user 
-          # binding.pry
           readings = user.readings.sort_by { |reading| reading.created_at }
           render json: readings, status: 200
         end
