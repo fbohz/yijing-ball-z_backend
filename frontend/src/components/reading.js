@@ -40,6 +40,8 @@ class Reading {
 
         if (!!notes) {
             readingAttrs["notes"] = notes.value 
+        } else {
+            readingAttrs["notes"] = " "
         }
         
         this.adapter.postUserReading(readingAttrs)
