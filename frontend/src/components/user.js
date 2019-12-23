@@ -204,18 +204,29 @@ class User {
                     discardListen()
 
                 })
-       const discardListen = () => {
+       
+                
+        const discardListen = () => {
         if (notesNode.classList.contains("clicked")) {
            const updateBtn = document.querySelector(".updateBtn")
            const notesUp = document.querySelector("textarea#notes_usr")
            updateBtn.addEventListener ('click', e => {
-                notesNode.innerHTML = `<h3><strong>Notes</strong></h3> <p id="un_input">${notesUp.value}</p>`
-                this.reading.confMessage("Reading Notes Successfully Updated!", "flashmsg")
-                this.adapter.updateReading(notesUp.value, editBtn.id)
-                updateBtn.remove()
-                setTimeout(() => { document.getElementById("flashmsg").textContent = " " }, 4000);
+               if (!!notesUp && !!notesUp.value) {
+                    updateProcess(notesUp.value, editBtn.id)
+                } else {
+                    updateProcess(" ", editBtn.id)
+                }
             })   
-       }
-       }         
+         }
+         const updateProcess = (notesValue, editBtnId) => {
+            const updateBtn = document.querySelector(".updateBtn")
+            notesNode.innerHTML = `<h3><strong>Notes</strong></h3> <p id="un_input">${notesValue}</p>`
+            this.reading.confMessage("Reading Notes Successfully Updated!", "flashmsg")
+            this.adapter.updateReading(notesValue, editBtnId)
+            updateBtn.remove()
+            setTimeout(() => { document.getElementById("flashmsg").textContent = " " }, 4000);
+         }
+       } 
+
     }
 }
