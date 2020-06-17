@@ -32287,3 +32287,12 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 30ms (Views: 1.3ms | ActiveRecord: 2.1ms | Allocations: 1722)
 
 
+Started POST "/graphql" for ::1 at 2020-06-17 12:26:43 -0500
+  [1m[35m (10.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n        mutation {\n          createUser(input: {\n            name: \"Artesano Spirit\",\n            uid: \"450560255893556\",\n            provider: \"facebook\" \n          }){\n            id\n            name\n          }\n        }\n      ", "graphql"=>{"query"=>"\n        mutation {\n          createUser(input: {\n            name: \"Artesano Spirit\",\n            uid: \"450560255893556\",\n            provider: \"facebook\" \n          }){\n            id\n            name\n          }\n        }\n      "}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "450560255893556"], ["LIMIT", 1]]
+  ↳ app/graphql/mutations/create_user.rb:12:in `resolve'
+Completed 200 OK in 348ms (Views: 0.4ms | ActiveRecord: 44.2ms | Allocations: 21224)
+
+
