@@ -19,6 +19,10 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+#  graphiql-rails to work
+require "sprockets/railtie"
+
+
 module Backend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -36,6 +40,8 @@ module Backend
     # config.session_store :cookie_store, key: 'bla'
     # config.middleware.use ActionDispatch::Cookies # Required for all session management
     # config.middleware.use ActionDispatch::Session::CookieStore, config.session_options
+    config.middleware.use Rack::MethodOverride
+
 
   end
   
