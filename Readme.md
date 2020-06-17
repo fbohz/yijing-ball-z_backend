@@ -32,7 +32,7 @@ Committing code is easy:
  Feel free to email me at misguidedapps@gmail.com.
 
 ## License
-[Yijing Ball-Z](https://github.com/fbohz/yijing-ball-z/blob/master/LICENSE.md) is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+[Yijing Ball-Z](https://github.com/fbohz/yijing-ball-z-legacy/blob/master/LICENSE.md) is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## More Info
 Watch my demo [here](https://youtu.be/F7mGfHanf38).
