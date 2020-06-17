@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_10_180707) do
+ActiveRecord::Schema.define(version: 2020_06_17_155801) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 2019_12_10_180707) do
     t.string "provider"
     t.string "uid"
     t.string "remember_token"
+    t.string "client_mutation_id"
   end
 
   add_foreign_key "readings", "users"

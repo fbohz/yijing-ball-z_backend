@@ -30781,3 +30781,1315 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 237ms (Views: 0.4ms | ActiveRecord: 106.1ms | Allocations: 8701)
 
 
+Started GET "/graphiql" for ::1 at 2020-06-17 10:15:24 -0500
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 14.3ms | Allocations: 2098)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 2714)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:15:25 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+unknown keyword: Types
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/field.rb:178:in `initialize'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/accepts_definition.rb:142:in `initialize'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/field.rb:107:in `new'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/field.rb:107:in `from_options'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/has_fields.rb:12:in `field'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/graphql/types/query_type.rb:22:in `<class:QueryType>'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/graphql/types/query_type.rb:2:in `<module:Types>'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/graphql/types/query_type.rb:1:in `<main>'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/zeitwerk-2.2.2/lib/zeitwerk/kernel.rb:16:in `require'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/graphql/backend_schema.rb:3:in `<class:BackendSchema>'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/graphql/backend_schema.rb:1:in `<main>'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/zeitwerk-2.2.2/lib/zeitwerk/kernel.rb:16:in `require'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 59ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2725)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 10:15:25 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 10:16:03 -0500
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 8.5ms | Allocations: 2102)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 2716)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:16:04 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 273ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 31086)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 10:16:04 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:16:50 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n{\n  allUsers {\n    name\n  }\n}\n\n{\n  user(id:1){\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n{\n  allUsers {\n    name\n  }\n}\n\n{\n  user(id:1){\n    name\n  }\n}", "variables"=>nil}}
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 944)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:17:06 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#   }\n# }\n\n{\n  user(id:1){\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#   }\n# }\n\n{\n  user(id:1){\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+undefined method `map' for #<User:0x00007f942256a280>
+Did you mean?  tap
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_methods.rb:431:in `method_missing'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:98:in `proxy_to_depth'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:85:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 327ms (Views: 10.2ms | ActiveRecord: 45.4ms | Allocations: 12518)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:17:48 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n{\n  allUsers {\n    name\n    id\n  }\n}\n\n# {\n#   user(id:1){\n#     name\n#   }\n# }", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n{\n  allUsers {\n    name\n    id\n  }\n}\n\n# {\n#   user(id:1){\n#     name\n#   }\n# }", "variables"=>nil}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 1859)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:18:04 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\nquery {\n  user(id:1){\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\nquery {\n  user(id:1){\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+undefined method `map' for #<User:0x00007f9421d517b0>
+Did you mean?  tap
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_methods.rb:431:in `method_missing'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:98:in `proxy_to_depth'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:85:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 51ms (Views: 10.5ms | ActiveRecord: 1.0ms | Allocations: 4130)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:18:07 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+undefined method `map' for #<User:0x00007f9425278650>
+Did you mean?  tap
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_methods.rb:431:in `method_missing'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:98:in `proxy_to_depth'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:85:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 23ms (Views: 3.9ms | ActiveRecord: 1.4ms | Allocations: 4132)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:18:31 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    id\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    id\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+undefined method `map' for #<User:0x00007f9426319658>
+Did you mean?  tap
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_methods.rb:431:in `method_missing'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:98:in `proxy_to_depth'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:85:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 36ms (Views: 2.7ms | ActiveRecord: 0.8ms | Allocations: 4140)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:18:32 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    id\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    id\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+undefined method `map' for #<User:0x00007f94252c2d68>
+Did you mean?  tap
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_methods.rb:431:in `method_missing'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:98:in `proxy_to_depth'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:85:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 32ms (Views: 3.0ms | ActiveRecord: 2.9ms | Allocations: 4119)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:18:39 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    uid\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    uid\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+undefined method `map' for #<User:0x00007f94226087c8>
+Did you mean?  tap
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_methods.rb:431:in `method_missing'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:98:in `proxy_to_depth'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:85:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 45ms (Views: 2.9ms | ActiveRecord: 1.3ms | Allocations: 4126)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:20:01 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(1){\n    uid\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(1){\n    uid\n  }\n}", "variables"=>nil}}
+Completed 200 OK in 39ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 430)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:20:08 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    uid\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id:1){\n    uid\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+undefined method `map' for #<User:0x00007f9426381e60>
+Did you mean?  tap
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_methods.rb:431:in `method_missing'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:98:in `proxy_to_depth'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:85:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 94ms (Views: 3.3ms | ActiveRecord: 1.3ms | Allocations: 4125)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started POST "/graphql" for ::1 at 2020-06-17 10:20:51 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id: 1){\n    uid\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id: 1){\n    uid\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+undefined method `map' for #<User:0x00007f94263e27b0>
+Did you mean?  tap
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_methods.rb:431:in `method_missing'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:98:in `proxy_to_depth'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:85:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 22ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 4125)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 10:22:07 -0500
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 13.3ms | Allocations: 2098)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 2713)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:22:08 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 156ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 30932)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 10:22:08 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:22:11 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id: 1){\n    uid\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id: 1){\n    uid\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+Completed 200 OK in 62ms (Views: 0.3ms | ActiveRecord: 16.0ms | Allocations: 7312)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:22:18 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id: 1){\n    uid\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n{\n  user(id: 1){\n    uid\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:27:in `user'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 1447)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 10:45:07 -0500
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 20.9ms | Allocations: 2102)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 2718)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:45:08 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 198ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 33469)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 10:45:08 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 10:49:56 -0500
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 54.1ms | Allocations: 2098)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 2712)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:49:57 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 292ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 33234)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 10:49:57 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:54:16 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n# RETURN USER\n\n# {\n#   user(id: 1){\n#     uid\n#     name\n#   }\n# }\n\n# POST USER\n\nmutation {\n  createUser(input: {\n    name: \"GraphQL Test\",\n    uid: \"test123\",\n    provider: \"graphQL-test\" \n  }){\n    id\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n# RETURN USER\n\n# {\n#   user(id: 1){\n#     uid\n#     name\n#   }\n# }\n\n# POST USER\n\nmutation {\n  createUser(input: {\n    name: \"GraphQL Test\",\n    uid: \"test123\",\n    provider: \"graphQL-test\" \n  }){\n    id\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "test123"], ["LIMIT", 1]]
+  ↳ app/graphql/mutations/create_user.rb:12:in `resolve'
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/graphql/mutations/create_user.rb:16:in `resolve'
+  [1m[36mUser Create (22.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "GraphQL Test"], ["created_at", "2020-06-17 15:54:16.839289"], ["updated_at", "2020-06-17 15:54:16.839289"], ["provider", "graphQL-test"], ["uid", "test123"]]
+  ↳ app/graphql/mutations/create_user.rb:16:in `resolve'
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/graphql/mutations/create_user.rb:16:in `resolve'
+can't write unknown attribute `client_mutation_id`
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute.rb:206:in `with_value_from_database'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activemodel-6.0.2.1/lib/active_model/attribute_set.rb:49:in `write_from_user'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/attribute_methods/write.rb:44:in `_write_attribute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/attribute_methods/write.rb:37:in `write_attribute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/attribute_methods.rb:337:in `[]='
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/relay/mutation/resolve.rb:47:in `build_result'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/relay/mutation/resolve.rb:25:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1216:in `after_lazy'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/relay/mutation/resolve.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/member/instrumentation.rb:80:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/field.rb:248:in `resolve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:321:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:129:in `block in resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:128:in `resolve_field'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:92:in `block in resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:85:in `resolve_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:56:in `block in resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/execute.rb:31:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `map'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:186:in `block in instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `block in trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:76:in `call_tracers'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/tracing.rb:62:in `trace'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:393:in `block in multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:1289:in `with_definition_error_check'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:392:in `multiplex'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphql-1.9.17/lib/graphql/schema.rb:369:in `execute'
+/Users/Pipo/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/forwardable.rb:230:in `execute'
+/Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:196:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/notifications.rb:180:in `instrument'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:191:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_controller/metal.rb:252:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/conditional_get.rb:40:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activerecord-6.0.2.1/lib/active_record/migration.rb:567:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/rack/logger.rb:26:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/activesupport-6.0.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/rack-cors-1.1.0/lib/rack/cors.rb:100:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/engine.rb:526:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/Users/Pipo/.rvm/gems/ruby-2.6.1/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 351ms (Views: 2.5ms | ActiveRecord: 68.8ms | Allocations: 21439)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3079914347658820980)[0m
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnMutationToUsers (20200617155801)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (23.1ms)[0m  [1m[35mALTER TABLE "users" ADD "client_mutation_id" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200617155801"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(3079914347658820980)[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/graphiql" for ::1 at 2020-06-17 10:59:41 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 435.5ms | Allocations: 287235)
+Completed 200 OK in 449ms (Views: 443.7ms | ActiveRecord: 0.0ms | Allocations: 289408)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:59:42 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 101ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 33895)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 10:59:42 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 106)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 10:59:53 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n# RETURN USER\n\n# {\n#   user(id: 1){\n#     uid\n#     name\n#   }\n# }\n\n# POST USER\n\nmutation {\n  createUser(input: {\n    name: \"GraphQL Test\",\n    uid: \"test123\",\n    provider: \"graphQL-test\" \n  }){\n    id\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n# {\n#   allUsers {\n#     name\n#     id\n#   }\n# }\n\n# RETURN USER\n\n# {\n#   user(id: 1){\n#     uid\n#     name\n#   }\n# }\n\n# POST USER\n\nmutation {\n  createUser(input: {\n    name: \"GraphQL Test\",\n    uid: \"test123\",\n    provider: \"graphQL-test\" \n  }){\n    id\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "test123"], ["LIMIT", 1]]
+  ↳ app/graphql/mutations/create_user.rb:12:in `resolve'
+Completed 200 OK in 61ms (Views: 0.3ms | ActiveRecord: 17.0ms | Allocations: 11081)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mReading Load (8.3ms)[0m  [1m[34mSELECT "readings".* FROM "readings" WHERE "readings"."user_id" = $1 LIMIT $2[0m  [["user_id", 3], ["LIMIT", 11]]
+  [1m[36mReading Load (0.6ms)[0m  [1m[34mSELECT "readings".* FROM "readings" WHERE "readings"."user_id" = $1[0m  [["user_id", 3]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mReading Load (0.9ms)[0m  [1m[34mSELECT "readings".* FROM "readings" WHERE "readings"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mReading Load (0.9ms)[0m  [1m[34mSELECT "readings".* FROM "readings" WHERE "readings"."user_id" = $1[0m  [["user_id", 1]]
