@@ -30660,3 +30660,124 @@ Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 24.0ms | Allocations: 100
 
 
 DEPRECATION WARNING: `Module#parent_name` has been renamed to `module_parent_name`. `parent_name` is deprecated and will be removed in Rails 6.1. (called from <main> at /Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/bin/rails:9)
+DEPRECATION WARNING: `Module#parent_name` has been renamed to `module_parent_name`. `parent_name` is deprecated and will be removed in Rails 6.1. (called from <main> at /Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/bin/rails:9)
+Started GET "/graphiql" for ::1 at 2020-06-17 09:11:46 -0500
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#not_found as HTML
+  Parameters: {"a"=>"graphiql"}
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 170)
+
+
+DEPRECATION WARNING: `Module#parent_name` has been renamed to `module_parent_name`. `parent_name` is deprecated and will be removed in Rails 6.1. (called from <main> at /Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/bin/rails:9)
+DEPRECATION WARNING: `Module#parent_name` has been renamed to `module_parent_name`. `parent_name` is deprecated and will be removed in Rails 6.1. (called from <main> at /Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/bin/rails:9)
+DEPRECATION WARNING: `Module#parent_name` has been renamed to `module_parent_name`. `parent_name` is deprecated and will be removed in Rails 6.1. (called from <main> at /Users/Pipo/Google Drive/Study/0.Full_Stack/Flatiron/1.LO/learn.co/PJ/ybz_all/b-yijing-ball-z_backend/bin/rails:9)
+Started GET "/graphiql" for ::1 at 2020-06-17 09:17:59 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#not_found as HTML
+  Parameters: {"a"=>"graphiql"}
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 169)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 09:18:00 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 107)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 09:18:03 -0500
+Processing by ApplicationController#not_found as HTML
+  Parameters: {"a"=>"graphiql"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 106)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 09:18:03 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 09:18:23 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#not_found as HTML
+  Parameters: {"a"=>"graphiql"}
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 169)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 09:18:23 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 105)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 09:19:08 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 1099.2ms | Allocations: 295595)
+Completed 200 OK in 1123ms (Views: 1110.9ms | ActiveRecord: 0.0ms | Allocations: 298641)
+
+
+Started GET "/assets/graphiql/rails/application-8c170720948bf97b769a858441a0c5ef334be2b5edbfd069f6f0ed4bbc2206cc.css" for ::1 at 2020-06-17 09:19:09 -0500
+Started GET "/assets/graphiql/rails/application-6f03c7a92432765b0fbe671bfb7a292ee6c37e6704b6e6ac95587e45676bbf72.js" for ::1 at 2020-06-17 09:19:09 -0500
+Started POST "/graphql" for ::1 at 2020-06-17 09:19:10 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 287ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 28352)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 09:19:11 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 106)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 09:19:38 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 477.6ms | Allocations: 287236)
+Completed 200 OK in 494ms (Views: 485.9ms | ActiveRecord: 0.0ms | Allocations: 289409)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 09:19:40 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 87ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 27947)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 09:19:40 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 106)
+
+
+Started GET "/graphiql" for ::1 at 2020-06-17 09:22:35 -0500
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/Pipo/.rvm/gems/ruby-2.6.1/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 12.7ms | Allocations: 2097)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 2712)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 09:22:36 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 136ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 30168)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-17 09:22:36 -0500
+Processing by ApplicationController#not_found as 
+  Parameters: {"a"=>"favicon"}
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started POST "/graphql" for ::1 at 2020-06-17 09:23:02 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n{\n  allUsers {\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that starts\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n\n{\n  allUsers {\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 237ms (Views: 0.4ms | ActiveRecord: 106.1ms | Allocations: 8701)
+
+
